@@ -3,6 +3,7 @@ library(magrittr)
 library(raster)
 library(ggplot2)
 library(tidycensus)
+library(terra)
 mapviewOptions(fgb = FALSE)
 
 umrb_grid_proj <-
@@ -21,7 +22,7 @@ get_umrb_status <- function(){
   # httr::GET(url = "https://dl.boxcloud.com/d/1/b1!Y5CMqqt3mOhS4jjvCCwD2AeQmhxM9Ohom794KK5Tv3Yal0Xo7Rm9u8XyjH8pNgyey2-PIAAw6BAIbN1gdXEWpLUCkiKDkRItrmNtZ6w-_LtjTZ_5r-VMH_Tmxigc_r-hHgUSypo23hZUA_Pmi5xNsKgoVmOh1TZY0mL_0mcaxuOY1wlYeEr9YT-6kSziddnV4VRftzDF8B34VEtyE_Zi2ROL9YsgB05TPM-p-WtKYKzYQdfFvnOfU9W5QnRyrZ1QTHKuN6512QzhpoTucVt_RNwLY7lNoolMFe4sd0hyMXX1jL7OfDqprFsbzk8pzN1v0NE_PCHFhs3xY-Q9c1yoHvt72YD0mOxez-JaZmCWW7iIOTUkja8JkWKhmHdVNN8oQGfFkwRLIGCEnKMm42aP3drXe2yDuxSMKbDNKo9YQdw227Dsv56iAljJyvl41lDgkWD7KX8Pm9pXgcUFFiBgJAReRFPWfny4TOqoMISWuk4s2skcp1LfnRydeeDDrbtL3VX11iLN-CXLE_GpZdPfvfqrseLiBgoZH08mi6SD04Jt75P-8wlCKCYepkGp80zk0Addl9Bg-w7Kh-BrS8JLEmoMf1ZiTK9U8eUGTGXrEPtmK1h0n07Mdn0SoT5u4ezz-U0LsowDupojxwv1CLcpJJMK0dQNkxDuNOew8K1xrdSxghc8mfl8gOltafC29cympLIzsh-bAnpSPfQ4O1y5QJuL9pNILF9-MmS1Wmfg_mvuZL6jhGZ86ofIh_7NV90GG9mMi4JFn0-RzXKQK979FNU4-YKrbBfYMCbzKLDRm6yWBVHUBgfvkCQ0K9XW3ljZBWYtXHuGVA1koeNURK-74gZULPLdnUTuXJacuefVAB_kG_t7ImC2mO-QatJHosUFOeBitH8pGO5S7wbRyt9cMI_-fGWgd4vQ29GNbTTEXPrXFV634jVm0UFrDycMXwSoscgT53_sFtMVxeQlIeVCJaOfKjMrbZ9SqKRbTs94YhKpxu9sot8rqxLHLXD_IiPLCJHfOiVUYECReukYHQMy3FWcN8r6DI3751B279DELqR18zxn0D5paq5f9zdUJXsoKxKE6WbYTtUkSs4AP_HvIqUVNDvDnwM3J8z6fEiznL-gWPhxihS1Vg7f3yvD8gursSh4XO54Xqr-NJ1Kl9S6PSb9J564UQ_MZ-ymkRBZVbYHkHcbOkmZ_r1VkHO8uk3iz6ZdeO0ueRMsfA9IGG-juTeLzE_xh5a0REVoaR6hrAZiW0XkhJWnmC8lJRhA3_JYYgPUtUOMuvaFNnkM-zp8V7Vh62Xh-ap1fkODg7dY5drvsbDdAyGWR4hXmkY0y7ycwYm7aAALs33n3wkTwycvDB7aBgGTeNVDTEboxb3wviWamcLBvyXW03j3J39zr2SRJ_FT8Ga6rnpPPsB1SMx4IZavWKI8mSj9tNYEyOd6K7zP84PD3Uh6GLjKI2iBk8srxhvEL1ETHgQP-6zsslE2YUsL_EEl1dWViymCtfaCryZn158gtIOm7siQpAgOXMc3ayuimfAW8H4YIc9qapiVqW5qqLTywfAJJjMeBK-u_oQTxw../download",
   #           httr::write_disk(tmp) )
   
-  readxl::read_excel("data-raw/Site Status Database 20211105.xlsx") %>%
+  readxl::read_excel("data-raw/Site Status Database Jan 13 2023.xlsx") %>%
     sf::st_as_sf(coords = c("Longitude", "Latitude"), crs = 4326) %>%
     dplyr::rename(`Site Type` = `Site Type\r\n(New, Existing, Existing - Moved > 100 ft)\r\n`) %>%
     dplyr::mutate(`Site Type` = ifelse(`Site Type` == "new","New",`Site Type`))
@@ -40,6 +41,7 @@ get_umrb_grid <- function(){
   # sf::read_sf(tmpdir)
   sf::read_sf("data-raw/fwmesonetgrid19oct2021/")
 }
+
 
 get_df <- function(x){
   out <- cbind(xyFromCell(x, seq_len(ncell(x))),
@@ -95,22 +97,62 @@ umrb <-
   sf::st_transform(umrb_grid_proj) %>%
   rmapshaper::ms_simplify()
 
+umrb_states <-
+  states %>%
+  dplyr::filter(STUSPS %in% c("ID", "MT", "WY", "ND", "SD", "NE", "MN", "IA"))
 
 # httr::GET("https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/raster/PRISMA_SR_50M.zip",
 #           httr::write_disk("data-raw/PRISMA_SR_50M.zip"))
 # unzip("data-raw/PRISMA_SR_50M.zip",
 #       exdir = "data-raw")
 
-hill <- 
-  terra::rast("data-raw/PRISMA_SR_50M/PRIMSA_SR_50M.tif") %>%
-  terra::crop(.,sf::st_transform(states, terra::crs(.))) %>%
+
+get_image_rast <-
+  function(x, url = "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export"){
+    ext <- 
+      x %>% 
+      sf::st_bbox()
+    
+    
+    deets <-
+      httr::GET(url,
+                query = list(bbox=ext %>% paste0(collapse = ","),
+                             bboxSR=terra::crs(x, describe = TRUE)$code,
+                             size = paste0(terra::ncol(x),",",terra::nrow(x)),
+                             imageSR=terra::crs(x, describe = TRUE)$code,
+                             f="json")) %>%
+      httr::content()
+    
+    httr::modify_url(url,
+                     query = list(bbox=ext %>% paste0(collapse = ","),
+                                  bboxSR=terra::crs(x, describe = TRUE)$code,
+                                  size = paste0(terra::ncol(x),",",terra::nrow(x)),
+                                  imageSR=terra::crs(x, describe = TRUE)$code,
+                                  f="image")) %>%
+      terra::rast() %T>%
+      terra::set.crs(terra::crs(x)) %T>%
+      terra::set.ext(unlist(deets$extent[c("xmin","xmax","ymin","ymax")])) %>%
+      magrittr::set_names("layer")
+  }
+
+umrb_buffer <- states  %>%
+  sf::st_transform("EPSG:5070") %>%
+  sf::st_buffer(20000)
+
+umrb_rast <- rast(extent = terra::ext(umrb_buffer), crs = terra::crs(umrb_buffer), resolution = 1000)
+
+hill <- get_image_rast(umrb_rast) %>%
+  # terra::project(umrb_grid_proj$wkt) %>%
   terra::project(umrb_grid_proj$wkt, method = "near") %>%
   terra::mask(.,terra::vect(sf::st_transform(states, terra::crs(.))))
 
 
+
+
 g <-
-  ggplot(states) +
+  ggplot(sf::st_transform(states, "EPSG:5070")) +
   geom_raster(data = hill %>%
+                terra::project("EPSG:5070", method = "near") %>%
                 raster::raster() %>%
                 get_df(),
               mapping = aes(x = x,
@@ -127,46 +169,82 @@ g <-
           color = "#2b8cbe",
           fill = "white",
           alpha = 0.5) +
-  theme_void() + 
-  coord_sf(expand = FALSE)
+  theme_void(base_size = 24) + 
+  coord_sf(expand = TRUE,
+           xlim = c(-2356114, 2258200),
+           ylim = c(269573.6, 3172568)) +
+  labs(title = "The Upper Missouri River Basin") +
+  # ggplot2::scale_y_continuous(expand = expansion(mult = c(0.01,0.15))) +
+  theme(plot.title = element_text(hjust = 0.5,
+                                  face = "bold",
+                                  vjust = 1),
+        plot.subtitle = element_text(size = 12,
+                                     hjust = 0.5,
+                                     face = "bold",
+                                     vjust = 3),
+        legend.position = "top",
+        legend.text = element_text(size = 14)
+  )
 
 ggsave("figures/umrb-overview.png",
        plot = g,
-       width = 10.24,
-       height = 7.68,
-       bg = "white")
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
 
+
+
+umrb_zoom_base <- function(){
+  ggplot(umrb_states) +
+    geom_raster(data = hill %>%
+                  terra::crop(terra::vect(umrb_states), mask = TRUE) %>%
+                  raster::raster() %>%
+                  get_df(),
+                mapping = aes(x = x,
+                              y = y,
+                              alpha = ID),
+                na.rm = TRUE) +
+    scale_alpha(range = c(0.8, 0),
+                na.value = 0,
+                limits = c(0,255),
+                guide = "none") +
+    
+    geom_sf(data = umrb_states,
+            fill = NA) +
+    theme_void(base_size = 24) + 
+    coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+             ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")],
+             default = TRUE) +
+    # ggplot2::scale_y_continuous(expand = expansion(mult = c(0.01,0.15))) +
+    theme(plot.title = element_text(hjust = 0.5,
+                                    face = "bold",
+                                    vjust = 1),
+          plot.subtitle = element_text(size = 18,
+                                       hjust = 0.5,
+                                    face = "bold",
+                                    vjust = 3),
+          legend.position = "top",
+          legend.margin=margin(t = 0.085, unit='in'),
+          legend.text = element_text(size = 14,
+                                     margin = margin(r = 0.5, unit = "inch")),
+          legend.spacing.x = unit(0, "in")
+          )
+}
 
 g <-
-  ggplot(umrb) +
-  geom_raster(data = hill %>%
-                raster::raster() %>%
-                get_df(),
-              mapping = aes(x = x,
-                            y = y,
-                            alpha = ID),
-              na.rm = TRUE) +
-  scale_alpha(range = c(0.8, 0),
-              na.value = 0,
-              limits = c(0,255),
-              guide = "none") +
-  
-  geom_sf(data = states,
-          fill = NA) +
+  umrb_zoom_base() +
   geom_sf(data = umrb,
           color = "#2b8cbe",
           fill = "white",
           alpha = 0.5) +
-  theme_void() +
-  coord_sf(xlim = sf::st_bbox(umrb)[c("xmin","xmax")],
-           ylim = sf::st_bbox(umrb)[c("ymin","ymax")])
+  labs(title = "The Upper Missouri River Basin",
+       subtitle = "")
 
 ggsave("figures/umrb-zoom.png",
        plot = g,
-       width = 10.24,
-       height = 6.4,
-       bg = "white"
-)
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
 
 sf::st_area(umrb) %>% units::set_units("mi^2")
 #302,000 square miles
@@ -199,7 +277,11 @@ pop20_tribal <-
   dplyr::filter(sf::st_intersects(geometry,sf::st_transform(umrb,sf::st_crs(geometry)), sparse = FALSE)[,1]) %>%
   dplyr::select(Name =  NAME.x,
                 variable,
-                value)
+                value) %>%
+  sf::st_transform(umrb_grid_proj) %>%
+  sf::st_intersection(umrb_states) %>%
+  dplyr::group_by(Name) %>%
+  dplyr::summarise()
 
 # 21 Tribal Reservations
 sum(pop20_tribal$value, na.rm = TRUE)
@@ -214,25 +296,13 @@ tcus <-
                                    dplyr::select(STATEFP, State = STUSPS)) %>%
                        dplyr::transmute(Town = NAME,
                                         State)) %>%
-  sf::st_as_sf()
+  sf::st_as_sf() %>%
+  sf::st_transform(umrb_grid_proj) %>%
+  sf::st_intersection(umrb_states)
 
 
-g<-
-  ggplot(umrb) +
-  geom_raster(data = hill %>%
-                raster::raster() %>%
-                get_df(),
-              mapping = aes(x = x,
-                            y = y,
-                            alpha = ID),
-              na.rm = TRUE) +
-  scale_alpha(range = c(0.8, 0),
-              na.value = 0,
-              limits = c(0,255),
-              guide = "none") +
-  
-  geom_sf(data = states,
-          fill = NA) +
+g <-
+  umrb_zoom_base() +
   geom_sf(data = umrb,
           color = "#2b8cbe",
           fill = "white",
@@ -242,20 +312,20 @@ g<-
           fill = "#5D7A56",
           alpha = 0.5
   ) +
-  geom_sf_text(data = tcus, 
-               label="★", 
-               size=3, 
-               family = "HiraKakuPro-W3") +
-  theme_void() +
-  coord_sf(xlim = sf::st_bbox(umrb)[c("xmin","xmax")],
-           ylim = sf::st_bbox(umrb)[c("ymin","ymax")])
+  # geom_sf_text(data = tcus, 
+  #              label="★", 
+  #              size=3, 
+  #              family = "HiraKakuPro-W3") +
+  coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+           ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
+  labs(title = "The Upper Missouri River Basin",
+       subtitle = "Tribal Lands")
 
 ggsave("figures/umrb-tribes.png",
        plot = g,
-       width = 10.24,
-       height = 6.4,
-       bg = "white"
-)
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
 
 
 umrb_grid <- 
@@ -283,21 +353,7 @@ umrb_dem_5500 <-
 
 
 g<-
-  ggplot(umrb) +
-  geom_raster(data = hill %>%
-                raster::raster() %>%
-                get_df(),
-              mapping = aes(x = x,
-                            y = y,
-                            alpha = ID),
-              na.rm = TRUE) +
-  scale_alpha(range = c(0.8, 0),
-              na.value = 0,
-              limits = c(0,255),
-              guide = "none") +
-  
-  geom_sf(data = states,
-          fill = NA) +
+  umrb_zoom_base() +
   geom_sf(data = umrb,
           color = "#2b8cbe",
           size = 0.25,
@@ -312,41 +368,23 @@ g<-
           fill = "#5D7A56",
           alpha = 0.5
   ) +
-  geom_sf_text(data = tcus, 
-               label="★", 
-               size=3, 
-               family = "HiraKakuPro-W3") +
-  # geom_sf(data = umrb_dem_5500,
-  #         # mapping = aes(color = State,
-  #         #               fill = State),
-  #         alpha = 0.5) +
-  theme_void() +
-  coord_sf(xlim = sf::st_bbox(umrb)[c("xmin","xmax")],
-           ylim = sf::st_bbox(umrb)[c("ymin","ymax")])
+  # geom_sf_text(data = tcus, 
+  #              label="★", 
+  #              size=3, 
+  #              family = "HiraKakuPro-W3") +
+  coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+           ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
+  labs(title = "The Upper Missouri River Basin",
+       subtitle = "Plains Below 5,500 ft.")
 
 ggsave("figures/umrb-5500.png",
        plot = g,
-       width = 10.24,
-       height = 6.4,
-       bg = "white"
-)
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
 
 g<-
-  ggplot(umrb) +
-  geom_raster(data = hill %>%
-                raster::raster() %>%
-                get_df(),
-              mapping = aes(x = x,
-                            y = y,
-                            alpha = ID),
-              na.rm = TRUE) +
-  scale_alpha(range = c(0.8, 0),
-              na.value = 0,
-              limits = c(0,255),
-              guide = "none") +
-  
-  geom_sf(data = states,
-          fill = NA) +
+  umrb_zoom_base() +
   geom_sf(data = umrb,
           color = "#2b8cbe",
           size = 0.25,
@@ -357,43 +395,29 @@ g<-
           fill = "#5D7A56",
           alpha = 0.3
   ) +
-  geom_sf_text(data = tcus, 
-               label="★", 
-               size=3, 
-               family = "HiraKakuPro-W3") +
+  # geom_sf_text(data = tcus, 
+  #              label="★", 
+  #              size=3, 
+  #              family = "HiraKakuPro-W3") +
   geom_sf(data = umrb_grid,
-          color = "#2b8cbe",
+          color = "gray50",
           fill = "white",
           alpha = 0.5) +
-  theme_void() +
-  coord_sf(xlim = sf::st_bbox(umrb)[c("xmin","xmax")],
-           ylim = sf::st_bbox(umrb)[c("ymin","ymax")])
+  coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+           ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
+  labs(title = "The UMRB Monitoring Network",
+       subtitle = "500 mi² Grid")
 
 ggsave("figures/umrb-grid.png",
        plot = g,
-       width = 10.24,
-       height = 6.4,
-       bg = "white"
-)
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
 
 # 540 grid cells = 540 stations, or roughtly 1 every 500 square miles
 
 g<-
-  ggplot(umrb) +
-  geom_raster(data = hill %>%
-                raster::raster() %>%
-                get_df(),
-              mapping = aes(x = x,
-                            y = y,
-                            alpha = ID),
-              na.rm = TRUE) +
-  scale_alpha(range = c(0.8, 0),
-              na.value = 0,
-              limits = c(0,255),
-              guide = "none") +
-  
-  geom_sf(data = states,
-          fill = NA) +
+  umrb_zoom_base() +
   geom_sf(data = umrb,
           color = "#2b8cbe",
           size = 0.25,
@@ -404,14 +428,26 @@ g<-
           fill = "#5D7A56",
           alpha = 0.3
   ) +
-  geom_sf_text(data = tcus, 
-               label="★", 
-               size=3, 
-               family = "HiraKakuPro-W3") +
+  # geom_sf_text(data = tcus, 
+  #              label="★", 
+  #              size=3, 
+  #              family = "HiraKakuPro-W3") +
   geom_sf(data = umrb_grid,
-          mapping = aes(color = State,
-                        fill = State),
+          mapping = aes(fill = State),
+          color = "gray50",
           alpha = 0.5) +
+  geom_sf_label(data = umrb_grid %>%
+                 dplyr::group_by(State) %>%
+                 dplyr::count() %>%
+                 sf::st_drop_geometry() %>%
+                 dplyr::inner_join(states, .,
+                                   by = c("STUSPS" = "State")) %>%
+                 sf::st_centroid() %>%
+                 dplyr::mutate(count = paste0(NAME, ":\n", n, " stations")),
+               mapping = aes(label = count),
+               fontface = "bold",
+               alpha = 0.5
+               ) +
   scale_color_manual(values = c("MT" = "#00678a",
                                 "ND" = "#c0affb",
                                 "NE" = "#e6a176",
@@ -424,17 +460,18 @@ g<-
                                 "SD" = "#984464",
                                 "TBD" = "#5eccab",
                                 "WY" = "#56641a")) +
-  theme_void() +
-  theme(legend.position = 'none') +
-  coord_sf(xlim = sf::st_bbox(umrb)[c("xmin","xmax")],
-           ylim = sf::st_bbox(umrb)[c("ymin","ymax")])
+  coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+           ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
+  guides(fill = "none",
+         color = "none") +
+  labs(title = "The UMRB Monitoring Network",
+       subtitle = "Participating State Mesonets")
 
 ggsave("figures/umrb-grid-states.png",
        plot = g,
-       width = 10.24,
-       height = 6.4,
-       bg = "white"
-)
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
 
 umrb_grid %>%
   sf::st_drop_geometry() %>%
@@ -458,32 +495,15 @@ site_status <-
   dplyr::select(Site, 
                 `Grid Cell ID`,
                 `Site Type`,
-                `Station Status`) %>%
-  dplyr::mutate(`Station Status` = factor(`Station Status`,
-                                          levels = c("Complete", 
-                                                     "In-Progress", 
-                                                     "Candidate"),
-                                          labels = c("Operational",
-                                                     "Summer 2022",
-                                                     "Summer 2023"),
-                                          ordered = TRUE))
+                `Project Year (PY)`) %>%
+  dplyr::mutate(`Station Status` = forcats::fct_collapse(`Project Year (PY)`,
+                                                         Operational = c("Pilot Year", "PY1", "PY2"),
+                                                `Summer 2023` = c("PY3"),
+                                                `Candidate 2024` = c("PY4"))) %>%
+  dplyr::filter(!is.na(`Station Status`))
 
 g <-
-  ggplot(umrb) +
-  geom_raster(data = hill %>%
-                raster::raster() %>%
-                get_df(),
-              mapping = aes(x = x,
-                            y = y,
-                            alpha = ID),
-              na.rm = TRUE) +
-  scale_alpha(range = c(0.8, 0),
-              na.value = 0,
-              limits = c(0,255),
-              guide = "none") +
-  
-  geom_sf(data = states,
-          fill = NA) +
+  umrb_zoom_base() +
   geom_sf(data = umrb,
           color = "#2b8cbe",
           size = 0.25,
@@ -494,10 +514,10 @@ g <-
           fill = "#5D7A56",
           alpha = 0.3
   ) +
-  geom_sf_text(data = tcus, 
-               label="★", 
-               size=3, 
-               family = "HiraKakuPro-W3") +
+  # geom_sf_text(data = tcus, 
+  #              label="★", 
+  #              size=3, 
+  #              family = "HiraKakuPro-W3") +
   geom_sf(data = umrb_grid,
           color = "gray50",
           fill = "white",
@@ -507,8 +527,8 @@ g <-
                                 dplyr::filter(`Station Status` == "Operational") %>%
                                 sf::st_drop_geometry() %>%
                                 dplyr::rename(Cell = `Grid Cell ID`)),
-          mapping = aes(color = State,
-                        fill = State),
+          mapping = aes(fill = State),
+          color = "gray50",
           size = 1.2,
           alpha = 0.5) +
   scale_color_manual(values = c("MT" = "#00678a",
@@ -530,38 +550,34 @@ g <-
           aes(shape = `Station Status`),
           fill = "white") +
   scale_shape_manual(values = c("Operational" = 19,
-                                "Summer 2022" = 21,
-                                "Summer 2023" = 24),
-                     drop = FALSE) +
-  theme_void() +
-  theme(legend.position = 'bottom') +
-  coord_sf(xlim = sf::st_bbox(umrb)[c("xmin","xmax")],
-           ylim = sf::st_bbox(umrb)[c("ymin","ymax")])
+                                "Summer 2023" = 21,
+                                "Candidate 2024" = 3),
+                     drop = FALSE,
+                     name = NULL) +
+  coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+           ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
+  labs(title = "The UMRB Monitoring Network",
+       subtitle = NULL) +
+  geom_text(x = mean(sf::st_bbox(umrb_states)[c("xmin","xmax")]),
+            y = sf::st_bbox(umrb_states)[c("ymax")],
+            label = paste0(
+              site_status %>%
+                dplyr::filter(`Station Status` == "Operational") %>%
+                nrow(),
+              " Operational"
+            ),
+            fontface = "bold",
+            size = 6)
 
-ggsave("figures/umrb-grid-sites-2021.png",
+ggsave("figures/umrb-grid-sites-2022.png",
        plot = g,
-       width = 10.24,
-       height = 6.4,
-       bg = "white"
-)
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
 
 
 g <-
-  ggplot(umrb) +
-  geom_raster(data = hill %>%
-                raster::raster() %>%
-                get_df(),
-              mapping = aes(x = x,
-                            y = y,
-                            alpha = ID),
-              na.rm = TRUE) +
-  scale_alpha(range = c(0.8, 0),
-              na.value = 0,
-              limits = c(0,255),
-              guide = "none") +
-  
-  geom_sf(data = states,
-          fill = NA) +
+  umrb_zoom_base() +
   geom_sf(data = umrb,
           color = "#2b8cbe",
           size = 0.25,
@@ -572,21 +588,21 @@ g <-
           fill = "#5D7A56",
           alpha = 0.3
   ) +
-  geom_sf_text(data = tcus, 
-               label="★", 
-               size=3, 
-               family = "HiraKakuPro-W3") +
+  # geom_sf_text(data = tcus, 
+  #              label="★", 
+  #              size=3, 
+  #              family = "HiraKakuPro-W3") +
   geom_sf(data = umrb_grid,
           color = "gray50",
           fill = "white",
           alpha = 0.5) +
   geom_sf(data = umrb_grid %>%
             dplyr::inner_join(site_status %>%
-                                dplyr::filter(`Station Status` %in% c("Operational","Summer 2022")) %>%
+                                dplyr::filter(`Station Status` %in% c("Operational","Summer 2023")) %>%
                                 sf::st_drop_geometry() %>%
                                 dplyr::rename(Cell = `Grid Cell ID`)),
-          mapping = aes(color = State,
-                        fill = State),
+          mapping = aes(fill = State),
+          color = "gray50",
           size = 1.2,
           alpha = 0.5) +
   scale_color_manual(values = c("MT" = "#00678a",
@@ -604,42 +620,38 @@ g <-
                                 "WY" = "#56641a"),
                     guide = 'none') +
   geom_sf(data = site_status %>%
-            dplyr::filter(`Station Status`  %in% c("Operational","Summer 2022")),
+            dplyr::filter(`Station Status`  %in% c("Operational","Summer 2023")),
           aes(shape = `Station Status`),
           fill = "white") +
   scale_shape_manual(values = c("Operational" = 19,
-                                "Summer 2022" = 21,
-                                "Summer 2023" = 24),
-                     drop = FALSE) +
-  theme_void() +
-  theme(legend.position = 'bottom') +
-  coord_sf(xlim = sf::st_bbox(umrb)[c("xmin","xmax")],
-           ylim = sf::st_bbox(umrb)[c("ymin","ymax")])
+                                "Summer 2023" = 21,
+                                "Candidate 2024" = 3),
+                     drop = FALSE,
+                     name = NULL) +
+  coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+           ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
+  labs(title = "The UMRB Monitoring Network",
+       subtitle = NULL) +
+  geom_text(x = mean(sf::st_bbox(umrb_states)[c("xmin","xmax")]),
+            y = sf::st_bbox(umrb_states)[c("ymax")],
+            label = paste0(
+              site_status %>%
+                dplyr::filter(`Station Status` == "Summer 2023") %>%
+                nrow(),
+              " Summer 2023 Installs"
+            ),
+            fontface = "bold",
+            size = 6)
 
-ggsave("figures/umrb-grid-sites-2022.png",
+ggsave("figures/umrb-grid-sites-2023.png",
        plot = g,
-       width = 10.24,
-       height = 6.4,
-       bg = "white"
-)
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
 
 
 g <-
-  ggplot(umrb) +
-  geom_raster(data = hill %>%
-                raster::raster() %>%
-                get_df(),
-              mapping = aes(x = x,
-                            y = y,
-                            alpha = ID),
-              na.rm = TRUE) +
-  scale_alpha(range = c(0.8, 0),
-              na.value = 0,
-              limits = c(0,255),
-              guide = "none") +
-  
-  geom_sf(data = states,
-          fill = NA) +
+  umrb_zoom_base() +
   geom_sf(data = umrb,
           color = "#2b8cbe",
           size = 0.25,
@@ -650,10 +662,10 @@ g <-
           fill = "#5D7A56",
           alpha = 0.3
   ) +
-  geom_sf_text(data = tcus, 
-               label="★", 
-               size=3, 
-               family = "HiraKakuPro-W3") +
+  # geom_sf_text(data = tcus, 
+  #              label="★", 
+  #              size=3, 
+  #              family = "HiraKakuPro-W3") +
   geom_sf(data = umrb_grid,
           color = "gray50",
           fill = "white",
@@ -662,8 +674,8 @@ g <-
             dplyr::inner_join(site_status %>%
                                 sf::st_drop_geometry() %>%
                                 dplyr::rename(Cell = `Grid Cell ID`)),
-          mapping = aes(color = State,
-                        fill = State),
+          mapping = aes(fill = State),
+          color = "gray50",
           size = 1.2,
           alpha = 0.5) +
   scale_color_manual(values = c("MT" = "#00678a",
@@ -684,20 +696,30 @@ g <-
           aes(shape = `Station Status`),
           fill = "white") +
   scale_shape_manual(values = c("Operational" = 19,
-                                "Summer 2022" = 21,
-                                "Summer 2023" = 24),
-                     drop = FALSE) +
-  theme_void() +
-  theme(legend.position = 'bottom') +
-  coord_sf(xlim = sf::st_bbox(umrb)[c("xmin","xmax")],
-           ylim = sf::st_bbox(umrb)[c("ymin","ymax")])
+                                "Summer 2023" = 21,
+                                "Candidate 2024" = 3),
+                     drop = FALSE,
+                     name = NULL) +
+  coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+           ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
+  labs(title = "The UMRB Monitoring Network",
+       subtitle = NULL) +
+  geom_text(x = mean(sf::st_bbox(umrb_states)[c("xmin","xmax")]),
+            y = sf::st_bbox(umrb_states)[c("ymax")],
+            label = paste0(
+              site_status %>%
+                dplyr::filter(`Station Status` == "Candidate 2024") %>%
+                nrow(),
+              " Candidate 2024 Installs"
+            ),
+            fontface = "bold",
+            size = 6)
 
-ggsave("figures/umrb-grid-sites.png",
+ggsave("figures/umrb-grid-sites-2024.png",
        plot = g,
-       width = 10.24,
-       height = 6.4,
-       bg = "white"
-)
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
 
 
 umrb_grid_tribes <-
@@ -709,21 +731,7 @@ umrb_grid_tribes <-
   
 
 g <-
-  ggplot(umrb) +
-  geom_raster(data = hill %>%
-                raster::raster() %>%
-                get_df(),
-              mapping = aes(x = x,
-                            y = y,
-                            alpha = ID),
-              na.rm = TRUE) +
-  scale_alpha(range = c(0.8, 0),
-              na.value = 0,
-              limits = c(0,255),
-              guide = "none") +
-  
-  geom_sf(data = states,
-          fill = NA) +
+  umrb_zoom_base() +
   geom_sf(data = umrb,
           color = "#2b8cbe",
           size = 0.25,
@@ -746,44 +754,26 @@ g <-
   geom_sf(data = pop20_tribal,
           color = "#5D7A56",
           fill = NA) +
-  geom_sf_text(data = tcus, 
-               label="★", 
-               size=3, 
-               family = "HiraKakuPro-W3") +
-  theme_void() +
+  # geom_sf_text(data = tcus, 
+  #              label="★", 
+  #              size=3, 
+  #              family = "HiraKakuPro-W3") +
   theme(legend.position = 'none') +
-  coord_sf(xlim = sf::st_bbox(umrb)[c("xmin","xmax")],
-           ylim = sf::st_bbox(umrb)[c("ymin","ymax")])
+  coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+           ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
+  labs(title = "The UMRB Monitoring Network",
+       subtitle = "174 Tribal Grid Cells")
 
 ggsave("figures/umrb-grid-tribes.png",
        plot = g,
-       width = 10.24,
-       height = 6.4,
-       bg = "white"
-)
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
 
 # 174 cells intersect Tribal land
 
 g <-
-  ggplot(umrb) +
-  geom_raster(data = hill %>%
-                raster::raster() %>%
-                get_df(),
-              mapping = aes(x = x,
-                            y = y,
-                            alpha = ID),
-              na.rm = TRUE) +
-  scale_alpha(range = c(0.8, 0),
-              na.value = 0,
-              limits = c(0,255),
-              guide = "none") +
-  geom_sf(data = pop20_tribal,
-          color = "#5D7A56",
-          fill = "#5D7A56",
-          alpha = 0.3
-  ) +
-  geom_sf(data = states,
-          fill = NA) +
+  umrb_zoom_base() +
   geom_sf(data = umrb,
           color = "#2b8cbe",
           size = 0.25,
@@ -812,21 +802,133 @@ g <-
 geom_sf(data = pop20_tribal,
         color = "#5D7A56",
         fill = NA) +
-  geom_sf_text(data = tcus, 
-               label="★", 
-               size=3, 
-               family = "HiraKakuPro-W3") +
-  theme_void() +
+  # geom_sf_text(data = tcus, 
+  #              label="★", 
+  #              size=3, 
+  #              family = "HiraKakuPro-W3") +
   theme(legend.position = 'none') +
-  coord_sf(xlim = sf::st_bbox(umrb)[c("xmin","xmax")],
-           ylim = sf::st_bbox(umrb)[c("ymin","ymax")])
+  coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+           ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
+  labs(title = "The UMRB Monitoring Network",
+       subtitle = "80 Tribal Grid Cells Remaining")
 
 ggsave("figures/umrb-grid-tribes_remaining.png",
        plot = g,
-       width = 10.24,
-       height = 6.4,
-       bg = "white"
-)
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
 
-# 151 potential cells to be filled on Tribal land
+# 80 potential cells to be filled on Tribal land
+
+
+g <-
+  umrb_zoom_base() +
+  geom_sf(data = umrb,
+          color = "#2b8cbe",
+          size = 0.25,
+          fill = NA,
+          alpha = 0.5) +
+  
+  geom_sf(data = umrb_grid,
+          color = "gray50",
+          fill = "white",
+          alpha = 0.5) +
+  geom_sf(data = umrb_grid %>%
+            dplyr::filter(!(Cell %in% (umrb_grid %>%
+                                         dplyr::inner_join(site_status %>%
+                                                             sf::st_drop_geometry() %>%
+                                                             dplyr::rename(Cell = `Grid Cell ID`)) %$%
+                                         Cell))),
+          color = "#627D5A",
+          fill = "#627D5A",
+          size = 1.2,
+          alpha = 0.5) +
+  geom_sf(data = umrb_grid,
+          color = "#627D5A",
+          fill = NA,
+          size = 1.2,
+          alpha = 0.5) +
+  geom_sf(data = pop20_tribal,
+          color = "#5D7A56",
+          fill = NA) +
+  # geom_sf_text(data = tcus, 
+  #              label="★", 
+  #              size=3, 
+  #              family = "HiraKakuPro-W3") +
+  theme(legend.position = 'none') +
+  coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+           ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
+  labs(title = "The UMRB Monitoring Network",
+       subtitle = "264 Grid Cells Remaining")
+
+ggsave("figures/umrb-grid-all_remaining.png",
+       plot = g,
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
+
+
+
+
+
+
+
+## All mesonet sites
+source("plotting_functions.R")
+
+stations <- 
+  "https://mesonet.climate.umt.edu/api/v2/stations" %>%
+  httr::GET(query = list(type = "csv")) %>%
+  httr::content() %>%
+  sf::st_as_sf(coords = c("longitude", "latitude"),
+               crs = 4326) %>%
+  dplyr::mutate(`Sub-network` = factor(sub_network, 
+                                       levels = c("HydroMet", "AgriMet"),
+                                       ordered = TRUE))
+
+ggplot() + 
+  mtd_plot() +
+  ggplot2::geom_sf(data = mcor::mt_counties_simple,
+                   color = "black",
+                   # alpha = 0.50,
+                   fill = NA,
+                   size = 0.5,
+                   inherit.aes = FALSE) +
+  add_hillshade() +
+  ggplot2::geom_sf(data = mcor::mt_state_simple,
+                   color = "black",
+                   # alpha = 0.50,
+                   fill = NA,
+                   size = 1,
+                   inherit.aes = FALSE) +
+  ggplot2::geom_sf(data = stations,
+                   mapping = aes(color = `Sub-network`,
+                                 size = `Sub-network`)
+  ) +
+  scale_color_manual(values = c(HydroMet = rgb(211, 129, 46, maxColorValue = 255),
+                                   AgriMet = rgb(29, 60, 52, maxColorValue = 255)),
+                     aesthetics = c("colour", "fill")) +
+  scale_size_manual(values = c(HydroMet = 2.5,  
+                                   AgriMet = 1))
+
+ggsave(file.path("figures","mco_mesonet.pdf") ,
+       width = fig_width,
+       height = fig_height,
+       dpi = 600,
+       bg = "transparent")
+
+stations %>%
+  dplyr::group_by(`Sub-network`) %>%
+  dplyr::count()
+# 105 stations
+# 19 HydroMet
+# 86 AgriMet
+
+ 
+
+
+
+  
+
+
 
