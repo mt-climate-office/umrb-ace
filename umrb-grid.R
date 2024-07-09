@@ -32,3 +32,16 @@ umrb_grid <-
 
 mapview::mapview(umrb_grid) +
   mapview::mapview(sf::read_sf("data-raw/fwmesonetgrid19oct2021"))
+
+library(sf)
+library(magrittr)
+sf::read_sf("/vsizip//Users/bocinsky/git/mt-climate-office/umrb-ace/data-raw/fwmesonetgrid19oct2021.zip") %>%
+  dplyr::transmute(cell, state = State, included = grepl("^[[:upper:]]", cell)) %>%
+  dplyr::mutate(cell_area = sf::st_area(geometry) %>%
+                  units::set_units("mi^2")) %>%
+  dplyr::select(cell, cell_area, included, state) %>%
+  sf::write_sf("data/umrb-ace-grid.shp")
+  
+  
+
+
