@@ -51,15 +51,15 @@ grid <-
                   status %>%
                   tidyr::replace_na("future") %>%
                   forcats::fct_collapse(Operational = "active",
-                                        `Install 2024` = c("ground", "inactive", "pending"),
-                                        `Install 2025` = "contracted",
-                                        Unassigned = "future"
+                                        `Summer 2024` = c("ground", "inactive", "pending", "structures"),
+                                        `Summer 2025` = "contracted",
+                                        `Future Stations` = "future"
                                         
                   ) %>%
                   factor(levels = c("Operational",
-                                    "Install 2024",
-                                    "Install 2025",
-                                    "Unassigned"
+                                    "Summer 2024",
+                                    "Summer 2025",
+                                    "Future Stations"
                   ),
                   ordered = TRUE)
   )
@@ -105,15 +105,19 @@ mt_towns <-
 "#EE3377FF"
 "#BBBBBBFF"
 
-ggplot(mcor::mt_state_simple) +
+
+
+
+p <-
+  ggplot(mcor::mt_state_simple) +
   geom_sf(data = grid,
           mapping = aes(fill = status)) +
-  scale_fill_manual(name = "UMRB Project\nStation Status",
+  scale_fill_manual(name = "Montana Mesonet\nStation Status",
                     values = c(
                       Operational = "#009988FF",
-                      `Install 2024` = "#0077BBFF",
-                      `Install 2025` = "#33BBEEFF",
-                      Unassigned = "#EE7733FF"
+                      `Summer 2024` = "#0077BBFF",
+                      `Summer 2025` = "#33BBEEFF",
+                      `Future Stations` = "#EE7733FF"
                     )
   ) +
   geom_raster(data = terra::as.data.frame(hill, xy = TRUE),
@@ -167,6 +171,7 @@ ggplot(mcor::mt_state_simple) +
   geom_sf(data = mcor::mt_state_simple,
           fill = NA,
           linewidth = 0.5) +
+  guides(fill = guide_legend(order = 1)) +
   # geom_sf(data = mt_towns,
   #         shape = 21,
   #         fill = "black",
@@ -201,8 +206,8 @@ ggplot(mcor::mt_state_simple) +
     # legend.background = element_blank(),
     # legend.justification = c(0,1),
     # legend.key.width = unit(0.4, "in"),
-    legend.justification = c(0, 0), 
-    legend.position.inside = c(-0.16, 0.07),
+    legend.justification = c(0, 1), 
+    legend.position.inside = c(-0.16, 0.9),
     legend.background = ggplot2::element_blank(), 
     # legend.key.width = ggplot2::unit(0.15, "in"), 
     # legend.text = ggplot2::element_text(size = ggplot2::rel(1)),
@@ -215,15 +220,66 @@ ggplot(mcor::mt_state_simple) +
                                   r = 0, 
                                   b = 0,
                                   l = 0.16, unit = "npc")
-  )
+  ) +
+  annotation_custom(
+    "MCO_logo.png" %>%
+      png::readPNG() %>%
+      grid::rasterGrob(interpolate=TRUE,
+                       # width = unit(0.6 * 3600/1325, "in"),
+                       height = unit(0.75, "in"),
+                       x = unit(-0.16, "npc"),
+                       y = unit(0.28, "npc"),
+                       just = "left"), 
+    xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf) +
+  annotation_custom(
+    "UM-Maroon.png" %>%
+      png::readPNG() %>%
+      grid::rasterGrob(interpolate=TRUE,
+                       # width = unit(0.75, "in"),
+                       height = unit(0.5, "in"),
+                       x = unit(-0.16, "npc"),
+                       y = unit(0.11, "npc"),
+                       just = "left"), 
+    xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf) +
+  annotation_custom(
+    gridtext::textbox_grob(
+      text = paste0("The Montana Mesonet is operated by the Montana Climate Office, 
+      and is a service of the Montana Forest and Conservation Experiment Station, 
+      WA Franke College of Forestry and Conservation, University of Montana.<br>
+      Map produced on ", format(today(), "%B %d, %Y"), "."),
+      x = unit(0.94, "npc"),
+      y = unit(0.05, "npc"),
+      width = unit(0.53, "npc"),
+      hjust = 1,
+      vjust = 0,
+      halign = 1,
+      valign = 1,
+      gp = grid::gpar(fontface = "italic",
+                      fontsize = 6)
+    ),
+    xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)
 
+gt <- ggplot_gtable(ggplot_build(p))
+gt$layout$clip[gt$layout$name == "panel"] <- "off"
 
-
-ggsave("mt_status_map.png",
-       width = 7.5, 
-       height = 3.5,
+dev.off()
+grid::grid.draw(gt) %>%
+ggsave(plot = .,
+       filename = "mt_status_map.png",
+       width = 10, 
+       height = 14/3,
        device = ragg::agg_png,
-       bg = "white"
+       bg = "white",
+       dpi = 1200
 )
 
+grid::grid.draw(gt) %>%
+  ggsave(plot = .,
+         filename = "mt_status_map.pdf",
+         width = 10, 
+         height = 14/3,
+         device = cairo_pdf,
+         bg = "white",
+         dpi = 1200
+  )
 
