@@ -51,14 +51,14 @@ grid <-
                   status %>%
                   tidyr::replace_na("future") %>%
                   forcats::fct_collapse(Operational = "active",
-                                        `Summer 2024` = c("ground", "inactive", "pending", "structures"),
-                                        `Summer 2025` = "contracted",
+                                        `Summer 2025` = c("ground", "inactive", "pending", "structures"),
+                                        `Summer 2026` = "contracted",
                                         `Future Stations` = "future"
                                         
                   ) %>%
                   factor(levels = c("Operational",
-                                    "Summer 2024",
                                     "Summer 2025",
+                                    "Summer 2026",
                                     "Future Stations"
                   ),
                   ordered = TRUE)
@@ -115,8 +115,8 @@ p <-
   scale_fill_manual(name = "Montana Mesonet\nStation Status",
                     values = c(
                       Operational = "#009988FF",
-                      `Summer 2024` = "#0077BBFF",
-                      `Summer 2025` = "#33BBEEFF",
+                      `Summer 2025` = "#0077BBFF",
+                      `Summer 2026` = "#33BBEEFF",
                       `Future Stations` = "#EE7733FF"
                     )
   ) +
@@ -273,13 +273,13 @@ ggsave(plot = .,
        dpi = 1200
 )
 
-grid::grid.draw(gt) %>%
-  ggsave(plot = .,
-         filename = "mt_status_map.pdf",
-         width = 10, 
-         height = 14/3,
-         device = cairo_pdf,
-         bg = "white",
-         dpi = 1200
-  )
+# grid::grid.draw(gt) %>%
+#   ggsave(plot = .,
+#          filename = "mt_status_map.pdf",
+#          width = 10, 
+#          height = 14/3,
+#          device = cairo_pdf,
+#          bg = "white",
+#          dpi = 1200
+#   )
 
