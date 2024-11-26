@@ -1,7 +1,7 @@
 Station ID|Station name|Slope|Aspect|Cover Description Code
-KEEM8|Absarokee|A|0|NA
-ASAM8|Ashland E|A|0|NA
-BLWM8|Benton Lake W|A|0|NA
+KEEM8|Absarokee|A|0|4103
+ASAM8|Ashland E|A|0|4403
+BLWM8|Benton Lake W|A|0|3302
 BSWM8|Big Sandy NW|A|0|NA
 BTSM8|Big Timber SE|A|0|NA
 BNGM8|Billings S|A|0|NA
