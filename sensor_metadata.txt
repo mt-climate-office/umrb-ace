@@ -1,0 +1,1917 @@
+Station ID|Station name|Variable|Position/depth (AGL) (m)|Sensor Mfg|Sensor Model
+KEEM8|Absarokee|SOILT4 [K]|0.1|Acclima|TDR-310N
+ASAM8|Ashland E|SOILT4 [K]|0.1|Acclima|TDR-310N
+BLWM8|Benton Lake W|SOILT4 [K]|0.1|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+BTSM8|Big Timber SE|SOILT4 [K]|0.1|Acclima|TDR-310N
+BNGM8|Billings S|SOILT4 [K]|0.1|Acclima|TDR-310N
+BNGM8|Billings S|SOILT4 [K]|0.1|Acclima|TDR-310N
+BNWM8|Bowmans Corner NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+BZNM8|Bozeman|SOILT4 [K]|0.1|Acclima|TDR-310N
+BZNM8|Bozeman|SOILT4 [K]|0.1|Acclima|TDR-310N
+BRYM8|Brady NE|SOILT4 [K]|0.1|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILT4 [K]|0.1|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILT4 [K]|0.1|Acclima|TDR-310N
+BDVM8|Broadview|SOILT4 [K]|0.1|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILT4 [K]|0.1|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILT4 [K]|0.1|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILT4 [K]|0.1|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILT4 [K]|0.1|Acclima|TDR-310N
+BUSM8|Busby S|SOILT4 [K]|0.1|Acclima|TDR-310N
+BYUM8|Bynum W|SOILT4 [K]|0.1|Acclima|TDR-310N
+CRNM8|Carter N|SOILT4 [K]|0.1|Acclima|TDR-310N
+CRNM8|Carter N|SOILT4 [K]|0.1|Acclima|TDR-310N
+CHSM8|Chester SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+CSTM8|Christina W|SOILT4 [K]|0.1|Acclima|TDR-310N
+CSTM8|Christina W|SOILT4 [K]|0.1|Acclima|TDR-310N
+CFCM8|Coffee Creek N|SOILT4 [K]|0.1|Acclima|TDR-310N
+CNNM8|Conrad N|SOILT4 [K]|0.1|Acclima|TDR-310N
+CNNM8|Conrad N|SOILT4 [K]|0.1|Acclima|TDR-310N
+COOM8|Cooney Reservoir NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+CROM8|Crow Agency|SOILT4 [K]|0.1|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILT4 [K]|0.1|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILT4 [K]|0.1|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILT4 [K]|0.1|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILT4 [K]|0.1|Acclima|TDR-310N
+DYRM8|Dupuyer N|SOILT4 [K]|0.1|Acclima|TDR-310N
+FRGM8|Forestgrove N|SOILT4 [K]|0.1|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+HWTM8|Harlowton E|SOILT4 [K]|0.1|Acclima|TDR-310N
+HAEM8|Havre|SOILT4 [K]|0.1|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILT4 [K]|0.1|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILT4 [K]|0.1|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+HNTM8|Huntley E|SOILT4 [K]|0.1|Acclima|TDR-310N
+IGMM8|Ingomar|SOILT4 [K]|0.1|Acclima|TDR-310N
+INNM8|Inverness N|SOILT4 [K]|0.1|Acclima|TDR-310N
+INNM8|Inverness N|SOILT4 [K]|0.1|Acclima|TDR-310N
+ISSM8|Inverness S|SOILT4 [K]|0.1|Acclima|TDR-310N
+ISSM8|Inverness S|SOILT4 [K]|0.1|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILT4 [K]|0.1|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILT4 [K]|0.1|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILT4 [K]|0.1|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILT4 [K]|0.1|Acclima|TDR-310N
+LMDM8|Lame Deer E|SOILT4 [K]|0.1|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+LVAM8|Lavina N|SOILT4 [K]|0.1|Acclima|TDR-310N
+LGGM8|Lodge Grass W|SOILT4 [K]|0.1|Acclima|TDR-310N
+LOAM8|Loma N|SOILT4 [K]|0.1|Acclima|TDR-310N
+LOAM8|Loma N|SOILT4 [K]|0.1|Acclima|TDR-310N
+LORM8|Loring SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+MTRM8|Matador Ranch|SOILT4 [K]|0.1|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILT4 [K]|0.1|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILT4 [K]|0.1|Acclima|TDR-310N
+MLVM8|Melville|SOILT4 [K]|0.1|Acclima|TDR-310N
+RADM8|Midway Colony|SOILT4 [K]|0.1|Acclima|TDR-310N
+MCYM8|Miles City|SOILT4 [K]|0.1|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILT4 [K]|0.1|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILT4 [K]|0.1|Acclima|TDR-310N
+MCIM8|Moccasin|SOILT4 [K]|0.1|Acclima|TDR-315N
+MOTM8|Molt S|SOILT4 [K]|0.1|Acclima|TDR-310N
+MOYM8|Mosby S|SOILT4 [K]|0.1|Acclima|TDR-310N
+MOBM8|Mosby NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILT4 [K]|0.1|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILT4 [K]|0.1|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILT4 [K]|0.1|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILT4 [K]|0.1|Acclima|TDR-310N
+MSSM8|Musselshell|SOILT4 [K]|0.1|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILT4 [K]|0.1|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILT4 [K]|0.1|Acclima|TDR-310N
+OILM8|Oilmont|SOILT4 [K]|0.1|Acclima|TDR-310N
+OHMM8|Opheim S|SOILT4 [K]|0.1|Acclima|TDR-310N
+OHMM8|Opheim S|SOILT4 [K]|0.1|Acclima|TDR-310N
+OTRM8|Otter E|SOILT4 [K]|0.1|Acclima|TDR-310N
+PARM8|Poplar N|SOILT4 [K]|0.1|Acclima|TDR-310N
+PARM8|Poplar N|SOILT4 [K]|0.1|Acclima|TDR-310N
+RAPM8|Rapelje SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+RMYM8|Rothiemay W|SOILT4 [K]|0.1|Acclima|TDR-310N
+ROUM8|Roundup|SOILT4 [K]|0.1|Acclima|TDR-315N
+RYOM8|Roy E|SOILT4 [K]|0.1|Acclima|TDR-310N
+RGTM8|Ryegate S|SOILT4 [K]|0.1|Acclima|TDR-310N
+SASM8|Saco S|SOILT4 [K]|0.1|Acclima|TDR-310N
+SDSM8|Sand Springs NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+SCYM8|Scobey NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+SIYM8|Sidney|SOILT4 [K]|0.1|Acclima|TDR-310N
+SDLM8|Springdale|SOILT4 [K]|0.1|Acclima|TDR-310N
+SDLM8|Springdale|SOILT4 [K]|0.1|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+SURM8|Sun River SE|SOILT4 [K]|0.1|Acclima|TDR-310N
+TAMM8|Tampico N|SOILT4 [K]|0.1|Acclima|TDR-310N
+TAMM8|Tampico N|SOILT4 [K]|0.1|Acclima|TDR-310N
+TTNM8|Toston|SOILT4 [K]|0.1|Acclima|TDR-310N
+TTNM8|Toston|SOILT4 [K]|0.1|Acclima|TDR-310N
+TRNM8|Turner N|SOILT4 [K]|0.1|Acclima|TDR-310N
+TWOM8|Twodot E|SOILT4 [K]|0.1|Acclima|TDR-310N
+VLTM8|Dovetail|SOILT4 [K]|0.1|Acclima|TDR-310N
+VOTM8|Volt N|SOILT4 [K]|0.1|Acclima|TDR-310N
+VOTM8|Volt N|SOILT4 [K]|0.1|Acclima|TDR-310N
+WRHM8|War Horse NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILT4 [K]|0.1|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILT4 [K]|0.1|Acclima|TDR-310N
+WIEM8|Winnett SW|SOILT4 [K]|0.1|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILT4 [K]|0.1|Acclima|TDR-310N
+KEEM8|Absarokee|T [K]|2|Vaisala|HMP155E
+ASAM8|Ashland E|T [K]|2|Vaisala|HMP155E
+BLWM8|Benton Lake W|T [K]|2|Vaisala|HMP155E
+BSWM8|Big Sandy NW|T [K]|2|Vaisala|HMP155E
+BTSM8|Big Timber SE|T [K]|2|Vaisala|HMP155E
+BNGM8|Billings S|T [K]|2|Vaisala|HMP155E
+BNWM8|Bowmans Corner NW|T [K]|2|Vaisala|HMP155E
+BZNM8|Bozeman|T [K]|2|Vaisala|HMP155E
+BRYM8|Brady NE|T [K]|2|Vaisala|HMP155E
+BDEM8|Bredette NE|T [K]|2|Vaisala|HMP155E
+BDVM8|Broadview|T [K]|2|Vaisala|HMP155E
+BSEM8|Big Sandy SE|T [K]|2|Vaisala|HMP155E
+BUFM8|Buffalo Lake E|T [K]|2|Vaisala|HMP155E
+BUSM8|Busby S|T [K]|2|Vaisala|HMP155E
+BYUM8|Bynum W|T [K]|2|Vaisala|HMP155E
+CRNM8|Carter N|T [K]|2|Vaisala|HMP155E
+CHSM8|Chester SW|T [K]|2|Vaisala|HMP155E
+CSTM8|Christina W|T [K]|2|Vaisala|HMP155E
+CFCM8|Coffee Creek N|T [K]|2|Vaisala|HMP155E
+CNNM8|Conrad N|T [K]|2|Vaisala|HMP155E
+COOM8|Cooney Reservoir NW|T [K]|2|Vaisala|HMP155E
+CROM8|Crow Agency|T [K]|2|Vaisala|HMP155E
+DOGM8|Dog Gun Lake E|T [K]|2|Vaisala|HMP155E
+DRYM8|Dry Lake|T [K]|2|Vaisala|HMP155E
+DYRM8|Dupuyer N|T [K]|2|Vaisala|HMP155E
+FRGM8|Forestgrove N|T [K]|2|Vaisala|HMP155E
+FTKM8|Fort Kipp NW|T [K]|2|Vaisala|HMP155E
+FOXM8|Fox Crossing SW|T [K]|2|Vaisala|HMP155E
+GLOM8|Glasgow SW|T [K]|2|Vaisala|HMP155E
+HWTM8|Harlowton E|T [K]|2|Vaisala|HMP155E
+HAEM8|Havre|T [K]|2|Vaisala|HMP155E
+HIWM8|Highwood Bench|T [K]|2|Vaisala|HMP155E
+HOGM8|Hogeland SW|T [K]|2|Vaisala|HMP155E
+HNTM8|Huntley E|T [K]|2|Vaisala|HMP155E
+IGMM8|Ingomar|T [K]|2|Vaisala|HMP155E
+INNM8|Inverness N|T [K]|2|Vaisala|HMP155E
+ISSM8|Inverness S|T [K]|2|Vaisala|HMP155E
+JGPM8|Judith Gap|T [K]|2|Vaisala|HMP155E
+LTBM8|Lake Thibadeau W|T [K]|2|Vaisala|HMP155E
+LMDM8|Lame Deer E|T [K]|2|Vaisala|HMP155E
+LLNM8|Larslan SW|T [K]|2|Vaisala|HMP155E
+LVAM8|Lavina N|T [K]|2|Vaisala|HMP155E
+LGGM8|Lodge Grass W|T [K]|2|Vaisala|HMP155E
+LOAM8|Loma N|T [K]|2|Vaisala|HMP155E
+LORM8|Loring SW|T [K]|2|Vaisala|HMP155E
+MTRM8|Matador Ranch|T [K]|2|Vaisala|HMP155E
+MEDM8|Medicine Lake W|T [K]|2|Vaisala|HMP155E
+MLVM8|Melville|T [K]|2|Vaisala|HMP155E
+RADM8|Midway Colony|T [K]|2|Vaisala|HMP155E
+MCYM8|Miles City|T [K]|2|Vaisala|HMP155E
+MINM8|Mission Lake S|T [K]|2|Vaisala|HMP155E
+MCIM8|Moccasin|T [K]|2|Vaisala|HMP155E
+MOTM8|Molt S|T [K]|2|Vaisala|HMP155E
+MOYM8|Mosby S|T [K]|2|Vaisala|HMP155E
+MOBM8|Mosby NW|T [K]|2|Vaisala|HMP155E
+MBYM8|Mosby SE|T [K]|2|Vaisala|HMP155E
+MTLM8|Mt Lebanon SE|T [K]|2|Vaisala|HMP155E
+MSSM8|Musselshell|T [K]|2|Vaisala|HMP155E
+NUAM8|Nashua NE|T [K]|2|Vaisala|HMP155E
+OILM8|Oilmont|T [K]|2|Vaisala|HMP155E
+OHMM8|Opheim S|T [K]|2|Vaisala|HMP155E
+OTRM8|Otter E|T [K]|2|Vaisala|HMP155E
+PARM8|Poplar N|T [K]|2|Vaisala|HMP155E
+RAPM8|Rapelje SW|T [K]|2|Vaisala|HMP155E
+RMYM8|Rothiemay W|T [K]|2|Vaisala|HMP155E
+ROUM8|Roundup|T [K]|2|Vaisala|HMP155E
+RYOM8|Roy E|T [K]|2|Vaisala|HMP155E
+RGTM8|Ryegate S|T [K]|2|Vaisala|HMP155E
+SASM8|Saco S|T [K]|2|Vaisala|HMP155E
+SDSM8|Sand Springs NW|T [K]|2|Vaisala|HMP155E
+SVYM8|Savoy SW|T [K]|2|Vaisala|HMP155E
+SCYM8|Scobey NW|T [K]|2|Vaisala|HMP155E
+SIYM8|Sidney|T [K]|2|Vaisala|HMP155E
+SDLM8|Springdale|T [K]|2|Vaisala|HMP155E
+SBSM8|Sunburst NW|T [K]|2|Vaisala|HMP155E
+SURM8|Sun River SE|T [K]|2|Vaisala|HMP155E
+TAMM8|Tampico N|T [K]|2|Vaisala|HMP155E
+TTNM8|Toston|T [K]|2|Vaisala|HMP155E
+TRNM8|Turner N|T [K]|2|Vaisala|HMP155E
+TWOM8|Twodot E|T [K]|2|Vaisala|HMP155E
+VLTM8|Dovetail|T [K]|2|Vaisala|HMP155E
+VOTM8|Volt N|T [K]|2|Vaisala|HMP155E
+WRHM8|War Horse NW|T [K]|2|Vaisala|HMP155E
+WNFM8|Woodhawk|T [K]|2|Vaisala|HMP155E
+WIEM8|Winnett SW|T [K]|2|Vaisala|HMP155E
+WOFM8|Wolf Point NW|T [K]|2|Vaisala|HMP155E
+KEEM8|Absarokee|SOILM20 [%]|0.5|Acclima|TDR-310N
+ASAM8|Ashland E|SOILM20 [%]|0.5|Acclima|TDR-310N
+BLWM8|Benton Lake W|SOILM20 [%]|0.5|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+BTSM8|Big Timber SE|SOILM20 [%]|0.5|Acclima|TDR-310N
+BNGM8|Billings S|SOILM20 [%]|0.5|Acclima|TDR-310N
+BNGM8|Billings S|SOILM20 [%]|0.5|Acclima|TDR-310N
+BNWM8|Bowmans Corner NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+BZNM8|Bozeman|SOILM20 [%]|0.5|Acclima|TDR-310N
+BZNM8|Bozeman|SOILM20 [%]|0.5|Acclima|TDR-310N
+BRYM8|Brady NE|SOILM20 [%]|0.5|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILM20 [%]|0.5|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILM20 [%]|0.5|Acclima|TDR-310N
+BDVM8|Broadview|SOILM20 [%]|0.5|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILM20 [%]|0.5|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILM20 [%]|0.5|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILM20 [%]|0.5|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILM20 [%]|0.5|Acclima|TDR-310N
+BUSM8|Busby S|SOILM20 [%]|0.5|Acclima|TDR-310N
+BYUM8|Bynum W|SOILM20 [%]|0.5|Acclima|TDR-310N
+CRNM8|Carter N|SOILM20 [%]|0.5|Acclima|TDR-310N
+CRNM8|Carter N|SOILM20 [%]|0.5|Acclima|TDR-310N
+CHSM8|Chester SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+CSTM8|Christina W|SOILM20 [%]|0.5|Acclima|TDR-310N
+CSTM8|Christina W|SOILM20 [%]|0.5|Acclima|TDR-310N
+CFCM8|Coffee Creek N|SOILM20 [%]|0.5|Acclima|TDR-310N
+CNNM8|Conrad N|SOILM20 [%]|0.5|Acclima|TDR-310N
+CNNM8|Conrad N|SOILM20 [%]|0.5|Acclima|TDR-310N
+COOM8|Cooney Reservoir NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+CROM8|Crow Agency|SOILM20 [%]|0.5|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILM20 [%]|0.5|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILM20 [%]|0.5|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILM20 [%]|0.5|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILM20 [%]|0.5|Acclima|TDR-310N
+DYRM8|Dupuyer N|SOILM20 [%]|0.5|Acclima|TDR-310N
+FRGM8|Forestgrove N|SOILM20 [%]|0.5|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+HWTM8|Harlowton E|SOILM20 [%]|0.5|Acclima|TDR-310N
+HAEM8|Havre|SOILM20 [%]|0.5|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILM20 [%]|0.5|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILM20 [%]|0.5|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+HNTM8|Huntley E|SOILM20 [%]|0.5|Acclima|TDR-310N
+IGMM8|Ingomar|SOILM20 [%]|0.5|Acclima|TDR-310N
+INNM8|Inverness N|SOILM20 [%]|0.5|Acclima|TDR-310N
+INNM8|Inverness N|SOILM20 [%]|0.5|Acclima|TDR-310N
+ISSM8|Inverness S|SOILM20 [%]|0.5|Acclima|TDR-310N
+ISSM8|Inverness S|SOILM20 [%]|0.5|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILM20 [%]|0.5|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILM20 [%]|0.5|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILM20 [%]|0.5|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILM20 [%]|0.5|Acclima|TDR-310N
+LMDM8|Lame Deer E|SOILM20 [%]|0.5|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+LVAM8|Lavina N|SOILM20 [%]|0.5|Acclima|TDR-310N
+LGGM8|Lodge Grass W|SOILM20 [%]|0.5|Acclima|TDR-310N
+LOAM8|Loma N|SOILM20 [%]|0.5|Acclima|TDR-310N
+LOAM8|Loma N|SOILM20 [%]|0.5|Acclima|TDR-310N
+LORM8|Loring SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+MTRM8|Matador Ranch|SOILM20 [%]|0.5|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILM20 [%]|0.5|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILM20 [%]|0.5|Acclima|TDR-310N
+MLVM8|Melville|SOILM20 [%]|0.5|Acclima|TDR-310N
+RADM8|Midway Colony|SOILM20 [%]|0.5|Acclima|TDR-310N
+MCYM8|Miles City|SOILM20 [%]|0.5|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILM20 [%]|0.5|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILM20 [%]|0.5|Acclima|TDR-310N
+MCIM8|Moccasin|SOILM20 [%]|0.5|Acclima|TDR-315N
+MOTM8|Molt S|SOILM20 [%]|0.5|Acclima|TDR-310N
+MOYM8|Mosby S|SOILM20 [%]|0.5|Acclima|TDR-310N
+MOBM8|Mosby NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILM20 [%]|0.5|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILM20 [%]|0.5|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILM20 [%]|0.5|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILM20 [%]|0.5|Acclima|TDR-310N
+MSSM8|Musselshell|SOILM20 [%]|0.5|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILM20 [%]|0.5|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILM20 [%]|0.5|Acclima|TDR-310N
+OILM8|Oilmont|SOILM20 [%]|0.5|Acclima|TDR-310N
+OHMM8|Opheim S|SOILM20 [%]|0.5|Acclima|TDR-310N
+OHMM8|Opheim S|SOILM20 [%]|0.5|Acclima|TDR-310N
+OTRM8|Otter E|SOILM20 [%]|0.5|Acclima|TDR-310N
+PARM8|Poplar N|SOILM20 [%]|0.5|Acclima|TDR-310N
+PARM8|Poplar N|SOILM20 [%]|0.5|Acclima|TDR-310N
+RAPM8|Rapelje SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+RMYM8|Rothiemay W|SOILM20 [%]|0.5|Acclima|TDR-310N
+ROUM8|Roundup|SOILM20 [%]|0.5|Acclima|TDR-315N
+RYOM8|Roy E|SOILM20 [%]|0.5|Acclima|TDR-310N
+RGTM8|Ryegate S|SOILM20 [%]|0.5|Acclima|TDR-310N
+SASM8|Saco S|SOILM20 [%]|0.5|Acclima|TDR-310N
+SDSM8|Sand Springs NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+SCYM8|Scobey NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+SIYM8|Sidney|SOILM20 [%]|0.5|Acclima|TDR-310N
+SDLM8|Springdale|SOILM20 [%]|0.5|Acclima|TDR-310N
+SDLM8|Springdale|SOILM20 [%]|0.5|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+SURM8|Sun River SE|SOILM20 [%]|0.5|Acclima|TDR-310N
+TAMM8|Tampico N|SOILM20 [%]|0.5|Acclima|TDR-310N
+TAMM8|Tampico N|SOILM20 [%]|0.5|Acclima|TDR-310N
+TTNM8|Toston|SOILM20 [%]|0.5|Acclima|TDR-310N
+TTNM8|Toston|SOILM20 [%]|0.5|Acclima|TDR-310N
+TRNM8|Turner N|SOILM20 [%]|0.5|Acclima|TDR-310N
+TWOM8|Twodot E|SOILM20 [%]|0.5|Acclima|TDR-310N
+VLTM8|Dovetail|SOILM20 [%]|0.5|Acclima|TDR-310N
+VOTM8|Volt N|SOILM20 [%]|0.5|Acclima|TDR-310N
+VOTM8|Volt N|SOILM20 [%]|0.5|Acclima|TDR-310N
+WRHM8|War Horse NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILM20 [%]|0.5|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILM20 [%]|0.5|Acclima|TDR-310N
+WIEM8|Winnett SW|SOILM20 [%]|0.5|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILM20 [%]|0.5|Acclima|TDR-310N
+KEEM8|Absarokee|FF [m/s]|10|RM Young|09106
+ASAM8|Ashland E|FF [m/s]|10|RM Young|05108-74
+BLWM8|Benton Lake W|FF [m/s]|10|RM Young|05108-74
+BSWM8|Big Sandy NW|FF [m/s]|10|RM Young|05108-74
+BTSM8|Big Timber SE|FF [m/s]|10|RM Young|05108-74
+BNGM8|Billings S|FF [m/s]|10|RM Young|05108-74
+BNWM8|Bowmans Corner NW|FF [m/s]|10|RM Young|05108-74
+BZNM8|Bozeman|FF [m/s]|10|RM Young|09101
+BRYM8|Brady NE|FF [m/s]|10|RM Young|05108-74
+BDEM8|Bredette NE|FF [m/s]|10|RM Young|05108-74
+BDVM8|Broadview|FF [m/s]|10|RM Young|09106
+BSEM8|Big Sandy SE|FF [m/s]|10|RM Young|05108-74
+BUFM8|Buffalo Lake E|FF [m/s]|10|RM Young|05108-74
+BUSM8|Busby S|FF [m/s]|10|RM Young|05108-74
+BYUM8|Bynum W|FF [m/s]|10|RM Young|05108-74
+CRNM8|Carter N|FF [m/s]|10|RM Young|05108-74
+CHSM8|Chester SW|FF [m/s]|10|RM Young|05108-74
+CSTM8|Christina W|FF [m/s]|10|RM Young|05108-74
+CFCM8|Coffee Creek N|FF [m/s]|10|RM Young|05108-74
+CNNM8|Conrad N|FF [m/s]|10|RM Young|05108-74
+COOM8|Cooney Reservoir NW|FF [m/s]|10|RM Young|05108-74
+CROM8|Crow Agency|FF [m/s]|10|RM Young|09106
+DOGM8|Dog Gun Lake E|FF [m/s]|10|RM Young|05108-74
+DRYM8|Dry Lake|FF [m/s]|10|RM Young|05108-74
+DYRM8|Dupuyer N|FF [m/s]|10|RM Young|05108-74
+FRGM8|Forestgrove N|FF [m/s]|10|RM Young|05108-74
+FTKM8|Fort Kipp NW|FF [m/s]|10|RM Young|05108-74
+FOXM8|Fox Crossing SW|FF [m/s]|10|RM Young|05108-74
+GLOM8|Glasgow SW|FF [m/s]|10|RM Young|05108-74
+HWTM8|Harlowton E|FF [m/s]|10|RM Young|05108-74
+HAEM8|Havre|FF [m/s]|10|RM Young|09106
+HIWM8|Highwood Bench|FF [m/s]|10|RM Young|05108-74
+HOGM8|Hogeland SW|FF [m/s]|10|RM Young|05108-74
+HNTM8|Huntley E|FF [m/s]|10|RM Young|05108-74
+IGMM8|Ingomar|FF [m/s]|10|RM Young|09106
+INNM8|Inverness N|FF [m/s]|10|RM Young|05108-74
+ISSM8|Inverness S|FF [m/s]|10|RM Young|05108-74
+JGPM8|Judith Gap|FF [m/s]|10|RM Young|05108-74
+LTBM8|Lake Thibadeau W|FF [m/s]|10|RM Young|05108-74
+LMDM8|Lame Deer E|FF [m/s]|10|RM Young|05108-74
+LLNM8|Larslan SW|FF [m/s]|10|RM Young|05108-74
+LVAM8|Lavina N|FF [m/s]|10|RM Young|05108-74
+LGGM8|Lodge Grass W|FF [m/s]|10|RM Young|05108-74
+LOAM8|Loma N|FF [m/s]|10|RM Young|05108-74
+LORM8|Loring SW|FF [m/s]|10|RM Young|05108-74
+MTRM8|Matador Ranch|FF [m/s]|10|RM Young|05108-74
+MEDM8|Medicine Lake W|FF [m/s]|10|RM Young|05108-74
+MLVM8|Melville|FF [m/s]|10|RM Young|09106
+RADM8|Midway Colony|FF [m/s]|10|RM Young|05108-74
+MCYM8|Miles City|FF [m/s]|10|RM Young|09106
+MINM8|Mission Lake S|FF [m/s]|10|RM Young|05108-74
+MCIM8|Moccasin|FF [m/s]|10|RM Young|05108-74
+MOTM8|Molt S|FF [m/s]|10|RM Young|05108-74
+MOYM8|Mosby S|FF [m/s]|10|RM Young|05108-74
+MOBM8|Mosby NW|FF [m/s]|10|RM Young|05108-74
+MBYM8|Mosby SE|FF [m/s]|10|RM Young|05108-74
+MTLM8|Mt Lebanon SE|FF [m/s]|10|RM Young|05108-74
+MSSM8|Musselshell|FF [m/s]|10|RM Young|05108-74
+NUAM8|Nashua NE|FF [m/s]|10|RM Young|05108-74
+OILM8|Oilmont|FF [m/s]|10|RM Young|05108-74
+OHMM8|Opheim S|FF [m/s]|10|RM Young|05108-74
+OTRM8|Otter E|FF [m/s]|10|RM Young|05108-74
+PARM8|Poplar N|FF [m/s]|10|RM Young|05108-74
+RAPM8|Rapelje SW|FF [m/s]|10|RM Young|05108-74
+RMYM8|Rothiemay W|FF [m/s]|10|RM Young|05108-74
+ROUM8|Roundup|FF [m/s]|10|RM Young|05108-74
+RYOM8|Roy E|FF [m/s]|10|RM Young|05108-74
+RGTM8|Ryegate S|FF [m/s]|10|RM Young|05108-74
+SASM8|Saco S|FF [m/s]|10|RM Young|05108-74
+SDSM8|Sand Springs NW|FF [m/s]|10|RM Young|05108-74
+SVYM8|Savoy SW|FF [m/s]|10|RM Young|05108-74
+SCYM8|Scobey NW|FF [m/s]|10|RM Young|05108-74
+SIYM8|Sidney|FF [m/s]|10|RM Young|05108-74
+SDLM8|Springdale|FF [m/s]|10|RM Young|05108-74
+SBSM8|Sunburst NW|FF [m/s]|10|RM Young|05108-74
+SURM8|Sun River SE|FF [m/s]|10|RM Young|05108-74
+TAMM8|Tampico N|FF [m/s]|10|RM Young|05108-74
+TTNM8|Toston|FF [m/s]|10|RM Young|05108-74
+TRNM8|Turner N|FF [m/s]|10|RM Young|05108-74
+TWOM8|Twodot E|FF [m/s]|10|RM Young|05108-74
+VLTM8|Dovetail|FF [m/s]|10|RM Young|05108-74
+VOTM8|Volt N|FF [m/s]|10|RM Young|05108-74
+WRHM8|War Horse NW|FF [m/s]|10|RM Young|05108-74
+WNFM8|Woodhawk|FF [m/s]|10|RM Young|05108-74
+WIEM8|Winnett SW|FF [m/s]|10|RM Young|05108-74
+WOFM8|Wolf Point NW|FF [m/s]|10|RM Young|05108-74
+KEEM8|Absarokee|SOILM4 [%]|0.1|Acclima|TDR-310N
+ASAM8|Ashland E|SOILM4 [%]|0.1|Acclima|TDR-310N
+BLWM8|Benton Lake W|SOILM4 [%]|0.1|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+BTSM8|Big Timber SE|SOILM4 [%]|0.1|Acclima|TDR-310N
+BNGM8|Billings S|SOILM4 [%]|0.1|Acclima|TDR-310N
+BNGM8|Billings S|SOILM4 [%]|0.1|Acclima|TDR-310N
+BNWM8|Bowmans Corner NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+BZNM8|Bozeman|SOILM4 [%]|0.1|Acclima|TDR-310N
+BZNM8|Bozeman|SOILM4 [%]|0.1|Acclima|TDR-310N
+BRYM8|Brady NE|SOILM4 [%]|0.1|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILM4 [%]|0.1|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILM4 [%]|0.1|Acclima|TDR-310N
+BDVM8|Broadview|SOILM4 [%]|0.1|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILM4 [%]|0.1|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILM4 [%]|0.1|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILM4 [%]|0.1|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILM4 [%]|0.1|Acclima|TDR-310N
+BUSM8|Busby S|SOILM4 [%]|0.1|Acclima|TDR-310N
+BYUM8|Bynum W|SOILM4 [%]|0.1|Acclima|TDR-310N
+CRNM8|Carter N|SOILM4 [%]|0.1|Acclima|TDR-310N
+CRNM8|Carter N|SOILM4 [%]|0.1|Acclima|TDR-310N
+CHSM8|Chester SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+CSTM8|Christina W|SOILM4 [%]|0.1|Acclima|TDR-310N
+CSTM8|Christina W|SOILM4 [%]|0.1|Acclima|TDR-310N
+CFCM8|Coffee Creek N|SOILM4 [%]|0.1|Acclima|TDR-310N
+CNNM8|Conrad N|SOILM4 [%]|0.1|Acclima|TDR-310N
+CNNM8|Conrad N|SOILM4 [%]|0.1|Acclima|TDR-310N
+COOM8|Cooney Reservoir NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+CROM8|Crow Agency|SOILM4 [%]|0.1|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILM4 [%]|0.1|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILM4 [%]|0.1|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILM4 [%]|0.1|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILM4 [%]|0.1|Acclima|TDR-310N
+DYRM8|Dupuyer N|SOILM4 [%]|0.1|Acclima|TDR-310N
+FRGM8|Forestgrove N|SOILM4 [%]|0.1|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+HWTM8|Harlowton E|SOILM4 [%]|0.1|Acclima|TDR-310N
+HAEM8|Havre|SOILM4 [%]|0.1|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILM4 [%]|0.1|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILM4 [%]|0.1|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+HNTM8|Huntley E|SOILM4 [%]|0.1|Acclima|TDR-310N
+IGMM8|Ingomar|SOILM4 [%]|0.1|Acclima|TDR-310N
+INNM8|Inverness N|SOILM4 [%]|0.1|Acclima|TDR-310N
+INNM8|Inverness N|SOILM4 [%]|0.1|Acclima|TDR-310N
+ISSM8|Inverness S|SOILM4 [%]|0.1|Acclima|TDR-310N
+ISSM8|Inverness S|SOILM4 [%]|0.1|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILM4 [%]|0.1|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILM4 [%]|0.1|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILM4 [%]|0.1|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILM4 [%]|0.1|Acclima|TDR-310N
+LMDM8|Lame Deer E|SOILM4 [%]|0.1|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+LVAM8|Lavina N|SOILM4 [%]|0.1|Acclima|TDR-310N
+LGGM8|Lodge Grass W|SOILM4 [%]|0.1|Acclima|TDR-310N
+LOAM8|Loma N|SOILM4 [%]|0.1|Acclima|TDR-310N
+LOAM8|Loma N|SOILM4 [%]|0.1|Acclima|TDR-310N
+LORM8|Loring SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+MTRM8|Matador Ranch|SOILM4 [%]|0.1|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILM4 [%]|0.1|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILM4 [%]|0.1|Acclima|TDR-310N
+MLVM8|Melville|SOILM4 [%]|0.1|Acclima|TDR-310N
+RADM8|Midway Colony|SOILM4 [%]|0.1|Acclima|TDR-310N
+MCYM8|Miles City|SOILM4 [%]|0.1|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILM4 [%]|0.1|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILM4 [%]|0.1|Acclima|TDR-310N
+MCIM8|Moccasin|SOILM4 [%]|0.1|Acclima|TDR-315N
+MOTM8|Molt S|SOILM4 [%]|0.1|Acclima|TDR-310N
+MOYM8|Mosby S|SOILM4 [%]|0.1|Acclima|TDR-310N
+MOBM8|Mosby NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILM4 [%]|0.1|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILM4 [%]|0.1|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILM4 [%]|0.1|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILM4 [%]|0.1|Acclima|TDR-310N
+MSSM8|Musselshell|SOILM4 [%]|0.1|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILM4 [%]|0.1|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILM4 [%]|0.1|Acclima|TDR-310N
+OILM8|Oilmont|SOILM4 [%]|0.1|Acclima|TDR-310N
+OHMM8|Opheim S|SOILM4 [%]|0.1|Acclima|TDR-310N
+OHMM8|Opheim S|SOILM4 [%]|0.1|Acclima|TDR-310N
+OTRM8|Otter E|SOILM4 [%]|0.1|Acclima|TDR-310N
+PARM8|Poplar N|SOILM4 [%]|0.1|Acclima|TDR-310N
+PARM8|Poplar N|SOILM4 [%]|0.1|Acclima|TDR-310N
+RAPM8|Rapelje SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+RMYM8|Rothiemay W|SOILM4 [%]|0.1|Acclima|TDR-310N
+ROUM8|Roundup|SOILM4 [%]|0.1|Acclima|TDR-315N
+RYOM8|Roy E|SOILM4 [%]|0.1|Acclima|TDR-310N
+RGTM8|Ryegate S|SOILM4 [%]|0.1|Acclima|TDR-310N
+SASM8|Saco S|SOILM4 [%]|0.1|Acclima|TDR-310N
+SDSM8|Sand Springs NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+SCYM8|Scobey NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+SIYM8|Sidney|SOILM4 [%]|0.1|Acclima|TDR-310N
+SDLM8|Springdale|SOILM4 [%]|0.1|Acclima|TDR-310N
+SDLM8|Springdale|SOILM4 [%]|0.1|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+SURM8|Sun River SE|SOILM4 [%]|0.1|Acclima|TDR-310N
+TAMM8|Tampico N|SOILM4 [%]|0.1|Acclima|TDR-310N
+TAMM8|Tampico N|SOILM4 [%]|0.1|Acclima|TDR-310N
+TTNM8|Toston|SOILM4 [%]|0.1|Acclima|TDR-310N
+TTNM8|Toston|SOILM4 [%]|0.1|Acclima|TDR-310N
+TRNM8|Turner N|SOILM4 [%]|0.1|Acclima|TDR-310N
+TWOM8|Twodot E|SOILM4 [%]|0.1|Acclima|TDR-310N
+VLTM8|Dovetail|SOILM4 [%]|0.1|Acclima|TDR-310N
+VOTM8|Volt N|SOILM4 [%]|0.1|Acclima|TDR-310N
+VOTM8|Volt N|SOILM4 [%]|0.1|Acclima|TDR-310N
+WRHM8|War Horse NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILM4 [%]|0.1|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILM4 [%]|0.1|Acclima|TDR-310N
+WIEM8|Winnett SW|SOILM4 [%]|0.1|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILM4 [%]|0.1|Acclima|TDR-310N
+KEEM8|Absarokee|SOILT2 [K]|0.05|Acclima|TDR-310N
+ASAM8|Ashland E|SOILT2 [K]|0.05|Acclima|TDR-310N
+BLWM8|Benton Lake W|SOILT2 [K]|0.05|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+BTSM8|Big Timber SE|SOILT2 [K]|0.05|Acclima|TDR-310N
+BNGM8|Billings S|SOILT2 [K]|0.05|Acclima|TDR-310N
+BNGM8|Billings S|SOILT2 [K]|0.05|Acclima|TDR-310N
+BNWM8|Bowmans Corner NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+BZNM8|Bozeman|SOILT2 [K]|0.05|Acclima|TDR-310N
+BZNM8|Bozeman|SOILT2 [K]|0.05|Acclima|TDR-310N
+BRYM8|Brady NE|SOILT2 [K]|0.05|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILT2 [K]|0.05|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILT2 [K]|0.05|Acclima|TDR-310N
+BDVM8|Broadview|SOILT2 [K]|0.05|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILT2 [K]|0.05|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILT2 [K]|0.05|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILT2 [K]|0.05|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILT2 [K]|0.05|Acclima|TDR-310N
+BUSM8|Busby S|SOILT2 [K]|0.05|Acclima|TDR-310N
+BYUM8|Bynum W|SOILT2 [K]|0.05|Acclima|TDR-310N
+CRNM8|Carter N|SOILT2 [K]|0.05|Acclima|TDR-310N
+CRNM8|Carter N|SOILT2 [K]|0.05|Acclima|TDR-310N
+CHSM8|Chester SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+CSTM8|Christina W|SOILT2 [K]|0.05|Acclima|TDR-310N
+CSTM8|Christina W|SOILT2 [K]|0.05|Acclima|TDR-310N
+CFCM8|Coffee Creek N|SOILT2 [K]|0.05|Acclima|TDR-310N
+CNNM8|Conrad N|SOILT2 [K]|0.05|Acclima|TDR-310N
+CNNM8|Conrad N|SOILT2 [K]|0.05|Acclima|TDR-310N
+COOM8|Cooney Reservoir NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+CROM8|Crow Agency|SOILT2 [K]|0.05|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILT2 [K]|0.05|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILT2 [K]|0.05|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILT2 [K]|0.05|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILT2 [K]|0.05|Acclima|TDR-310N
+DYRM8|Dupuyer N|SOILT2 [K]|0.05|Acclima|TDR-310N
+FRGM8|Forestgrove N|SOILT2 [K]|0.05|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+HWTM8|Harlowton E|SOILT2 [K]|0.05|Acclima|TDR-310N
+HAEM8|Havre|SOILT2 [K]|0.05|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILT2 [K]|0.05|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILT2 [K]|0.05|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+HNTM8|Huntley E|SOILT2 [K]|0.05|Acclima|TDR-310N
+IGMM8|Ingomar|SOILT2 [K]|0.05|Acclima|TDR-310N
+INNM8|Inverness N|SOILT2 [K]|0.05|Acclima|TDR-310N
+INNM8|Inverness N|SOILT2 [K]|0.05|Acclima|TDR-310N
+ISSM8|Inverness S|SOILT2 [K]|0.05|Acclima|TDR-310N
+ISSM8|Inverness S|SOILT2 [K]|0.05|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILT2 [K]|0.05|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILT2 [K]|0.05|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILT2 [K]|0.05|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILT2 [K]|0.05|Acclima|TDR-310N
+LMDM8|Lame Deer E|SOILT2 [K]|0.05|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+LVAM8|Lavina N|SOILT2 [K]|0.05|Acclima|TDR-310N
+LGGM8|Lodge Grass W|SOILT2 [K]|0.05|Acclima|TDR-310N
+LOAM8|Loma N|SOILT2 [K]|0.05|Acclima|TDR-310N
+LOAM8|Loma N|SOILT2 [K]|0.05|Acclima|TDR-310N
+LORM8|Loring SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+MTRM8|Matador Ranch|SOILT2 [K]|0.05|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILT2 [K]|0.05|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILT2 [K]|0.05|Acclima|TDR-310N
+MLVM8|Melville|SOILT2 [K]|0.05|Acclima|TDR-310N
+RADM8|Midway Colony|SOILT2 [K]|0.05|Acclima|TDR-310N
+MCYM8|Miles City|SOILT2 [K]|0.05|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILT2 [K]|0.05|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILT2 [K]|0.05|Acclima|TDR-310N
+MCIM8|Moccasin|SOILT2 [K]|0.05|Acclima|TDR-315N
+MOTM8|Molt S|SOILT2 [K]|0.05|Acclima|TDR-310N
+MOYM8|Mosby S|SOILT2 [K]|0.05|Acclima|TDR-310N
+MOBM8|Mosby NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILT2 [K]|0.05|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILT2 [K]|0.05|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILT2 [K]|0.05|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILT2 [K]|0.05|Acclima|TDR-310N
+MSSM8|Musselshell|SOILT2 [K]|0.05|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILT2 [K]|0.05|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILT2 [K]|0.05|Acclima|TDR-310N
+OILM8|Oilmont|SOILT2 [K]|0.05|Acclima|TDR-310N
+OHMM8|Opheim S|SOILT2 [K]|0.05|Acclima|TDR-310N
+OHMM8|Opheim S|SOILT2 [K]|0.05|Acclima|TDR-310N
+OTRM8|Otter E|SOILT2 [K]|0.05|Acclima|TDR-310N
+PARM8|Poplar N|SOILT2 [K]|0.05|Acclima|TDR-310N
+PARM8|Poplar N|SOILT2 [K]|0.05|Acclima|TDR-310N
+RAPM8|Rapelje SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+RMYM8|Rothiemay W|SOILT2 [K]|0.05|Acclima|TDR-310N
+ROUM8|Roundup|SOILT2 [K]|0.05|Acclima|TDR-315N
+RYOM8|Roy E|SOILT2 [K]|0.05|Acclima|TDR-310N
+RGTM8|Ryegate S|SOILT2 [K]|0.05|Acclima|TDR-310N
+SASM8|Saco S|SOILT2 [K]|0.05|Acclima|TDR-310N
+SDSM8|Sand Springs NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+SCYM8|Scobey NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+SIYM8|Sidney|SOILT2 [K]|0.05|Acclima|TDR-310N
+SDLM8|Springdale|SOILT2 [K]|0.05|Acclima|TDR-310N
+SDLM8|Springdale|SOILT2 [K]|0.05|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+SURM8|Sun River SE|SOILT2 [K]|0.05|Acclima|TDR-310N
+TAMM8|Tampico N|SOILT2 [K]|0.05|Acclima|TDR-310N
+TAMM8|Tampico N|SOILT2 [K]|0.05|Acclima|TDR-310N
+TTNM8|Toston|SOILT2 [K]|0.05|Acclima|TDR-310N
+TTNM8|Toston|SOILT2 [K]|0.05|Acclima|TDR-310N
+TRNM8|Turner N|SOILT2 [K]|0.05|Acclima|TDR-310N
+TWOM8|Twodot E|SOILT2 [K]|0.05|Acclima|TDR-310N
+VLTM8|Dovetail|SOILT2 [K]|0.05|Acclima|TDR-310N
+VOTM8|Volt N|SOILT2 [K]|0.05|Acclima|TDR-310N
+VOTM8|Volt N|SOILT2 [K]|0.05|Acclima|TDR-310N
+WRHM8|War Horse NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILT2 [K]|0.05|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILT2 [K]|0.05|Acclima|TDR-310N
+WIEM8|Winnett SW|SOILT2 [K]|0.05|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILT2 [K]|0.05|Acclima|TDR-310N
+KEEM8|Absarokee|SOILT20 [K]|0.5|Acclima|TDR-310N
+ASAM8|Ashland E|SOILT20 [K]|0.5|Acclima|TDR-310N
+BLWM8|Benton Lake W|SOILT20 [K]|0.5|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+BTSM8|Big Timber SE|SOILT20 [K]|0.5|Acclima|TDR-310N
+BNGM8|Billings S|SOILT20 [K]|0.5|Acclima|TDR-310N
+BNGM8|Billings S|SOILT20 [K]|0.5|Acclima|TDR-310N
+BNWM8|Bowmans Corner NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+BZNM8|Bozeman|SOILT20 [K]|0.5|Acclima|TDR-310N
+BZNM8|Bozeman|SOILT20 [K]|0.5|Acclima|TDR-310N
+BRYM8|Brady NE|SOILT20 [K]|0.5|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILT20 [K]|0.5|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILT20 [K]|0.5|Acclima|TDR-310N
+BDVM8|Broadview|SOILT20 [K]|0.5|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILT20 [K]|0.5|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILT20 [K]|0.5|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILT20 [K]|0.5|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILT20 [K]|0.5|Acclima|TDR-310N
+BUSM8|Busby S|SOILT20 [K]|0.5|Acclima|TDR-310N
+BYUM8|Bynum W|SOILT20 [K]|0.5|Acclima|TDR-310N
+CRNM8|Carter N|SOILT20 [K]|0.5|Acclima|TDR-310N
+CRNM8|Carter N|SOILT20 [K]|0.5|Acclima|TDR-310N
+CHSM8|Chester SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+CSTM8|Christina W|SOILT20 [K]|0.5|Acclima|TDR-310N
+CSTM8|Christina W|SOILT20 [K]|0.5|Acclima|TDR-310N
+CFCM8|Coffee Creek N|SOILT20 [K]|0.5|Acclima|TDR-310N
+CNNM8|Conrad N|SOILT20 [K]|0.5|Acclima|TDR-310N
+CNNM8|Conrad N|SOILT20 [K]|0.5|Acclima|TDR-310N
+COOM8|Cooney Reservoir NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+CROM8|Crow Agency|SOILT20 [K]|0.5|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILT20 [K]|0.5|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILT20 [K]|0.5|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILT20 [K]|0.5|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILT20 [K]|0.5|Acclima|TDR-310N
+DYRM8|Dupuyer N|SOILT20 [K]|0.5|Acclima|TDR-310N
+FRGM8|Forestgrove N|SOILT20 [K]|0.5|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+HWTM8|Harlowton E|SOILT20 [K]|0.5|Acclima|TDR-310N
+HAEM8|Havre|SOILT20 [K]|0.5|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILT20 [K]|0.5|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILT20 [K]|0.5|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+HNTM8|Huntley E|SOILT20 [K]|0.5|Acclima|TDR-310N
+IGMM8|Ingomar|SOILT20 [K]|0.5|Acclima|TDR-310N
+INNM8|Inverness N|SOILT20 [K]|0.5|Acclima|TDR-310N
+INNM8|Inverness N|SOILT20 [K]|0.5|Acclima|TDR-310N
+ISSM8|Inverness S|SOILT20 [K]|0.5|Acclima|TDR-310N
+ISSM8|Inverness S|SOILT20 [K]|0.5|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILT20 [K]|0.5|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILT20 [K]|0.5|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILT20 [K]|0.5|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILT20 [K]|0.5|Acclima|TDR-310N
+LMDM8|Lame Deer E|SOILT20 [K]|0.5|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+LVAM8|Lavina N|SOILT20 [K]|0.5|Acclima|TDR-310N
+LGGM8|Lodge Grass W|SOILT20 [K]|0.5|Acclima|TDR-310N
+LOAM8|Loma N|SOILT20 [K]|0.5|Acclima|TDR-310N
+LOAM8|Loma N|SOILT20 [K]|0.5|Acclima|TDR-310N
+LORM8|Loring SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+MTRM8|Matador Ranch|SOILT20 [K]|0.5|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILT20 [K]|0.5|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILT20 [K]|0.5|Acclima|TDR-310N
+MLVM8|Melville|SOILT20 [K]|0.5|Acclima|TDR-310N
+RADM8|Midway Colony|SOILT20 [K]|0.5|Acclima|TDR-310N
+MCYM8|Miles City|SOILT20 [K]|0.5|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILT20 [K]|0.5|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILT20 [K]|0.5|Acclima|TDR-310N
+MCIM8|Moccasin|SOILT20 [K]|0.5|Acclima|TDR-315N
+MOTM8|Molt S|SOILT20 [K]|0.5|Acclima|TDR-310N
+MOYM8|Mosby S|SOILT20 [K]|0.5|Acclima|TDR-310N
+MOBM8|Mosby NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILT20 [K]|0.5|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILT20 [K]|0.5|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILT20 [K]|0.5|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILT20 [K]|0.5|Acclima|TDR-310N
+MSSM8|Musselshell|SOILT20 [K]|0.5|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILT20 [K]|0.5|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILT20 [K]|0.5|Acclima|TDR-310N
+OILM8|Oilmont|SOILT20 [K]|0.5|Acclima|TDR-310N
+OHMM8|Opheim S|SOILT20 [K]|0.5|Acclima|TDR-310N
+OHMM8|Opheim S|SOILT20 [K]|0.5|Acclima|TDR-310N
+OTRM8|Otter E|SOILT20 [K]|0.5|Acclima|TDR-310N
+PARM8|Poplar N|SOILT20 [K]|0.5|Acclima|TDR-310N
+PARM8|Poplar N|SOILT20 [K]|0.5|Acclima|TDR-310N
+RAPM8|Rapelje SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+RMYM8|Rothiemay W|SOILT20 [K]|0.5|Acclima|TDR-310N
+ROUM8|Roundup|SOILT20 [K]|0.5|Acclima|TDR-315N
+RYOM8|Roy E|SOILT20 [K]|0.5|Acclima|TDR-310N
+RGTM8|Ryegate S|SOILT20 [K]|0.5|Acclima|TDR-310N
+SASM8|Saco S|SOILT20 [K]|0.5|Acclima|TDR-310N
+SDSM8|Sand Springs NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+SCYM8|Scobey NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+SIYM8|Sidney|SOILT20 [K]|0.5|Acclima|TDR-310N
+SDLM8|Springdale|SOILT20 [K]|0.5|Acclima|TDR-310N
+SDLM8|Springdale|SOILT20 [K]|0.5|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+SURM8|Sun River SE|SOILT20 [K]|0.5|Acclima|TDR-310N
+TAMM8|Tampico N|SOILT20 [K]|0.5|Acclima|TDR-310N
+TAMM8|Tampico N|SOILT20 [K]|0.5|Acclima|TDR-310N
+TTNM8|Toston|SOILT20 [K]|0.5|Acclima|TDR-310N
+TTNM8|Toston|SOILT20 [K]|0.5|Acclima|TDR-310N
+TRNM8|Turner N|SOILT20 [K]|0.5|Acclima|TDR-310N
+TWOM8|Twodot E|SOILT20 [K]|0.5|Acclima|TDR-310N
+VLTM8|Dovetail|SOILT20 [K]|0.5|Acclima|TDR-310N
+VOTM8|Volt N|SOILT20 [K]|0.5|Acclima|TDR-310N
+VOTM8|Volt N|SOILT20 [K]|0.5|Acclima|TDR-310N
+WRHM8|War Horse NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILT20 [K]|0.5|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILT20 [K]|0.5|Acclima|TDR-310N
+WIEM8|Winnett SW|SOILT20 [K]|0.5|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILT20 [K]|0.5|Acclima|TDR-310N
+KEEM8|Absarokee|DD [deg]|10|RM Young|09106
+ASAM8|Ashland E|DD [deg]|10|RM Young|05108-74
+BLWM8|Benton Lake W|DD [deg]|10|RM Young|05108-74
+BSWM8|Big Sandy NW|DD [deg]|10|RM Young|05108-74
+BTSM8|Big Timber SE|DD [deg]|10|RM Young|05108-74
+BNGM8|Billings S|DD [deg]|10|RM Young|05108-74
+BNWM8|Bowmans Corner NW|DD [deg]|10|RM Young|05108-74
+BZNM8|Bozeman|DD [deg]|10|RM Young|09101
+BRYM8|Brady NE|DD [deg]|10|RM Young|05108-74
+BDEM8|Bredette NE|DD [deg]|10|RM Young|05108-74
+BDVM8|Broadview|DD [deg]|10|RM Young|09106
+BSEM8|Big Sandy SE|DD [deg]|10|RM Young|05108-74
+BUFM8|Buffalo Lake E|DD [deg]|10|RM Young|05108-74
+BUSM8|Busby S|DD [deg]|10|RM Young|05108-74
+BYUM8|Bynum W|DD [deg]|10|RM Young|05108-74
+CRNM8|Carter N|DD [deg]|10|RM Young|05108-74
+CHSM8|Chester SW|DD [deg]|10|RM Young|05108-74
+CSTM8|Christina W|DD [deg]|10|RM Young|05108-74
+CFCM8|Coffee Creek N|DD [deg]|10|RM Young|05108-74
+CNNM8|Conrad N|DD [deg]|10|RM Young|05108-74
+COOM8|Cooney Reservoir NW|DD [deg]|10|RM Young|05108-74
+CROM8|Crow Agency|DD [deg]|10|RM Young|09106
+DOGM8|Dog Gun Lake E|DD [deg]|10|RM Young|05108-74
+DRYM8|Dry Lake|DD [deg]|10|RM Young|05108-74
+DYRM8|Dupuyer N|DD [deg]|10|RM Young|05108-74
+FRGM8|Forestgrove N|DD [deg]|10|RM Young|05108-74
+FTKM8|Fort Kipp NW|DD [deg]|10|RM Young|05108-74
+FOXM8|Fox Crossing SW|DD [deg]|10|RM Young|05108-74
+GLOM8|Glasgow SW|DD [deg]|10|RM Young|05108-74
+HWTM8|Harlowton E|DD [deg]|10|RM Young|05108-74
+HAEM8|Havre|DD [deg]|10|RM Young|09106
+HIWM8|Highwood Bench|DD [deg]|10|RM Young|05108-74
+HOGM8|Hogeland SW|DD [deg]|10|RM Young|05108-74
+HNTM8|Huntley E|DD [deg]|10|RM Young|05108-74
+IGMM8|Ingomar|DD [deg]|10|RM Young|09106
+INNM8|Inverness N|DD [deg]|10|RM Young|05108-74
+ISSM8|Inverness S|DD [deg]|10|RM Young|05108-74
+JGPM8|Judith Gap|DD [deg]|10|RM Young|05108-74
+LTBM8|Lake Thibadeau W|DD [deg]|10|RM Young|05108-74
+LMDM8|Lame Deer E|DD [deg]|10|RM Young|05108-74
+LLNM8|Larslan SW|DD [deg]|10|RM Young|05108-74
+LVAM8|Lavina N|DD [deg]|10|RM Young|05108-74
+LGGM8|Lodge Grass W|DD [deg]|10|RM Young|05108-74
+LOAM8|Loma N|DD [deg]|10|RM Young|05108-74
+LORM8|Loring SW|DD [deg]|10|RM Young|05108-74
+MTRM8|Matador Ranch|DD [deg]|10|RM Young|05108-74
+MEDM8|Medicine Lake W|DD [deg]|10|RM Young|05108-74
+MLVM8|Melville|DD [deg]|10|RM Young|09106
+RADM8|Midway Colony|DD [deg]|10|RM Young|05108-74
+MCYM8|Miles City|DD [deg]|10|RM Young|09106
+MINM8|Mission Lake S|DD [deg]|10|RM Young|05108-74
+MCIM8|Moccasin|DD [deg]|10|RM Young|05108-74
+MOTM8|Molt S|DD [deg]|10|RM Young|05108-74
+MOYM8|Mosby S|DD [deg]|10|RM Young|05108-74
+MOBM8|Mosby NW|DD [deg]|10|RM Young|05108-74
+MBYM8|Mosby SE|DD [deg]|10|RM Young|05108-74
+MTLM8|Mt Lebanon SE|DD [deg]|10|RM Young|05108-74
+MSSM8|Musselshell|DD [deg]|10|RM Young|05108-74
+NUAM8|Nashua NE|DD [deg]|10|RM Young|05108-74
+OILM8|Oilmont|DD [deg]|10|RM Young|05108-74
+OHMM8|Opheim S|DD [deg]|10|RM Young|05108-74
+OTRM8|Otter E|DD [deg]|10|RM Young|05108-74
+PARM8|Poplar N|DD [deg]|10|RM Young|05108-74
+RAPM8|Rapelje SW|DD [deg]|10|RM Young|05108-74
+RMYM8|Rothiemay W|DD [deg]|10|RM Young|05108-74
+ROUM8|Roundup|DD [deg]|10|RM Young|05108-74
+RYOM8|Roy E|DD [deg]|10|RM Young|05108-74
+RGTM8|Ryegate S|DD [deg]|10|RM Young|05108-74
+SASM8|Saco S|DD [deg]|10|RM Young|05108-74
+SDSM8|Sand Springs NW|DD [deg]|10|RM Young|05108-74
+SVYM8|Savoy SW|DD [deg]|10|RM Young|05108-74
+SCYM8|Scobey NW|DD [deg]|10|RM Young|05108-74
+SIYM8|Sidney|DD [deg]|10|RM Young|05108-74
+SDLM8|Springdale|DD [deg]|10|RM Young|05108-74
+SBSM8|Sunburst NW|DD [deg]|10|RM Young|05108-74
+SURM8|Sun River SE|DD [deg]|10|RM Young|05108-74
+TAMM8|Tampico N|DD [deg]|10|RM Young|05108-74
+TTNM8|Toston|DD [deg]|10|RM Young|05108-74
+TRNM8|Turner N|DD [deg]|10|RM Young|05108-74
+TWOM8|Twodot E|DD [deg]|10|RM Young|05108-74
+VLTM8|Dovetail|DD [deg]|10|RM Young|05108-74
+VOTM8|Volt N|DD [deg]|10|RM Young|05108-74
+WRHM8|War Horse NW|DD [deg]|10|RM Young|05108-74
+WNFM8|Woodhawk|DD [deg]|10|RM Young|05108-74
+WIEM8|Winnett SW|DD [deg]|10|RM Young|05108-74
+WOFM8|Wolf Point NW|DD [deg]|10|RM Young|05108-74
+KEEM8|Absarokee|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+ASAM8|Ashland E|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BLWM8|Benton Lake W|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BSWM8|Big Sandy NW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BTSM8|Big Timber SE|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BNGM8|Billings S|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BNWM8|Bowmans Corner NW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BZNM8|Bozeman|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BRYM8|Brady NE|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BDEM8|Bredette NE|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BDVM8|Broadview|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BSEM8|Big Sandy SE|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BUFM8|Buffalo Lake E|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BUSM8|Busby S|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+BYUM8|Bynum W|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+CRNM8|Carter N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+CHSM8|Chester SW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+CSTM8|Christina W|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+CFCM8|Coffee Creek N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+CNNM8|Conrad N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+COOM8|Cooney Reservoir NW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+CROM8|Crow Agency|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+DOGM8|Dog Gun Lake E|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+DRYM8|Dry Lake|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+DYRM8|Dupuyer N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+FRGM8|Forestgrove N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+FTKM8|Fort Kipp NW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+FOXM8|Fox Crossing SW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+GLOM8|Glasgow SW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+HWTM8|Harlowton E|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+HAEM8|Havre|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+HIWM8|Highwood Bench|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+HOGM8|Hogeland SW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+HNTM8|Huntley E|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+IGMM8|Ingomar|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+INNM8|Inverness N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+ISSM8|Inverness S|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+JGPM8|Judith Gap|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+LTBM8|Lake Thibadeau W|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+LMDM8|Lame Deer E|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+LLNM8|Larslan SW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+LVAM8|Lavina N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+LGGM8|Lodge Grass W|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+LOAM8|Loma N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+LORM8|Loring SW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MTRM8|Matador Ranch|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MEDM8|Medicine Lake W|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MLVM8|Melville|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+RADM8|Midway Colony|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MCYM8|Miles City|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MINM8|Mission Lake S|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MCIM8|Moccasin|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MOTM8|Molt S|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MOYM8|Mosby S|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MOBM8|Mosby NW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MBYM8|Mosby SE|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MTLM8|Mt Lebanon SE|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+MSSM8|Musselshell|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+NUAM8|Nashua NE|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+OILM8|Oilmont|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+OHMM8|Opheim S|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+OTRM8|Otter E|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+PARM8|Poplar N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+RAPM8|Rapelje SW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+RMYM8|Rothiemay W|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+ROUM8|Roundup|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+RYOM8|Roy E|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+RGTM8|Ryegate S|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+SASM8|Saco S|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+SDSM8|Sand Springs NW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+SVYM8|Savoy SW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+SCYM8|Scobey NW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+SIYM8|Sidney|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+SDLM8|Springdale|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+SBSM8|Sunburst NW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+SURM8|Sun River SE|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+TAMM8|Tampico N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+TTNM8|Toston|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+TRNM8|Turner N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+TWOM8|Twodot E|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+VLTM8|Dovetail|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+VOTM8|Volt N|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+WRHM8|War Horse NW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+WNFM8|Woodhawk|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+WIEM8|Winnett SW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+WOFM8|Wolf Point NW|GSRD5M [W/m^2]|NA|Apogee|SP-510-SS
+KEEM8|Absarokee|SOILM8 [%]|0.2|Acclima|TDR-310N
+ASAM8|Ashland E|SOILM8 [%]|0.2|Acclima|TDR-310N
+BLWM8|Benton Lake W|SOILM8 [%]|0.2|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+BTSM8|Big Timber SE|SOILM8 [%]|0.2|Acclima|TDR-310N
+BNGM8|Billings S|SOILM8 [%]|0.2|Acclima|TDR-310N
+BNGM8|Billings S|SOILM8 [%]|0.2|Acclima|TDR-310N
+BNWM8|Bowmans Corner NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+BZNM8|Bozeman|SOILM8 [%]|0.2|Acclima|TDR-310N
+BZNM8|Bozeman|SOILM8 [%]|0.2|Acclima|TDR-310N
+BRYM8|Brady NE|SOILM8 [%]|0.2|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILM8 [%]|0.2|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILM8 [%]|0.2|Acclima|TDR-310N
+BDVM8|Broadview|SOILM8 [%]|0.2|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILM8 [%]|0.2|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILM8 [%]|0.2|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILM8 [%]|0.2|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILM8 [%]|0.2|Acclima|TDR-310N
+BUSM8|Busby S|SOILM8 [%]|0.2|Acclima|TDR-310N
+BYUM8|Bynum W|SOILM8 [%]|0.2|Acclima|TDR-310N
+CRNM8|Carter N|SOILM8 [%]|0.2|Acclima|TDR-310N
+CRNM8|Carter N|SOILM8 [%]|0.2|Acclima|TDR-310N
+CHSM8|Chester SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+CSTM8|Christina W|SOILM8 [%]|0.2|Acclima|TDR-310N
+CSTM8|Christina W|SOILM8 [%]|0.2|Acclima|TDR-310N
+CFCM8|Coffee Creek N|SOILM8 [%]|0.2|Acclima|TDR-310N
+CNNM8|Conrad N|SOILM8 [%]|0.2|Acclima|TDR-310N
+CNNM8|Conrad N|SOILM8 [%]|0.2|Acclima|TDR-310N
+COOM8|Cooney Reservoir NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+CROM8|Crow Agency|SOILM8 [%]|0.2|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILM8 [%]|0.2|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILM8 [%]|0.2|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILM8 [%]|0.2|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILM8 [%]|0.2|Acclima|TDR-310N
+DYRM8|Dupuyer N|SOILM8 [%]|0.2|Acclima|TDR-310N
+FRGM8|Forestgrove N|SOILM8 [%]|0.2|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+HWTM8|Harlowton E|SOILM8 [%]|0.2|Acclima|TDR-310N
+HAEM8|Havre|SOILM8 [%]|0.2|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILM8 [%]|0.2|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILM8 [%]|0.2|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+HNTM8|Huntley E|SOILM8 [%]|0.2|Acclima|TDR-310N
+IGMM8|Ingomar|SOILM8 [%]|0.2|Acclima|TDR-310N
+INNM8|Inverness N|SOILM8 [%]|0.2|Acclima|TDR-310N
+INNM8|Inverness N|SOILM8 [%]|0.2|Acclima|TDR-310N
+ISSM8|Inverness S|SOILM8 [%]|0.2|Acclima|TDR-310N
+ISSM8|Inverness S|SOILM8 [%]|0.2|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILM8 [%]|0.2|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILM8 [%]|0.2|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILM8 [%]|0.2|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILM8 [%]|0.2|Acclima|TDR-310N
+LMDM8|Lame Deer E|SOILM8 [%]|0.2|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+LVAM8|Lavina N|SOILM8 [%]|0.2|Acclima|TDR-310N
+LGGM8|Lodge Grass W|SOILM8 [%]|0.2|Acclima|TDR-310N
+LOAM8|Loma N|SOILM8 [%]|0.2|Acclima|TDR-310N
+LOAM8|Loma N|SOILM8 [%]|0.2|Acclima|TDR-310N
+LORM8|Loring SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+MTRM8|Matador Ranch|SOILM8 [%]|0.2|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILM8 [%]|0.2|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILM8 [%]|0.2|Acclima|TDR-310N
+MLVM8|Melville|SOILM8 [%]|0.2|Acclima|TDR-310N
+RADM8|Midway Colony|SOILM8 [%]|0.2|Acclima|TDR-310N
+MCYM8|Miles City|SOILM8 [%]|0.2|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILM8 [%]|0.2|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILM8 [%]|0.2|Acclima|TDR-310N
+MCIM8|Moccasin|SOILM8 [%]|0.2|Acclima|TDR-315N
+MOTM8|Molt S|SOILM8 [%]|0.2|Acclima|TDR-310N
+MOYM8|Mosby S|SOILM8 [%]|0.2|Acclima|TDR-310N
+MOBM8|Mosby NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILM8 [%]|0.2|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILM8 [%]|0.2|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILM8 [%]|0.2|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILM8 [%]|0.2|Acclima|TDR-310N
+MSSM8|Musselshell|SOILM8 [%]|0.2|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILM8 [%]|0.2|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILM8 [%]|0.2|Acclima|TDR-310N
+OILM8|Oilmont|SOILM8 [%]|0.2|Acclima|TDR-310N
+OHMM8|Opheim S|SOILM8 [%]|0.2|Acclima|TDR-310N
+OHMM8|Opheim S|SOILM8 [%]|0.2|Acclima|TDR-310N
+OTRM8|Otter E|SOILM8 [%]|0.2|Acclima|TDR-310N
+PARM8|Poplar N|SOILM8 [%]|0.2|Acclima|TDR-310N
+PARM8|Poplar N|SOILM8 [%]|0.2|Acclima|TDR-310N
+RAPM8|Rapelje SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+RMYM8|Rothiemay W|SOILM8 [%]|0.2|Acclima|TDR-310N
+ROUM8|Roundup|SOILM8 [%]|0.2|Acclima|TDR-315N
+RYOM8|Roy E|SOILM8 [%]|0.2|Acclima|TDR-310N
+RGTM8|Ryegate S|SOILM8 [%]|0.2|Acclima|TDR-310N
+SASM8|Saco S|SOILM8 [%]|0.2|Acclima|TDR-310N
+SDSM8|Sand Springs NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+SCYM8|Scobey NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+SIYM8|Sidney|SOILM8 [%]|0.2|Acclima|TDR-310N
+SDLM8|Springdale|SOILM8 [%]|0.2|Acclima|TDR-310N
+SDLM8|Springdale|SOILM8 [%]|0.2|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+SURM8|Sun River SE|SOILM8 [%]|0.2|Acclima|TDR-310N
+TAMM8|Tampico N|SOILM8 [%]|0.2|Acclima|TDR-310N
+TAMM8|Tampico N|SOILM8 [%]|0.2|Acclima|TDR-310N
+TTNM8|Toston|SOILM8 [%]|0.2|Acclima|TDR-310N
+TTNM8|Toston|SOILM8 [%]|0.2|Acclima|TDR-310N
+TRNM8|Turner N|SOILM8 [%]|0.2|Acclima|TDR-310N
+TWOM8|Twodot E|SOILM8 [%]|0.2|Acclima|TDR-310N
+VLTM8|Dovetail|SOILM8 [%]|0.2|Acclima|TDR-310N
+VOTM8|Volt N|SOILM8 [%]|0.2|Acclima|TDR-310N
+VOTM8|Volt N|SOILM8 [%]|0.2|Acclima|TDR-310N
+WRHM8|War Horse NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILM8 [%]|0.2|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILM8 [%]|0.2|Acclima|TDR-310N
+WIEM8|Winnett SW|SOILM8 [%]|0.2|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILM8 [%]|0.2|Acclima|TDR-310N
+KEEM8|Absarokee|RH [%]|NA|Vaisala|HMP155E
+ASAM8|Ashland E|RH [%]|NA|Vaisala|HMP155E
+BLWM8|Benton Lake W|RH [%]|NA|Vaisala|HMP155E
+BSWM8|Big Sandy NW|RH [%]|NA|Vaisala|HMP155E
+BTSM8|Big Timber SE|RH [%]|NA|Vaisala|HMP155E
+BNGM8|Billings S|RH [%]|NA|Vaisala|HMP155E
+BNWM8|Bowmans Corner NW|RH [%]|NA|Vaisala|HMP155E
+BZNM8|Bozeman|RH [%]|NA|Vaisala|HMP155E
+BRYM8|Brady NE|RH [%]|NA|Vaisala|HMP155E
+BDEM8|Bredette NE|RH [%]|NA|Vaisala|HMP155E
+BDVM8|Broadview|RH [%]|NA|Vaisala|HMP155E
+BSEM8|Big Sandy SE|RH [%]|NA|Vaisala|HMP155E
+BUFM8|Buffalo Lake E|RH [%]|NA|Vaisala|HMP155E
+BUSM8|Busby S|RH [%]|NA|Vaisala|HMP155E
+BYUM8|Bynum W|RH [%]|NA|Vaisala|HMP155E
+CRNM8|Carter N|RH [%]|NA|Vaisala|HMP155E
+CHSM8|Chester SW|RH [%]|NA|Vaisala|HMP155E
+CSTM8|Christina W|RH [%]|NA|Vaisala|HMP155E
+CFCM8|Coffee Creek N|RH [%]|NA|Vaisala|HMP155E
+CNNM8|Conrad N|RH [%]|NA|Vaisala|HMP155E
+COOM8|Cooney Reservoir NW|RH [%]|NA|Vaisala|HMP155E
+CROM8|Crow Agency|RH [%]|NA|Vaisala|HMP155E
+DOGM8|Dog Gun Lake E|RH [%]|NA|Vaisala|HMP155E
+DRYM8|Dry Lake|RH [%]|NA|Vaisala|HMP155E
+DYRM8|Dupuyer N|RH [%]|NA|Vaisala|HMP155E
+FRGM8|Forestgrove N|RH [%]|NA|Vaisala|HMP155E
+FTKM8|Fort Kipp NW|RH [%]|NA|Vaisala|HMP155E
+FOXM8|Fox Crossing SW|RH [%]|NA|Vaisala|HMP155E
+GLOM8|Glasgow SW|RH [%]|NA|Vaisala|HMP155E
+HWTM8|Harlowton E|RH [%]|NA|Vaisala|HMP155E
+HAEM8|Havre|RH [%]|NA|Vaisala|HMP155E
+HIWM8|Highwood Bench|RH [%]|NA|Vaisala|HMP155E
+HOGM8|Hogeland SW|RH [%]|NA|Vaisala|HMP155E
+HNTM8|Huntley E|RH [%]|NA|Vaisala|HMP155E
+IGMM8|Ingomar|RH [%]|NA|Vaisala|HMP155E
+INNM8|Inverness N|RH [%]|NA|Vaisala|HMP155E
+ISSM8|Inverness S|RH [%]|NA|Vaisala|HMP155E
+JGPM8|Judith Gap|RH [%]|NA|Vaisala|HMP155E
+LTBM8|Lake Thibadeau W|RH [%]|NA|Vaisala|HMP155E
+LMDM8|Lame Deer E|RH [%]|NA|Vaisala|HMP155E
+LLNM8|Larslan SW|RH [%]|NA|Vaisala|HMP155E
+LVAM8|Lavina N|RH [%]|NA|Vaisala|HMP155E
+LGGM8|Lodge Grass W|RH [%]|NA|Vaisala|HMP155E
+LOAM8|Loma N|RH [%]|NA|Vaisala|HMP155E
+LORM8|Loring SW|RH [%]|NA|Vaisala|HMP155E
+MTRM8|Matador Ranch|RH [%]|NA|Vaisala|HMP155E
+MEDM8|Medicine Lake W|RH [%]|NA|Vaisala|HMP155E
+MLVM8|Melville|RH [%]|NA|Vaisala|HMP155E
+RADM8|Midway Colony|RH [%]|NA|Vaisala|HMP155E
+MCYM8|Miles City|RH [%]|NA|Vaisala|HMP155E
+MINM8|Mission Lake S|RH [%]|NA|Vaisala|HMP155E
+MCIM8|Moccasin|RH [%]|NA|Vaisala|HMP155E
+MOTM8|Molt S|RH [%]|NA|Vaisala|HMP155E
+MOYM8|Mosby S|RH [%]|NA|Vaisala|HMP155E
+MOBM8|Mosby NW|RH [%]|NA|Vaisala|HMP155E
+MBYM8|Mosby SE|RH [%]|NA|Vaisala|HMP155E
+MTLM8|Mt Lebanon SE|RH [%]|NA|Vaisala|HMP155E
+MSSM8|Musselshell|RH [%]|NA|Vaisala|HMP155E
+NUAM8|Nashua NE|RH [%]|NA|Vaisala|HMP155E
+OILM8|Oilmont|RH [%]|NA|Vaisala|HMP155E
+OHMM8|Opheim S|RH [%]|NA|Vaisala|HMP155E
+OTRM8|Otter E|RH [%]|NA|Vaisala|HMP155E
+PARM8|Poplar N|RH [%]|NA|Vaisala|HMP155E
+RAPM8|Rapelje SW|RH [%]|NA|Vaisala|HMP155E
+RMYM8|Rothiemay W|RH [%]|NA|Vaisala|HMP155E
+ROUM8|Roundup|RH [%]|NA|Vaisala|HMP155E
+RYOM8|Roy E|RH [%]|NA|Vaisala|HMP155E
+RGTM8|Ryegate S|RH [%]|NA|Vaisala|HMP155E
+SASM8|Saco S|RH [%]|NA|Vaisala|HMP155E
+SDSM8|Sand Springs NW|RH [%]|NA|Vaisala|HMP155E
+SVYM8|Savoy SW|RH [%]|NA|Vaisala|HMP155E
+SCYM8|Scobey NW|RH [%]|NA|Vaisala|HMP155E
+SIYM8|Sidney|RH [%]|NA|Vaisala|HMP155E
+SDLM8|Springdale|RH [%]|NA|Vaisala|HMP155E
+SBSM8|Sunburst NW|RH [%]|NA|Vaisala|HMP155E
+SURM8|Sun River SE|RH [%]|NA|Vaisala|HMP155E
+TAMM8|Tampico N|RH [%]|NA|Vaisala|HMP155E
+TTNM8|Toston|RH [%]|NA|Vaisala|HMP155E
+TRNM8|Turner N|RH [%]|NA|Vaisala|HMP155E
+TWOM8|Twodot E|RH [%]|NA|Vaisala|HMP155E
+VLTM8|Dovetail|RH [%]|NA|Vaisala|HMP155E
+VOTM8|Volt N|RH [%]|NA|Vaisala|HMP155E
+WRHM8|War Horse NW|RH [%]|NA|Vaisala|HMP155E
+WNFM8|Woodhawk|RH [%]|NA|Vaisala|HMP155E
+WIEM8|Winnett SW|RH [%]|NA|Vaisala|HMP155E
+WOFM8|Wolf Point NW|RH [%]|NA|Vaisala|HMP155E
+KEEM8|Absarokee|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+ASAM8|Ashland E|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BLWM8|Benton Lake W|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BSWM8|Big Sandy NW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BTSM8|Big Timber SE|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BNGM8|Billings S|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BNWM8|Bowmans Corner NW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BZNM8|Bozeman|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BRYM8|Brady NE|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BDEM8|Bredette NE|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BDVM8|Broadview|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BSEM8|Big Sandy SE|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BUFM8|Buffalo Lake E|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BUSM8|Busby S|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+BYUM8|Bynum W|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+CRNM8|Carter N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+CHSM8|Chester SW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+CSTM8|Christina W|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+CFCM8|Coffee Creek N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+CNNM8|Conrad N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+COOM8|Cooney Reservoir NW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+CROM8|Crow Agency|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+DOGM8|Dog Gun Lake E|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+DRYM8|Dry Lake|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+DYRM8|Dupuyer N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+FRGM8|Forestgrove N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+FTKM8|Fort Kipp NW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+FOXM8|Fox Crossing SW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+GLOM8|Glasgow SW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+HWTM8|Harlowton E|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+HAEM8|Havre|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+HIWM8|Highwood Bench|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+HOGM8|Hogeland SW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+HNTM8|Huntley E|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+IGMM8|Ingomar|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+INNM8|Inverness N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+ISSM8|Inverness S|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+JGPM8|Judith Gap|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+LTBM8|Lake Thibadeau W|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+LMDM8|Lame Deer E|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+LLNM8|Larslan SW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+LVAM8|Lavina N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+LGGM8|Lodge Grass W|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+LOAM8|Loma N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+LORM8|Loring SW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MTRM8|Matador Ranch|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MEDM8|Medicine Lake W|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MLVM8|Melville|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+RADM8|Midway Colony|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MCYM8|Miles City|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MINM8|Mission Lake S|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MCIM8|Moccasin|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MOTM8|Molt S|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MOYM8|Mosby S|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MOBM8|Mosby NW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MBYM8|Mosby SE|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MTLM8|Mt Lebanon SE|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+MSSM8|Musselshell|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+NUAM8|Nashua NE|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+OILM8|Oilmont|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+OHMM8|Opheim S|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+OTRM8|Otter E|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+PARM8|Poplar N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+RAPM8|Rapelje SW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+RMYM8|Rothiemay W|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+ROUM8|Roundup|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+RYOM8|Roy E|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+RGTM8|Ryegate S|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+SASM8|Saco S|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+SDSM8|Sand Springs NW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+SVYM8|Savoy SW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+SCYM8|Scobey NW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+SIYM8|Sidney|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+SDLM8|Springdale|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+SBSM8|Sunburst NW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+SURM8|Sun River SE|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+TAMM8|Tampico N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+TTNM8|Toston|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+TRNM8|Turner N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+TWOM8|Twodot E|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+VLTM8|Dovetail|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+VOTM8|Volt N|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+WRHM8|War Horse NW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+WNFM8|Woodhawk|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+WIEM8|Winnett SW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+WOFM8|Wolf Point NW|PCP5M [m]|NA|Ott Hydromet|Pluvio2 L 400
+KEEM8|Absarokee|SOILT8 [K]|0.2|Acclima|TDR-310N
+ASAM8|Ashland E|SOILT8 [K]|0.2|Acclima|TDR-310N
+BLWM8|Benton Lake W|SOILT8 [K]|0.2|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+BTSM8|Big Timber SE|SOILT8 [K]|0.2|Acclima|TDR-310N
+BNGM8|Billings S|SOILT8 [K]|0.2|Acclima|TDR-310N
+BNGM8|Billings S|SOILT8 [K]|0.2|Acclima|TDR-310N
+BNWM8|Bowmans Corner NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+BZNM8|Bozeman|SOILT8 [K]|0.2|Acclima|TDR-310N
+BZNM8|Bozeman|SOILT8 [K]|0.2|Acclima|TDR-310N
+BRYM8|Brady NE|SOILT8 [K]|0.2|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILT8 [K]|0.2|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILT8 [K]|0.2|Acclima|TDR-310N
+BDVM8|Broadview|SOILT8 [K]|0.2|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILT8 [K]|0.2|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILT8 [K]|0.2|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILT8 [K]|0.2|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILT8 [K]|0.2|Acclima|TDR-310N
+BUSM8|Busby S|SOILT8 [K]|0.2|Acclima|TDR-310N
+BYUM8|Bynum W|SOILT8 [K]|0.2|Acclima|TDR-310N
+CRNM8|Carter N|SOILT8 [K]|0.2|Acclima|TDR-310N
+CRNM8|Carter N|SOILT8 [K]|0.2|Acclima|TDR-310N
+CHSM8|Chester SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+CSTM8|Christina W|SOILT8 [K]|0.2|Acclima|TDR-310N
+CSTM8|Christina W|SOILT8 [K]|0.2|Acclima|TDR-310N
+CFCM8|Coffee Creek N|SOILT8 [K]|0.2|Acclima|TDR-310N
+CNNM8|Conrad N|SOILT8 [K]|0.2|Acclima|TDR-310N
+CNNM8|Conrad N|SOILT8 [K]|0.2|Acclima|TDR-310N
+COOM8|Cooney Reservoir NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+CROM8|Crow Agency|SOILT8 [K]|0.2|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILT8 [K]|0.2|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILT8 [K]|0.2|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILT8 [K]|0.2|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILT8 [K]|0.2|Acclima|TDR-310N
+DYRM8|Dupuyer N|SOILT8 [K]|0.2|Acclima|TDR-310N
+FRGM8|Forestgrove N|SOILT8 [K]|0.2|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+HWTM8|Harlowton E|SOILT8 [K]|0.2|Acclima|TDR-310N
+HAEM8|Havre|SOILT8 [K]|0.2|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILT8 [K]|0.2|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILT8 [K]|0.2|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+HNTM8|Huntley E|SOILT8 [K]|0.2|Acclima|TDR-310N
+IGMM8|Ingomar|SOILT8 [K]|0.2|Acclima|TDR-310N
+INNM8|Inverness N|SOILT8 [K]|0.2|Acclima|TDR-310N
+INNM8|Inverness N|SOILT8 [K]|0.2|Acclima|TDR-310N
+ISSM8|Inverness S|SOILT8 [K]|0.2|Acclima|TDR-310N
+ISSM8|Inverness S|SOILT8 [K]|0.2|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILT8 [K]|0.2|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILT8 [K]|0.2|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILT8 [K]|0.2|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILT8 [K]|0.2|Acclima|TDR-310N
+LMDM8|Lame Deer E|SOILT8 [K]|0.2|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+LVAM8|Lavina N|SOILT8 [K]|0.2|Acclima|TDR-310N
+LGGM8|Lodge Grass W|SOILT8 [K]|0.2|Acclima|TDR-310N
+LOAM8|Loma N|SOILT8 [K]|0.2|Acclima|TDR-310N
+LOAM8|Loma N|SOILT8 [K]|0.2|Acclima|TDR-310N
+LORM8|Loring SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+MTRM8|Matador Ranch|SOILT8 [K]|0.2|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILT8 [K]|0.2|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILT8 [K]|0.2|Acclima|TDR-310N
+MLVM8|Melville|SOILT8 [K]|0.2|Acclima|TDR-310N
+RADM8|Midway Colony|SOILT8 [K]|0.2|Acclima|TDR-310N
+MCYM8|Miles City|SOILT8 [K]|0.2|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILT8 [K]|0.2|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILT8 [K]|0.2|Acclima|TDR-310N
+MCIM8|Moccasin|SOILT8 [K]|0.2|Acclima|TDR-315N
+MOTM8|Molt S|SOILT8 [K]|0.2|Acclima|TDR-310N
+MOYM8|Mosby S|SOILT8 [K]|0.2|Acclima|TDR-310N
+MOBM8|Mosby NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILT8 [K]|0.2|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILT8 [K]|0.2|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILT8 [K]|0.2|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILT8 [K]|0.2|Acclima|TDR-310N
+MSSM8|Musselshell|SOILT8 [K]|0.2|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILT8 [K]|0.2|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILT8 [K]|0.2|Acclima|TDR-310N
+OILM8|Oilmont|SOILT8 [K]|0.2|Acclima|TDR-310N
+OHMM8|Opheim S|SOILT8 [K]|0.2|Acclima|TDR-310N
+OHMM8|Opheim S|SOILT8 [K]|0.2|Acclima|TDR-310N
+OTRM8|Otter E|SOILT8 [K]|0.2|Acclima|TDR-310N
+PARM8|Poplar N|SOILT8 [K]|0.2|Acclima|TDR-310N
+PARM8|Poplar N|SOILT8 [K]|0.2|Acclima|TDR-310N
+RAPM8|Rapelje SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+RMYM8|Rothiemay W|SOILT8 [K]|0.2|Acclima|TDR-310N
+ROUM8|Roundup|SOILT8 [K]|0.2|Acclima|TDR-315N
+RYOM8|Roy E|SOILT8 [K]|0.2|Acclima|TDR-310N
+RGTM8|Ryegate S|SOILT8 [K]|0.2|Acclima|TDR-310N
+SASM8|Saco S|SOILT8 [K]|0.2|Acclima|TDR-310N
+SDSM8|Sand Springs NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+SCYM8|Scobey NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+SIYM8|Sidney|SOILT8 [K]|0.2|Acclima|TDR-310N
+SDLM8|Springdale|SOILT8 [K]|0.2|Acclima|TDR-310N
+SDLM8|Springdale|SOILT8 [K]|0.2|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+SURM8|Sun River SE|SOILT8 [K]|0.2|Acclima|TDR-310N
+TAMM8|Tampico N|SOILT8 [K]|0.2|Acclima|TDR-310N
+TAMM8|Tampico N|SOILT8 [K]|0.2|Acclima|TDR-310N
+TTNM8|Toston|SOILT8 [K]|0.2|Acclima|TDR-310N
+TTNM8|Toston|SOILT8 [K]|0.2|Acclima|TDR-310N
+TRNM8|Turner N|SOILT8 [K]|0.2|Acclima|TDR-310N
+TWOM8|Twodot E|SOILT8 [K]|0.2|Acclima|TDR-310N
+VLTM8|Dovetail|SOILT8 [K]|0.2|Acclima|TDR-310N
+VOTM8|Volt N|SOILT8 [K]|0.2|Acclima|TDR-310N
+VOTM8|Volt N|SOILT8 [K]|0.2|Acclima|TDR-310N
+WRHM8|War Horse NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILT8 [K]|0.2|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILT8 [K]|0.2|Acclima|TDR-310N
+WIEM8|Winnett SW|SOILT8 [K]|0.2|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILT8 [K]|0.2|Acclima|TDR-310N
+KEEM8|Absarokee|SOILM40 [%]|1|Acclima|TDR-310N
+ASAM8|Ashland E|SOILM40 [%]|1|Acclima|TDR-310N
+BLWM8|Benton Lake W|SOILM40 [%]|1|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILM40 [%]|1|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILM40 [%]|1|Acclima|TDR-310N
+BNGM8|Billings S|SOILM40 [%]|1|Acclima|TDR-310N
+BNGM8|Billings S|SOILM40 [%]|1|Acclima|TDR-310N
+BNWM8|Bowmans Corner NW|SOILM40 [%]|1|Acclima|TDR-310N
+BZNM8|Bozeman|SOILM40 [%]|1|Acclima|TDR-310N
+BZNM8|Bozeman|SOILM40 [%]|1|Acclima|TDR-310N
+BRYM8|Brady NE|SOILM40 [%]|1|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILM40 [%]|1|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILM40 [%]|1|Acclima|TDR-310N
+BDVM8|Broadview|SOILM40 [%]|1|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILM40 [%]|1|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILM40 [%]|1|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILM40 [%]|1|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILM40 [%]|1|Acclima|TDR-310N
+BUSM8|Busby S|SOILM40 [%]|1|Acclima|TDR-310N
+BYUM8|Bynum W|SOILM40 [%]|1|Acclima|TDR-310N
+CRNM8|Carter N|SOILM40 [%]|1|Acclima|TDR-310N
+CRNM8|Carter N|SOILM40 [%]|1|Acclima|TDR-310N
+CHSM8|Chester SW|SOILM40 [%]|1|Acclima|TDR-310N
+CSTM8|Christina W|SOILM40 [%]|1|Acclima|TDR-310N
+CSTM8|Christina W|SOILM40 [%]|1|Acclima|TDR-310N
+CFCM8|Coffee Creek N|SOILM40 [%]|1|Acclima|TDR-310N
+CNNM8|Conrad N|SOILM40 [%]|1|Acclima|TDR-310N
+CNNM8|Conrad N|SOILM40 [%]|1|Acclima|TDR-310N
+COOM8|Cooney Reservoir NW|SOILM40 [%]|1|Acclima|TDR-310N
+CROM8|Crow Agency|SOILM40 [%]|1|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILM40 [%]|1|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILM40 [%]|1|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILM40 [%]|1|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILM40 [%]|1|Acclima|TDR-310N
+DYRM8|Dupuyer N|SOILM40 [%]|1|Acclima|TDR-310N
+FRGM8|Forestgrove N|SOILM40 [%]|1|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILM40 [%]|1|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILM40 [%]|1|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILM40 [%]|1|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILM40 [%]|1|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILM40 [%]|1|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILM40 [%]|1|Acclima|TDR-310N
+HWTM8|Harlowton E|SOILM40 [%]|1|Acclima|TDR-310N
+HAEM8|Havre|SOILM40 [%]|1|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILM40 [%]|1|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILM40 [%]|1|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILM40 [%]|1|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILM40 [%]|1|Acclima|TDR-310N
+HNTM8|Huntley E|SOILM40 [%]|1|Acclima|TDR-310N
+IGMM8|Ingomar|SOILM40 [%]|1|Acclima|TDR-310N
+INNM8|Inverness N|SOILM40 [%]|1|Acclima|TDR-310N
+INNM8|Inverness N|SOILM40 [%]|1|Acclima|TDR-310N
+ISSM8|Inverness S|SOILM40 [%]|1|Acclima|TDR-310N
+ISSM8|Inverness S|SOILM40 [%]|1|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILM40 [%]|1|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILM40 [%]|1|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILM40 [%]|1|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILM40 [%]|1|Acclima|TDR-310N
+LMDM8|Lame Deer E|SOILM40 [%]|1|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILM40 [%]|1|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILM40 [%]|1|Acclima|TDR-310N
+LVAM8|Lavina N|SOILM40 [%]|1|Acclima|TDR-310N
+LGGM8|Lodge Grass W|SOILM40 [%]|1|Acclima|TDR-310N
+LOAM8|Loma N|SOILM40 [%]|1|Acclima|TDR-310N
+LOAM8|Loma N|SOILM40 [%]|1|Acclima|TDR-310N
+LORM8|Loring SW|SOILM40 [%]|1|Acclima|TDR-310N
+MTRM8|Matador Ranch|SOILM40 [%]|1|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILM40 [%]|1|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILM40 [%]|1|Acclima|TDR-310N
+MLVM8|Melville|SOILM40 [%]|1|Acclima|TDR-310N
+RADM8|Midway Colony|SOILM40 [%]|1|Acclima|TDR-310N
+MCYM8|Miles City|SOILM40 [%]|1|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILM40 [%]|1|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILM40 [%]|1|Acclima|TDR-310N
+MCIM8|Moccasin|SOILM40 [%]|1|Acclima|TDR-315N
+MOTM8|Molt S|SOILM40 [%]|1|Acclima|TDR-310N
+MOYM8|Mosby S|SOILM40 [%]|1|Acclima|TDR-310N
+MOBM8|Mosby NW|SOILM40 [%]|1|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILM40 [%]|1|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILM40 [%]|1|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILM40 [%]|1|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILM40 [%]|1|Acclima|TDR-310N
+MSSM8|Musselshell|SOILM40 [%]|1|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILM40 [%]|1|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILM40 [%]|1|Acclima|TDR-310N
+OILM8|Oilmont|SOILM40 [%]|1|Acclima|TDR-310N
+OHMM8|Opheim S|SOILM40 [%]|1|Acclima|TDR-310N
+OHMM8|Opheim S|SOILM40 [%]|1|Acclima|TDR-310N
+OTRM8|Otter E|SOILM40 [%]|1|Acclima|TDR-310N
+PARM8|Poplar N|SOILM40 [%]|1|Acclima|TDR-310N
+PARM8|Poplar N|SOILM40 [%]|1|Acclima|TDR-310N
+RAPM8|Rapelje SW|SOILM40 [%]|1|Acclima|TDR-310N
+RMYM8|Rothiemay W|SOILM40 [%]|1|Acclima|TDR-310N
+ROUM8|Roundup|SOILM40 [%]|1|Acclima|TDR-315N
+RYOM8|Roy E|SOILM40 [%]|1|Acclima|TDR-310N
+RGTM8|Ryegate S|SOILM40 [%]|1|Acclima|TDR-310N
+SASM8|Saco S|SOILM40 [%]|1|Acclima|TDR-310N
+SDSM8|Sand Springs NW|SOILM40 [%]|1|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILM40 [%]|1|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILM40 [%]|1|Acclima|TDR-310N
+SCYM8|Scobey NW|SOILM40 [%]|1|Acclima|TDR-310N
+SIYM8|Sidney|SOILM40 [%]|1|Acclima|TDR-310N
+SDLM8|Springdale|SOILM40 [%]|1|Acclima|TDR-310N
+SDLM8|Springdale|SOILM40 [%]|1|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILM40 [%]|1|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILM40 [%]|1|Acclima|TDR-310N
+SURM8|Sun River SE|SOILM40 [%]|1|Acclima|TDR-310N
+TAMM8|Tampico N|SOILM40 [%]|1|Acclima|TDR-310N
+TAMM8|Tampico N|SOILM40 [%]|1|Acclima|TDR-310N
+TTNM8|Toston|SOILM40 [%]|1|Acclima|TDR-310N
+TTNM8|Toston|SOILM40 [%]|1|Acclima|TDR-310N
+TRNM8|Turner N|SOILM40 [%]|1|Acclima|TDR-310N
+TWOM8|Twodot E|SOILM40 [%]|1|Acclima|TDR-310N
+VLTM8|Dovetail|SOILM40 [%]|1|Acclima|TDR-310N
+VOTM8|Volt N|SOILM40 [%]|1|Acclima|TDR-310N
+VOTM8|Volt N|SOILM40 [%]|1|Acclima|TDR-310N
+WRHM8|War Horse NW|SOILM40 [%]|1|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILM40 [%]|1|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILM40 [%]|1|Acclima|TDR-310N
+WIEM8|Winnett SW|SOILM40 [%]|1|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILM40 [%]|1|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILM40 [%]|1|Acclima|TDR-310N
+KEEM8|Absarokee|SD [m]|NA|CSI|SnowVUE 10
+ASAM8|Ashland E|SD [m]|NA|CSI|SnowVUE 10
+BLWM8|Benton Lake W|SD [m]|NA|CSI|SnowVUE 10
+BSWM8|Big Sandy NW|SD [m]|NA|CSI|SnowVUE 10
+BTSM8|Big Timber SE|SD [m]|NA|CSI|SnowVUE 10
+BNGM8|Billings S|SD [m]|NA|CSI|SnowVUE 10
+BNWM8|Bowmans Corner NW|SD [m]|NA|CSI|SnowVUE 10
+BZNM8|Bozeman|SD [m]|NA|CSI|SnowVUE 10
+BRYM8|Brady NE|SD [m]|NA|CSI|SnowVUE 10
+BDEM8|Bredette NE|SD [m]|NA|CSI|SnowVUE 10
+BDVM8|Broadview|SD [m]|NA|CSI|SnowVUE 10
+BSEM8|Big Sandy SE|SD [m]|NA|CSI|SnowVUE 10
+BUFM8|Buffalo Lake E|SD [m]|NA|CSI|SnowVUE 10
+BUSM8|Busby S|SD [m]|NA|CSI|SnowVUE 10
+BYUM8|Bynum W|SD [m]|NA|CSI|SnowVUE 10
+CRNM8|Carter N|SD [m]|NA|CSI|SnowVUE 10
+CHSM8|Chester SW|SD [m]|NA|CSI|SnowVUE 10
+CSTM8|Christina W|SD [m]|NA|CSI|SnowVUE 10
+CFCM8|Coffee Creek N|SD [m]|NA|CSI|SnowVUE 10
+CNNM8|Conrad N|SD [m]|NA|CSI|SnowVUE 10
+COOM8|Cooney Reservoir NW|SD [m]|NA|CSI|SnowVUE 10
+CROM8|Crow Agency|SD [m]|NA|CSI|SnowVUE 10
+DOGM8|Dog Gun Lake E|SD [m]|NA|CSI|SnowVUE 10
+DRYM8|Dry Lake|SD [m]|NA|CSI|SnowVUE 10
+DYRM8|Dupuyer N|SD [m]|NA|CSI|SnowVUE 10
+FRGM8|Forestgrove N|SD [m]|NA|CSI|SnowVUE 10
+FTKM8|Fort Kipp NW|SD [m]|NA|CSI|SnowVUE 10
+FOXM8|Fox Crossing SW|SD [m]|NA|CSI|SnowVUE 10
+GLOM8|Glasgow SW|SD [m]|NA|CSI|SnowVUE 10
+HWTM8|Harlowton E|SD [m]|NA|CSI|SnowVUE 10
+HAEM8|Havre|SD [m]|NA|CSI|SnowVUE 10
+HIWM8|Highwood Bench|SD [m]|NA|CSI|SnowVUE 10
+HOGM8|Hogeland SW|SD [m]|NA|CSI|SnowVUE 10
+HNTM8|Huntley E|SD [m]|NA|CSI|SnowVUE 10
+IGMM8|Ingomar|SD [m]|NA|CSI|SnowVUE 10
+INNM8|Inverness N|SD [m]|NA|CSI|SnowVUE 10
+ISSM8|Inverness S|SD [m]|NA|CSI|SnowVUE 10
+JGPM8|Judith Gap|SD [m]|NA|CSI|SnowVUE 10
+LTBM8|Lake Thibadeau W|SD [m]|NA|CSI|SnowVUE 10
+LMDM8|Lame Deer E|SD [m]|NA|CSI|SnowVUE 10
+LLNM8|Larslan SW|SD [m]|NA|CSI|SnowVUE 10
+LVAM8|Lavina N|SD [m]|NA|CSI|SnowVUE 10
+LGGM8|Lodge Grass W|SD [m]|NA|CSI|SnowVUE 10
+LOAM8|Loma N|SD [m]|NA|CSI|SnowVUE 10
+LORM8|Loring SW|SD [m]|NA|CSI|SnowVUE 10
+MTRM8|Matador Ranch|SD [m]|NA|CSI|SnowVUE 10
+MEDM8|Medicine Lake W|SD [m]|NA|CSI|SnowVUE 10
+MLVM8|Melville|SD [m]|NA|CSI|SnowVUE 10
+RADM8|Midway Colony|SD [m]|NA|CSI|SnowVUE 10
+MCYM8|Miles City|SD [m]|NA|CSI|SnowVUE 10
+MINM8|Mission Lake S|SD [m]|NA|CSI|SnowVUE 10
+MCIM8|Moccasin|SD [m]|NA|CSI|SnowVUE 10
+MOTM8|Molt S|SD [m]|NA|CSI|SnowVUE 10
+MOYM8|Mosby S|SD [m]|NA|CSI|SnowVUE 10
+MOBM8|Mosby NW|SD [m]|NA|CSI|SnowVUE 10
+MBYM8|Mosby SE|SD [m]|NA|CSI|SnowVUE 10
+MTLM8|Mt Lebanon SE|SD [m]|NA|CSI|SnowVUE 10
+MSSM8|Musselshell|SD [m]|NA|CSI|SnowVUE 10
+NUAM8|Nashua NE|SD [m]|NA|CSI|SnowVUE 10
+OILM8|Oilmont|SD [m]|NA|CSI|SnowVUE 10
+OHMM8|Opheim S|SD [m]|NA|CSI|SnowVUE 10
+OTRM8|Otter E|SD [m]|NA|CSI|SnowVUE 10
+PARM8|Poplar N|SD [m]|NA|CSI|SnowVUE 10
+RAPM8|Rapelje SW|SD [m]|NA|CSI|SnowVUE 10
+RMYM8|Rothiemay W|SD [m]|NA|CSI|SnowVUE 10
+ROUM8|Roundup|SD [m]|NA|CSI|SnowVUE 10
+RYOM8|Roy E|SD [m]|NA|CSI|SnowVUE 10
+RGTM8|Ryegate S|SD [m]|NA|CSI|SnowVUE 10
+SASM8|Saco S|SD [m]|NA|CSI|SnowVUE 10
+SDSM8|Sand Springs NW|SD [m]|NA|CSI|SnowVUE 10
+SVYM8|Savoy SW|SD [m]|NA|CSI|SnowVUE 10
+SCYM8|Scobey NW|SD [m]|NA|CSI|SnowVUE 10
+SIYM8|Sidney|SD [m]|NA|CSI|SnowVUE 10
+SDLM8|Springdale|SD [m]|NA|CSI|SnowVUE 10
+SBSM8|Sunburst NW|SD [m]|NA|CSI|SnowVUE 10
+SURM8|Sun River SE|SD [m]|NA|CSI|SnowVUE 10
+TAMM8|Tampico N|SD [m]|NA|CSI|SnowVUE 10
+TTNM8|Toston|SD [m]|NA|CSI|SnowVUE 10
+TRNM8|Turner N|SD [m]|NA|CSI|SnowVUE 10
+TWOM8|Twodot E|SD [m]|NA|CSI|SnowVUE 10
+VLTM8|Dovetail|SD [m]|NA|CSI|SnowVUE 10
+VOTM8|Volt N|SD [m]|NA|CSI|SnowVUE 10
+WRHM8|War Horse NW|SD [m]|NA|CSI|SnowVUE 10
+WNFM8|Woodhawk|SD [m]|NA|CSI|SnowVUE 10
+WIEM8|Winnett SW|SD [m]|NA|CSI|SnowVUE 10
+WOFM8|Wolf Point NW|SD [m]|NA|CSI|SnowVUE 10
+KEEM8|Absarokee|SOILM2 [%]|0.05|Acclima|TDR-310N
+ASAM8|Ashland E|SOILM2 [%]|0.05|Acclima|TDR-310N
+BLWM8|Benton Lake W|SOILM2 [%]|0.05|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+BTSM8|Big Timber SE|SOILM2 [%]|0.05|Acclima|TDR-310N
+BNGM8|Billings S|SOILM2 [%]|0.05|Acclima|TDR-310N
+BNGM8|Billings S|SOILM2 [%]|0.05|Acclima|TDR-310N
+BNWM8|Bowmans Corner NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+BZNM8|Bozeman|SOILM2 [%]|0.05|Acclima|TDR-310N
+BZNM8|Bozeman|SOILM2 [%]|0.05|Acclima|TDR-310N
+BRYM8|Brady NE|SOILM2 [%]|0.05|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILM2 [%]|0.05|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILM2 [%]|0.05|Acclima|TDR-310N
+BDVM8|Broadview|SOILM2 [%]|0.05|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILM2 [%]|0.05|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILM2 [%]|0.05|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILM2 [%]|0.05|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILM2 [%]|0.05|Acclima|TDR-310N
+BUSM8|Busby S|SOILM2 [%]|0.05|Acclima|TDR-310N
+BYUM8|Bynum W|SOILM2 [%]|0.05|Acclima|TDR-310N
+CRNM8|Carter N|SOILM2 [%]|0.05|Acclima|TDR-310N
+CRNM8|Carter N|SOILM2 [%]|0.05|Acclima|TDR-310N
+CHSM8|Chester SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+CSTM8|Christina W|SOILM2 [%]|0.05|Acclima|TDR-310N
+CSTM8|Christina W|SOILM2 [%]|0.05|Acclima|TDR-310N
+CFCM8|Coffee Creek N|SOILM2 [%]|0.05|Acclima|TDR-310N
+CNNM8|Conrad N|SOILM2 [%]|0.05|Acclima|TDR-310N
+CNNM8|Conrad N|SOILM2 [%]|0.05|Acclima|TDR-310N
+COOM8|Cooney Reservoir NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+CROM8|Crow Agency|SOILM2 [%]|0.05|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILM2 [%]|0.05|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILM2 [%]|0.05|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILM2 [%]|0.05|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILM2 [%]|0.05|Acclima|TDR-310N
+DYRM8|Dupuyer N|SOILM2 [%]|0.05|Acclima|TDR-310N
+FRGM8|Forestgrove N|SOILM2 [%]|0.05|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+HWTM8|Harlowton E|SOILM2 [%]|0.05|Acclima|TDR-310N
+HAEM8|Havre|SOILM2 [%]|0.05|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILM2 [%]|0.05|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILM2 [%]|0.05|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+HNTM8|Huntley E|SOILM2 [%]|0.05|Acclima|TDR-310N
+IGMM8|Ingomar|SOILM2 [%]|0.05|Acclima|TDR-310N
+INNM8|Inverness N|SOILM2 [%]|0.05|Acclima|TDR-310N
+INNM8|Inverness N|SOILM2 [%]|0.05|Acclima|TDR-310N
+ISSM8|Inverness S|SOILM2 [%]|0.05|Acclima|TDR-310N
+ISSM8|Inverness S|SOILM2 [%]|0.05|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILM2 [%]|0.05|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILM2 [%]|0.05|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILM2 [%]|0.05|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILM2 [%]|0.05|Acclima|TDR-310N
+LMDM8|Lame Deer E|SOILM2 [%]|0.05|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+LVAM8|Lavina N|SOILM2 [%]|0.05|Acclima|TDR-310N
+LGGM8|Lodge Grass W|SOILM2 [%]|0.05|Acclima|TDR-310N
+LOAM8|Loma N|SOILM2 [%]|0.05|Acclima|TDR-310N
+LOAM8|Loma N|SOILM2 [%]|0.05|Acclima|TDR-310N
+LORM8|Loring SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+MTRM8|Matador Ranch|SOILM2 [%]|0.05|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILM2 [%]|0.05|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILM2 [%]|0.05|Acclima|TDR-310N
+MLVM8|Melville|SOILM2 [%]|0.05|Acclima|TDR-310N
+RADM8|Midway Colony|SOILM2 [%]|0.05|Acclima|TDR-310N
+MCYM8|Miles City|SOILM2 [%]|0.05|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILM2 [%]|0.05|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILM2 [%]|0.05|Acclima|TDR-310N
+MCIM8|Moccasin|SOILM2 [%]|0.05|Acclima|TDR-315N
+MOTM8|Molt S|SOILM2 [%]|0.05|Acclima|TDR-310N
+MOYM8|Mosby S|SOILM2 [%]|0.05|Acclima|TDR-310N
+MOBM8|Mosby NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILM2 [%]|0.05|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILM2 [%]|0.05|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILM2 [%]|0.05|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILM2 [%]|0.05|Acclima|TDR-310N
+MSSM8|Musselshell|SOILM2 [%]|0.05|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILM2 [%]|0.05|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILM2 [%]|0.05|Acclima|TDR-310N
+OILM8|Oilmont|SOILM2 [%]|0.05|Acclima|TDR-310N
+OHMM8|Opheim S|SOILM2 [%]|0.05|Acclima|TDR-310N
+OHMM8|Opheim S|SOILM2 [%]|0.05|Acclima|TDR-310N
+OTRM8|Otter E|SOILM2 [%]|0.05|Acclima|TDR-310N
+PARM8|Poplar N|SOILM2 [%]|0.05|Acclima|TDR-310N
+PARM8|Poplar N|SOILM2 [%]|0.05|Acclima|TDR-310N
+RAPM8|Rapelje SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+RMYM8|Rothiemay W|SOILM2 [%]|0.05|Acclima|TDR-310N
+ROUM8|Roundup|SOILM2 [%]|0.05|Acclima|TDR-315N
+RYOM8|Roy E|SOILM2 [%]|0.05|Acclima|TDR-310N
+RGTM8|Ryegate S|SOILM2 [%]|0.05|Acclima|TDR-310N
+SASM8|Saco S|SOILM2 [%]|0.05|Acclima|TDR-310N
+SDSM8|Sand Springs NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+SCYM8|Scobey NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+SIYM8|Sidney|SOILM2 [%]|0.05|Acclima|TDR-310N
+SDLM8|Springdale|SOILM2 [%]|0.05|Acclima|TDR-310N
+SDLM8|Springdale|SOILM2 [%]|0.05|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+SURM8|Sun River SE|SOILM2 [%]|0.05|Acclima|TDR-310N
+TAMM8|Tampico N|SOILM2 [%]|0.05|Acclima|TDR-310N
+TAMM8|Tampico N|SOILM2 [%]|0.05|Acclima|TDR-310N
+TTNM8|Toston|SOILM2 [%]|0.05|Acclima|TDR-310N
+TTNM8|Toston|SOILM2 [%]|0.05|Acclima|TDR-310N
+TRNM8|Turner N|SOILM2 [%]|0.05|Acclima|TDR-310N
+TWOM8|Twodot E|SOILM2 [%]|0.05|Acclima|TDR-310N
+VLTM8|Dovetail|SOILM2 [%]|0.05|Acclima|TDR-310N
+VOTM8|Volt N|SOILM2 [%]|0.05|Acclima|TDR-310N
+VOTM8|Volt N|SOILM2 [%]|0.05|Acclima|TDR-310N
+WRHM8|War Horse NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILM2 [%]|0.05|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILM2 [%]|0.05|Acclima|TDR-310N
+WIEM8|Winnett SW|SOILM2 [%]|0.05|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILM2 [%]|0.05|Acclima|TDR-310N
+KEEM8|Absarokee||NA|Ott Hydromet|Pluvio2 L 400
+ASAM8|Ashland E||NA|Ott Hydromet|Pluvio2 L 400
+BLWM8|Benton Lake W||NA|Ott Hydromet|Pluvio2 L 400
+BSWM8|Big Sandy NW||NA|Ott Hydromet|Pluvio2 L 400
+BTSM8|Big Timber SE||NA|Ott Hydromet|Pluvio2 L 400
+BNGM8|Billings S||NA|Ott Hydromet|Pluvio2 L 400
+BNWM8|Bowmans Corner NW||NA|Ott Hydromet|Pluvio2 L 400
+BZNM8|Bozeman||NA|Ott Hydromet|Pluvio2 L 400
+BRYM8|Brady NE||NA|Ott Hydromet|Pluvio2 L 400
+BDEM8|Bredette NE||NA|Ott Hydromet|Pluvio2 L 400
+BDVM8|Broadview||NA|Ott Hydromet|Pluvio2 L 400
+BSEM8|Big Sandy SE||NA|Ott Hydromet|Pluvio2 L 400
+BUFM8|Buffalo Lake E||NA|Ott Hydromet|Pluvio2 L 400
+BUSM8|Busby S||NA|Ott Hydromet|Pluvio2 L 400
+BYUM8|Bynum W||NA|Ott Hydromet|Pluvio2 L 400
+CRNM8|Carter N||NA|Ott Hydromet|Pluvio2 L 400
+CHSM8|Chester SW||NA|Ott Hydromet|Pluvio2 L 400
+CSTM8|Christina W||NA|Ott Hydromet|Pluvio2 L 400
+CFCM8|Coffee Creek N||NA|Ott Hydromet|Pluvio2 L 400
+CNNM8|Conrad N||NA|Ott Hydromet|Pluvio2 L 400
+COOM8|Cooney Reservoir NW||NA|Ott Hydromet|Pluvio2 L 400
+CROM8|Crow Agency||NA|Ott Hydromet|Pluvio2 L 400
+DOGM8|Dog Gun Lake E||NA|Ott Hydromet|Pluvio2 L 400
+DRYM8|Dry Lake||NA|Ott Hydromet|Pluvio2 L 400
+DYRM8|Dupuyer N||NA|Ott Hydromet|Pluvio2 L 400
+FRGM8|Forestgrove N||NA|Ott Hydromet|Pluvio2 L 400
+FTKM8|Fort Kipp NW||NA|Ott Hydromet|Pluvio2 L 400
+FOXM8|Fox Crossing SW||NA|Ott Hydromet|Pluvio2 L 400
+GLOM8|Glasgow SW||NA|Ott Hydromet|Pluvio2 L 400
+HWTM8|Harlowton E||NA|Ott Hydromet|Pluvio2 L 400
+HAEM8|Havre||NA|Ott Hydromet|Pluvio2 L 400
+HIWM8|Highwood Bench||NA|Ott Hydromet|Pluvio2 L 400
+HOGM8|Hogeland SW||NA|Ott Hydromet|Pluvio2 L 400
+HNTM8|Huntley E||NA|Ott Hydromet|Pluvio2 L 400
+IGMM8|Ingomar||NA|Ott Hydromet|Pluvio2 L 400
+INNM8|Inverness N||NA|Ott Hydromet|Pluvio2 L 400
+ISSM8|Inverness S||NA|Ott Hydromet|Pluvio2 L 400
+JGPM8|Judith Gap||NA|Ott Hydromet|Pluvio2 L 400
+LTBM8|Lake Thibadeau W||NA|Ott Hydromet|Pluvio2 L 400
+LMDM8|Lame Deer E||NA|Ott Hydromet|Pluvio2 L 400
+LLNM8|Larslan SW||NA|Ott Hydromet|Pluvio2 L 400
+LVAM8|Lavina N||NA|Ott Hydromet|Pluvio2 L 400
+LGGM8|Lodge Grass W||NA|Ott Hydromet|Pluvio2 L 400
+LOAM8|Loma N||NA|Ott Hydromet|Pluvio2 L 400
+LORM8|Loring SW||NA|Ott Hydromet|Pluvio2 L 400
+MTRM8|Matador Ranch||NA|Ott Hydromet|Pluvio2 L 400
+MEDM8|Medicine Lake W||NA|Ott Hydromet|Pluvio2 L 400
+MLVM8|Melville||NA|Ott Hydromet|Pluvio2 L 400
+RADM8|Midway Colony||NA|Ott Hydromet|Pluvio2 L 400
+MCYM8|Miles City||NA|Ott Hydromet|Pluvio2 L 400
+MINM8|Mission Lake S||NA|Ott Hydromet|Pluvio2 L 400
+MCIM8|Moccasin||NA|Ott Hydromet|Pluvio2 L 400
+MOTM8|Molt S||NA|Ott Hydromet|Pluvio2 L 400
+MOYM8|Mosby S||NA|Ott Hydromet|Pluvio2 L 400
+MOBM8|Mosby NW||NA|Ott Hydromet|Pluvio2 L 400
+MBYM8|Mosby SE||NA|Ott Hydromet|Pluvio2 L 400
+MTLM8|Mt Lebanon SE||NA|Ott Hydromet|Pluvio2 L 400
+MSSM8|Musselshell||NA|Ott Hydromet|Pluvio2 L 400
+NUAM8|Nashua NE||NA|Ott Hydromet|Pluvio2 L 400
+OILM8|Oilmont||NA|Ott Hydromet|Pluvio2 L 400
+OHMM8|Opheim S||NA|Ott Hydromet|Pluvio2 L 400
+OTRM8|Otter E||NA|Ott Hydromet|Pluvio2 L 400
+PARM8|Poplar N||NA|Ott Hydromet|Pluvio2 L 400
+RAPM8|Rapelje SW||NA|Ott Hydromet|Pluvio2 L 400
+RMYM8|Rothiemay W||NA|Ott Hydromet|Pluvio2 L 400
+ROUM8|Roundup||NA|Ott Hydromet|Pluvio2 L 400
+RYOM8|Roy E||NA|Ott Hydromet|Pluvio2 L 400
+RGTM8|Ryegate S||NA|Ott Hydromet|Pluvio2 L 400
+SASM8|Saco S||NA|Ott Hydromet|Pluvio2 L 400
+SDSM8|Sand Springs NW||NA|Ott Hydromet|Pluvio2 L 400
+SVYM8|Savoy SW||NA|Ott Hydromet|Pluvio2 L 400
+SCYM8|Scobey NW||NA|Ott Hydromet|Pluvio2 L 400
+SIYM8|Sidney||NA|Ott Hydromet|Pluvio2 L 400
+SDLM8|Springdale||NA|Ott Hydromet|Pluvio2 L 400
+SBSM8|Sunburst NW||NA|Ott Hydromet|Pluvio2 L 400
+SURM8|Sun River SE||NA|Ott Hydromet|Pluvio2 L 400
+TAMM8|Tampico N||NA|Ott Hydromet|Pluvio2 L 400
+TTNM8|Toston||NA|Ott Hydromet|Pluvio2 L 400
+TRNM8|Turner N||NA|Ott Hydromet|Pluvio2 L 400
+TWOM8|Twodot E||NA|Ott Hydromet|Pluvio2 L 400
+VLTM8|Dovetail||NA|Ott Hydromet|Pluvio2 L 400
+VOTM8|Volt N||NA|Ott Hydromet|Pluvio2 L 400
+WRHM8|War Horse NW||NA|Ott Hydromet|Pluvio2 L 400
+WNFM8|Woodhawk||NA|Ott Hydromet|Pluvio2 L 400
+WIEM8|Winnett SW||NA|Ott Hydromet|Pluvio2 L 400
+WOFM8|Wolf Point NW||NA|Ott Hydromet|Pluvio2 L 400
+KEEM8|Absarokee|SOILT40 [K]|1|Acclima|TDR-310N
+ASAM8|Ashland E|SOILT40 [K]|1|Acclima|TDR-310N
+BLWM8|Benton Lake W|SOILT40 [K]|1|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILT40 [K]|1|Acclima|TDR-310N
+BSWM8|Big Sandy NW|SOILT40 [K]|1|Acclima|TDR-310N
+BNGM8|Billings S|SOILT40 [K]|1|Acclima|TDR-310N
+BNGM8|Billings S|SOILT40 [K]|1|Acclima|TDR-310N
+BNWM8|Bowmans Corner NW|SOILT40 [K]|1|Acclima|TDR-310N
+BZNM8|Bozeman|SOILT40 [K]|1|Acclima|TDR-310N
+BZNM8|Bozeman|SOILT40 [K]|1|Acclima|TDR-310N
+BRYM8|Brady NE|SOILT40 [K]|1|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILT40 [K]|1|Acclima|TDR-310N
+BDEM8|Bredette NE|SOILT40 [K]|1|Acclima|TDR-310N
+BDVM8|Broadview|SOILT40 [K]|1|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILT40 [K]|1|Acclima|TDR-310N
+BSEM8|Big Sandy SE|SOILT40 [K]|1|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILT40 [K]|1|Acclima|TDR-310N
+BUFM8|Buffalo Lake E|SOILT40 [K]|1|Acclima|TDR-310N
+BUSM8|Busby S|SOILT40 [K]|1|Acclima|TDR-310N
+BYUM8|Bynum W|SOILT40 [K]|1|Acclima|TDR-310N
+CRNM8|Carter N|SOILT40 [K]|1|Acclima|TDR-310N
+CRNM8|Carter N|SOILT40 [K]|1|Acclima|TDR-310N
+CHSM8|Chester SW|SOILT40 [K]|1|Acclima|TDR-310N
+CSTM8|Christina W|SOILT40 [K]|1|Acclima|TDR-310N
+CSTM8|Christina W|SOILT40 [K]|1|Acclima|TDR-310N
+CFCM8|Coffee Creek N|SOILT40 [K]|1|Acclima|TDR-310N
+CNNM8|Conrad N|SOILT40 [K]|1|Acclima|TDR-310N
+CNNM8|Conrad N|SOILT40 [K]|1|Acclima|TDR-310N
+COOM8|Cooney Reservoir NW|SOILT40 [K]|1|Acclima|TDR-310N
+CROM8|Crow Agency|SOILT40 [K]|1|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILT40 [K]|1|Acclima|TDR-310N
+DOGM8|Dog Gun Lake E|SOILT40 [K]|1|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILT40 [K]|1|Acclima|TDR-310N
+DRYM8|Dry Lake|SOILT40 [K]|1|Acclima|TDR-310N
+DYRM8|Dupuyer N|SOILT40 [K]|1|Acclima|TDR-310N
+FRGM8|Forestgrove N|SOILT40 [K]|1|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILT40 [K]|1|Acclima|TDR-310N
+FTKM8|Fort Kipp NW|SOILT40 [K]|1|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILT40 [K]|1|Acclima|TDR-310N
+FOXM8|Fox Crossing SW|SOILT40 [K]|1|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILT40 [K]|1|Acclima|TDR-310N
+GLOM8|Glasgow SW|SOILT40 [K]|1|Acclima|TDR-310N
+HWTM8|Harlowton E|SOILT40 [K]|1|Acclima|TDR-310N
+HAEM8|Havre|SOILT40 [K]|1|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILT40 [K]|1|Acclima|TDR-310N
+HIWM8|Highwood Bench|SOILT40 [K]|1|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILT40 [K]|1|Acclima|TDR-310N
+HOGM8|Hogeland SW|SOILT40 [K]|1|Acclima|TDR-310N
+HNTM8|Huntley E|SOILT40 [K]|1|Acclima|TDR-310N
+IGMM8|Ingomar|SOILT40 [K]|1|Acclima|TDR-310N
+INNM8|Inverness N|SOILT40 [K]|1|Acclima|TDR-310N
+INNM8|Inverness N|SOILT40 [K]|1|Acclima|TDR-310N
+ISSM8|Inverness S|SOILT40 [K]|1|Acclima|TDR-310N
+ISSM8|Inverness S|SOILT40 [K]|1|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILT40 [K]|1|Acclima|TDR-310N
+JGPM8|Judith Gap|SOILT40 [K]|1|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILT40 [K]|1|Acclima|TDR-310N
+LTBM8|Lake Thibadeau W|SOILT40 [K]|1|Acclima|TDR-310N
+LMDM8|Lame Deer E|SOILT40 [K]|1|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILT40 [K]|1|Acclima|TDR-310N
+LLNM8|Larslan SW|SOILT40 [K]|1|Acclima|TDR-310N
+LVAM8|Lavina N|SOILT40 [K]|1|Acclima|TDR-310N
+LGGM8|Lodge Grass W|SOILT40 [K]|1|Acclima|TDR-310N
+LOAM8|Loma N|SOILT40 [K]|1|Acclima|TDR-310N
+LOAM8|Loma N|SOILT40 [K]|1|Acclima|TDR-310N
+LORM8|Loring SW|SOILT40 [K]|1|Acclima|TDR-310N
+MTRM8|Matador Ranch|SOILT40 [K]|1|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILT40 [K]|1|Acclima|TDR-310N
+MEDM8|Medicine Lake W|SOILT40 [K]|1|Acclima|TDR-310N
+MLVM8|Melville|SOILT40 [K]|1|Acclima|TDR-310N
+RADM8|Midway Colony|SOILT40 [K]|1|Acclima|TDR-310N
+MCYM8|Miles City|SOILT40 [K]|1|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILT40 [K]|1|Acclima|TDR-310N
+MINM8|Mission Lake S|SOILT40 [K]|1|Acclima|TDR-310N
+MCIM8|Moccasin|SOILT40 [K]|1|Acclima|TDR-315N
+MOTM8|Molt S|SOILT40 [K]|1|Acclima|TDR-310N
+MOYM8|Mosby S|SOILT40 [K]|1|Acclima|TDR-310N
+MOBM8|Mosby NW|SOILT40 [K]|1|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILT40 [K]|1|Acclima|TDR-310N
+MBYM8|Mosby SE|SOILT40 [K]|1|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILT40 [K]|1|Acclima|TDR-310N
+MTLM8|Mt Lebanon SE|SOILT40 [K]|1|Acclima|TDR-310N
+MSSM8|Musselshell|SOILT40 [K]|1|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILT40 [K]|1|Acclima|TDR-310N
+NUAM8|Nashua NE|SOILT40 [K]|1|Acclima|TDR-310N
+OILM8|Oilmont|SOILT40 [K]|1|Acclima|TDR-310N
+OHMM8|Opheim S|SOILT40 [K]|1|Acclima|TDR-310N
+OHMM8|Opheim S|SOILT40 [K]|1|Acclima|TDR-310N
+OTRM8|Otter E|SOILT40 [K]|1|Acclima|TDR-310N
+PARM8|Poplar N|SOILT40 [K]|1|Acclima|TDR-310N
+PARM8|Poplar N|SOILT40 [K]|1|Acclima|TDR-310N
+RAPM8|Rapelje SW|SOILT40 [K]|1|Acclima|TDR-310N
+RMYM8|Rothiemay W|SOILT40 [K]|1|Acclima|TDR-310N
+ROUM8|Roundup|SOILT40 [K]|1|Acclima|TDR-315N
+RYOM8|Roy E|SOILT40 [K]|1|Acclima|TDR-310N
+RGTM8|Ryegate S|SOILT40 [K]|1|Acclima|TDR-310N
+SASM8|Saco S|SOILT40 [K]|1|Acclima|TDR-310N
+SDSM8|Sand Springs NW|SOILT40 [K]|1|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILT40 [K]|1|Acclima|TDR-310N
+SVYM8|Savoy SW|SOILT40 [K]|1|Acclima|TDR-310N
+SCYM8|Scobey NW|SOILT40 [K]|1|Acclima|TDR-310N
+SIYM8|Sidney|SOILT40 [K]|1|Acclima|TDR-310N
+SDLM8|Springdale|SOILT40 [K]|1|Acclima|TDR-310N
+SDLM8|Springdale|SOILT40 [K]|1|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILT40 [K]|1|Acclima|TDR-310N
+SBSM8|Sunburst NW|SOILT40 [K]|1|Acclima|TDR-310N
+SURM8|Sun River SE|SOILT40 [K]|1|Acclima|TDR-310N
+TAMM8|Tampico N|SOILT40 [K]|1|Acclima|TDR-310N
+TAMM8|Tampico N|SOILT40 [K]|1|Acclima|TDR-310N
+TTNM8|Toston|SOILT40 [K]|1|Acclima|TDR-310N
+TTNM8|Toston|SOILT40 [K]|1|Acclima|TDR-310N
+TRNM8|Turner N|SOILT40 [K]|1|Acclima|TDR-310N
+TWOM8|Twodot E|SOILT40 [K]|1|Acclima|TDR-310N
+VLTM8|Dovetail|SOILT40 [K]|1|Acclima|TDR-310N
+VOTM8|Volt N|SOILT40 [K]|1|Acclima|TDR-310N
+VOTM8|Volt N|SOILT40 [K]|1|Acclima|TDR-310N
+WRHM8|War Horse NW|SOILT40 [K]|1|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILT40 [K]|1|Acclima|TDR-310N
+WNFM8|Woodhawk|SOILT40 [K]|1|Acclima|TDR-310N
+WIEM8|Winnett SW|SOILT40 [K]|1|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILT40 [K]|1|Acclima|TDR-310N
+WOFM8|Wolf Point NW|SOILT40 [K]|1|Acclima|TDR-310N

@@ -61,5 +61,29 @@ get_all_station_sensor_metadata <-
         `Sensor Mfg` = manufacturer,
         `Sensor Model` = model
       ) %>% 
-      readr::write_csv("./sensor_metadata.csv")
+      readr::write_delim("./sensor_metadata.txt", delim = "|")
   }
+
+
+cover_description <- function() {
+  
+  dplyr::tbl(con, RPostgres::Id(schema = "data", table = "stations")) %>% 
+    dplyr::filter(
+      sub_network == "HydroMet",
+      !is.na(date_installed),
+      !is.na(nwsli_id)
+    ) %>%
+    dplyr::select(name, nwsli_id) %>%
+    dplyr::collect() %>%
+    dplyr::select(
+      `Station ID` = nwsli_id,
+      `Station name` = name
+    ) %>% 
+    dplyr::mutate(
+      Slope = "A",
+      Aspect = 0,
+      `Cover Description Code` = NA
+    ) %>%
+    readr::write_delim("./site_metadata.txt", delim = "|")
+  
+}
