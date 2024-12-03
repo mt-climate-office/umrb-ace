@@ -65,25 +65,40 @@ get_all_station_sensor_metadata <-
   }
 
 
-cover_description <- function() {
+cover_description <- function(cover_file = "./Stations USDA Cover Codes 241202.csv") {
+  
+  cover <- readr::read_csv(cover_file, show_col_types=FALSE) %>%
+    dplyr::select(station=station_ID, `Cover Description Code`=Cover_USDA)
   
   dplyr::tbl(con, RPostgres::Id(schema = "data", table = "stations")) %>% 
     dplyr::filter(
       sub_network == "HydroMet",
       !is.na(date_installed),
-      !is.na(nwsli_id)
+      !is.na(nwsli_id),
+      nwsli_id != "RAPM8"
     ) %>%
-    dplyr::select(name, nwsli_id) %>%
     dplyr::collect() %>%
-    dplyr::select(
+    dplyr::left_join(cover) %>%
+    dplyr::select(name, nwsli_id, `Cover Description Code`) %>%
+    dplyr::rename(
       `Station ID` = nwsli_id,
       `Station name` = name
     ) %>% 
     dplyr::mutate(
       Slope = "A",
       Aspect = 0,
-      `Cover Description Code` = NA
-    ) %>%
+      `Cover Description Code` = dplyr::case_when(
+        `Station ID` == "BNGM8" ~ 3103,
+        `Station ID` == "BSEM8" ~ 2233,
+        `Station ID` == "MINM8" ~ 3103,
+        `Station ID` == "MOBM8" ~ 3103,
+        `Station ID` == "OHMM8" ~ 3103,
+        `Station ID` == "TRNM8" ~ 3103,
+        `Station ID` == "VLTM8" ~ 3102,
+        `Station ID` == "WETM8" ~ 4402,
+        TRUE ~ `Cover Description Code`
+      )
+    ) %>% 
     readr::write_delim("./site_metadata.txt", delim = "|")
-  
 }
+

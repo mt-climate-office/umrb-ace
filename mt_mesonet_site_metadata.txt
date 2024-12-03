@@ -1,0 +1,87 @@
+Station name|Station ID|Cover Description Code|Slope|Aspect
+Absarokee|KEEM8|3103|A|0
+Ashland E|ASAM8|4403|A|0
+Benton Lake W|BLWM8|3221|A|0
+Big Sandy NW|BSWM8|3600|A|0
+Big Timber SE|BTSM8|4102|A|0
+Billings S|BNGM8|3103|A|0
+Bowmans Corner NW|BNWM8|3102|A|0
+Bozeman|BZNM8|3600|A|0
+Brady NE|BRYM8|2323|A|0
+Bredette NE|BDEM8|4103|A|0
+Broadview|BDVM8|3103|A|0
+Big Sandy SE|BSEM8|2233|A|0
+Buffalo Lake E|BUFM8|3103|A|0
+Busby S|BUSM8|3103|A|0
+Bynum W|BYUM8|3102|A|0
+Carter N|CRNM8|3600|A|0
+Chester SW|CHSM8|3600|A|0
+Christina W|CSTM8|4403|A|0
+Coffee Creek N|CFCM8|3200|A|0
+Conrad N|CNNM8|2321|A|0
+Cooney Reservoir NW|COOM8|3200|A|0
+Crow Agency|CROM8|3200|A|0
+Dog Gun Lake E|DOGM8|3103|A|0
+Dry Lake|DRYM8|4102|A|0
+Dupuyer N|DYRM8|3102|A|0
+Forestgrove N|FRGM8|4103|A|0
+Fort Kipp NW|FTKM8|4103|A|0
+Fox Crossing SW|FOXM8|3102|A|0
+Glasgow SW|GLOM8|2323|A|0
+Harlowton E|HWTM8|3102|A|0
+Havre|HAEM8|3200|A|0
+Highwood Bench|HIWM8|2323|A|0
+Hogeland SW|HOGM8|3103|A|0
+Huntley E|HNTM8|3200|A|0
+Ingomar|IGMM8|4403|A|0
+Inverness N|INNM8|3600|A|0
+Inverness S|ISSM8|2323|A|0
+Judith Gap|JGPM8|3103|A|0
+Lake Thibadeau W|LTBM8|4103|A|0
+Lame Deer E|LMDM8|4103|A|0
+Larslan SW|LLNM8|3102|A|0
+Lavina N|LVAM8|3102|A|0
+Lodge Grass W|LGGM8|3102|A|0
+Loma N|LOAM8|4103|A|0
+Loring SW|LORM8|3600|A|0
+Matador Ranch|MTRM8|4103|A|0
+Medicine Lake W|MEDM8|3103|A|0
+Melville|MLVM8|4103|A|0
+Midway Colony|RADM8|3103|A|0
+Miles City|MCYM8|3106|A|0
+Mission Lake S|MINM8|3103|A|0
+Moccasin|MCIM8|3600|A|0
+Molt S|MOTM8|3102|A|0
+Mosby S|MOYM8|3200|A|0
+Mosby NW|MOBM8|3103|A|0
+Mosby SE|MBYM8|3102|A|0
+Mt Lebanon SE|MTLM8|3102|A|0
+Musselshell|MSSM8|3103|A|0
+Nashua NE|NUAM8|3102|A|0
+Oilmont|OILM8|2323|A|0
+Opheim S|OHMM8|3103|A|0
+Otter E|OTRM8|3103|A|0
+Poplar N|PARM8|3102|A|0
+Rothiemay W|RMYM8|3102|A|0
+Roundup|ROUM8|3103|A|0
+Roy E|RYOM8|3101|A|0
+Ryegate S|RGTM8|3102|A|0
+Saco S|SASM8|3103|A|0
+Sand Springs NW|SDSM8|3102|A|0
+Savoy SW|SVYM8|3103|A|0
+Scobey NW|SCYM8|3103|A|0
+Sidney|SIYM8|2323|A|0
+Springdale|SDLM8|3103|A|0
+Sunburst NW|SBSM8|3102|A|0
+Sun River SE|SURM8|3102|A|0
+Tampico N|TAMM8|4102|A|0
+Toston|TTNM8|4402|A|0
+Turner N|TRNM8|3103|A|0
+Twodot E|TWOM8|3102|A|0
+Dovetail|VLTM8|3102|A|0
+Volt N|VOTM8|3102|A|0
+War Horse NW|WRHM8|3200|A|0
+Wetzel NE|WETM8|4402|A|0
+Woodhawk|WNFM8|3200|A|0
+Winnett SW|WIEM8|4403|A|0
+Wolf Point NW|WOFM8|3102|A|0
