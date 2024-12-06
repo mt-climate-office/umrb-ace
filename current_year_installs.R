@@ -15,6 +15,7 @@ mt_station_status <- readr::read_csv(
   ) %>%
   sf::st_as_sf(coords = c("longitude", "latitude"), crs = 4326) 
 
+tribes <- sf::read_sf("https://data.climate.umt.edu/mesonet/fgb/mt_tribes.fgb")
 
 hill <- 
   mcor::mt_hillshade_500m %>%
@@ -35,10 +36,14 @@ p <-
           fill = NA,
           color = "white",
           linewidth = 0.3) +
+  geom_sf(data = tribes, 
+          fill = NA,
+          linewidth = 0.25,
+          color= "grey30") + 
   geom_sf(data = mt_station_status,
-          shape = 21,
+          shape = "\u2605",
           fill = "black",
-          color = "white",
+          color = "black",
   ) +
   guides(
     shape = guide_legend(
