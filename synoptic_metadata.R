@@ -79,9 +79,10 @@ cover_description <- function(cover_file = "./Stations USDA Cover Codes 241202.c
     ) %>%
     dplyr::collect() %>%
     dplyr::left_join(cover) %>%
-    dplyr::select(name, nwsli_id, `Cover Description Code`) %>%
+    dplyr::select(station, name, nwsli_id, `Cover Description Code`) %>%
     dplyr::rename(
-      `Station ID` = nwsli_id,
+      `Station ID` = station,
+      `NWSLI Detail` = nwsli_id,
       `Station name` = name
     ) %>% 
     dplyr::mutate(

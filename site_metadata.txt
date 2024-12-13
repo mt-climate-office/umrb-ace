@@ -1,0 +1,87 @@
+Station ID|Station name|NWSLI Detail|Cover Description Code|Slope|Aspect
+aceabsar|Absarokee|KEEM8|3103|A|0
+aceashla|Ashland E|ASAM8|4403|A|0
+acebento|Benton Lake W|BLWM8|3221|A|0
+acebigsa|Big Sandy NW|BSWM8|3600|A|0
+acebigti|Big Timber SE|BTSM8|4102|A|0
+acebilli|Billings S|BNGM8|NA|A|0
+acebowma|Bowmans Corner NW|BNWM8|3102|A|0
+acebozem|Bozeman|BZNM8|3600|A|0
+acebrady|Brady NE|BRYM8|2323|A|0
+acebrede|Bredette NE|BDEM8|4103|A|0
+acebroad|Broadview|BDVM8|3103|A|0
+acebsase|Big Sandy SE|BSEM8|NA|A|0
+acebuffa|Buffalo Lake E|BUFM8|3103|A|0
+acebusby|Busby S|BUSM8|3103|A|0
+acebynum|Bynum W|BYUM8|3102|A|0
+acecarte|Carter N|CRNM8|3600|A|0
+acechest|Chester SW|CHSM8|3600|A|0
+acechris|Christina W|CSTM8|4403|A|0
+acecoffe|Coffee Creek N|CFCM8|3200|A|0
+aceconra|Conrad N|CNNM8|2321|A|0
+acecoone|Cooney Reservoir NW|COOM8|3200|A|0
+acecrowa|Crow Agency|CROM8|3200|A|0
+acedoggu|Dog Gun Lake E|DOGM8|3103|A|0
+acedryla|Dry Lake|DRYM8|4102|A|0
+acedupuy|Dupuyer N|DYRM8|3102|A|0
+acefores|Forestgrove N|FRGM8|4103|A|0
+acefortk|Fort Kipp NW|FTKM8|4103|A|0
+acefoxcr|Fox Crossing SW|FOXM8|3102|A|0
+aceglasg|Glasgow SW|GLOM8|2323|A|0
+aceharlo|Harlowton E|HWTM8|3102|A|0
+acehavre|Havre|HAEM8|3200|A|0
+acehighw|Highwood Bench|HIWM8|2323|A|0
+acehogel|Hogeland SW|HOGM8|3103|A|0
+acehuntl|Huntley E|HNTM8|3200|A|0
+aceingom|Ingomar|IGMM8|4403|A|0
+aceinven|Inverness N|INNM8|3600|A|0
+aceinves|Inverness S|ISSM8|2323|A|0
+acejudit|Judith Gap|JGPM8|3103|A|0
+acelaket|Lake Thibadeau W|LTBM8|4103|A|0
+acelamed|Lame Deer E|LMDM8|4103|A|0
+acelarsl|Larslan SW|LLNM8|3102|A|0
+acelavin|Lavina N|LVAM8|3102|A|0
+acelodge|Lodge Grass W|LGGM8|3102|A|0
+aceloman|Loma N|LOAM8|4103|A|0
+acelorin|Loring SW|LORM8|3600|A|0
+acematad|Matador Ranch|MTRM8|4103|A|0
+acemedic|Medicine Lake W|MEDM8|3103|A|0
+acemelvi|Melville|MLVM8|4103|A|0
+acemidwa|Midway Colony|RADM8|3103|A|0
+acemiles|Miles City|MCYM8|3106|A|0
+acemissi|Mission Lake S|MINM8|NA|A|0
+acemocca|Moccasin|MCIM8|3600|A|0
+acemolts|Molt S|MOTM8|3102|A|0
+acemosbs|Mosby S|MOYM8|3200|A|0
+acemosnw|Mosby NW|MOBM8|NA|A|0
+acemosse|Mosby SE|MBYM8|3102|A|0
+acemtleb|Mt Lebanon SE|MTLM8|3102|A|0
+acemusse|Musselshell|MSSM8|3103|A|0
+acenashu|Nashua NE|NUAM8|3102|A|0
+aceoilmo|Oilmont|OILM8|2323|A|0
+aceophei|Opheim S|OHMM8|NA|A|0
+aceotter|Otter E|OTRM8|3103|A|0
+acepopla|Poplar N|PARM8|3102|A|0
+acerothi|Rothiemay W|RMYM8|3102|A|0
+aceround|Roundup|ROUM8|3103|A|0
+aceroyeg|Roy E|RYOM8|3101|A|0
+aceryega|Ryegate S|RGTM8|3102|A|0
+acesacos|Saco S|SASM8|3103|A|0
+acesands|Sand Springs NW|SDSM8|3102|A|0
+acesavoy|Savoy SW|SVYM8|3103|A|0
+acescobe|Scobey NW|SCYM8|3103|A|0
+acesidne|Sidney|SIYM8|2323|A|0
+acesprin|Springdale|SDLM8|3103|A|0
+acesunbu|Sunburst NW|SBSM8|3102|A|0
+acesunri|Sun River SE|SURM8|3102|A|0
+acetampi|Tampico N|TAMM8|4102|A|0
+acetosto|Toston|TTNM8|4402|A|0
+aceturne|Turner N|TRNM8|NA|A|0
+acetwodo|Twodot E|TWOM8|3102|A|0
+acevalen|Dovetail|VLTM8|NA|A|0
+acevoltn|Volt N|VOTM8|3102|A|0
+acewarho|War Horse NW|WRHM8|3200|A|0
+acewetz |Wetzel NE|WETM8|NA|A|0
+acewinif|Woodhawk|WNFM8|3200|A|0
+acewinne|Winnett SW|WIEM8|4403|A|0
+acewolfp|Wolf Point NW|WOFM8|3102|A|0
