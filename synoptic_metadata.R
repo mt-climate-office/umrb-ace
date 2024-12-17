@@ -65,11 +65,20 @@ get_all_station_sensor_metadata <-
   }
 
 
-cover_description <- function(cover_file = "./Stations USDA Cover Codes 241202.csv") {
+cover_description <- function(
+    cover_file = "./Stations USDA Cover Codes 241202.csv",
+    detail_file = "./nwsli_detail.txt"
+) {
   
   cover <- readr::read_csv(cover_file, show_col_types=FALSE) %>%
     dplyr::select(station=station_ID, `Cover Description Code`=Cover_USDA)
   
+  detail <- readr::read_delim(
+    "./nwsli_detail.txt", 
+    col_names = c("Station ID", "city", "distance", "azimuth")
+  ) %>% 
+    dplyr::select(`Station ID`, distance, azimuth)
+
   dplyr::tbl(con, RPostgres::Id(schema = "data", table = "stations")) %>% 
     dplyr::filter(
       sub_network == "HydroMet",
@@ -81,8 +90,7 @@ cover_description <- function(cover_file = "./Stations USDA Cover Codes 241202.c
     dplyr::left_join(cover) %>%
     dplyr::select(station, name, nwsli_id, `Cover Description Code`) %>%
     dplyr::rename(
-      `Station ID` = station,
-      `NWSLI Detail` = nwsli_id,
+      `Station ID` = nwsli_id,
       `Station name` = name
     ) %>% 
     dplyr::mutate(
@@ -99,7 +107,20 @@ cover_description <- function(cover_file = "./Stations USDA Cover Codes 241202.c
         `Station ID` == "WETM8" ~ 4402,
         TRUE ~ `Cover Description Code`
       )
-    ) %>% 
+    ) %>%
+    dplyr::left_join(detail) %>%
+    dplyr::mutate(distance = as.character(distance)) %>%
+    tidyr::replace_na(list(distance="", azimuth="")) %>%
+    dplyr::mutate(
+      dir = paste0(distance, azimuth),
+      `NWSLI Detail` = paste(`Station name`, dir, "Montana Mesonet")
+    ) %>%
+    dplyr::select(-c(distance, azimuth, dir, station)) %>%
     readr::write_delim("./site_metadata.txt", delim = "|")
 }
 
+
+readr::read_csv("https://mesonet.climate.umt.edu/api/stations?type=csv", 
+                show_col_types = FALSE) %>%
+  dplyr::select(name, station, nwsli_id) %>%
+  readr::write_csv("~/Downloads/mt_climate_offices_nwsliids.csv")
