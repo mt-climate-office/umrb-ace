@@ -113,7 +113,8 @@ cover_description <- function(
     tidyr::replace_na(list(distance="", azimuth="")) %>%
     dplyr::mutate(
       dir = paste0(distance, azimuth),
-      `NWSLI Detail` = paste(`Station name`, dir, "Montana Mesonet")
+      `NWSLI Detail` = paste(`Station name`, dir, "Montana Mesonet") %>%
+        gsub("\\s+", " ", .)
     ) %>%
     dplyr::select(-c(distance, azimuth, dir, station)) %>%
     readr::write_delim("./site_metadata.txt", delim = "|")
