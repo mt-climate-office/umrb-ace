@@ -79,10 +79,20 @@ nlcd_out <- nlcd %>%
     )
   )
 
+tribes <- tigris::native_areas() %>% 
+  dplyr::select(NAME) %>%
+  sf::st_transform("EPSG:5070") %>% 
+  sf::st_intersection(umrb_roi) %>%
+  sf::st_simplify() %>% 
+  sf::st_cast("POLYGON") %>% 
+  dplyr::mutate(area = sf::st_area(.)%>% as.numeric()) %>% 
+  dplyr::filter(area > 1000000) %>% 
+  dplyr::select(-area)
+
 get_df <- function(x){
   out <- cbind(xyFromCell(x, seq_len(ncell(x))),
                tibble::tibble(ID = raster::getValues(x))) %>%
-    tibble::as_tibble()
+    tibble::as_tibble() 
   
   if(is.factor(x)){
     
@@ -128,7 +138,14 @@ p <- ggplot(sf::st_transform(umrb_states, "EPSG:5070")) +
   ) +
   geom_sf(data = umrb_states,
           fill = NA, 
-          color="black") +
+          color="black",
+          size=0) +
+  geom_sf(
+    data=tribes,
+    fill = NA,
+    color = "black",
+    size = 3
+  ) +
   geom_sf(data = umrb,
           aes(color = "Upper Missouri River Basin"),  # Add this aes mapping
           fill = "white",
