@@ -22,7 +22,7 @@ get_umrb_status <- function(){
   # httr::GET(url = "https://dl.boxcloud.com/d/1/b1!Y5CMqqt3mOhS4jjvCCwD2AeQmhxM9Ohom794KK5Tv3Yal0Xo7Rm9u8XyjH8pNgyey2-PIAAw6BAIbN1gdXEWpLUCkiKDkRItrmNtZ6w-_LtjTZ_5r-VMH_Tmxigc_r-hHgUSypo23hZUA_Pmi5xNsKgoVmOh1TZY0mL_0mcaxuOY1wlYeEr9YT-6kSziddnV4VRftzDF8B34VEtyE_Zi2ROL9YsgB05TPM-p-WtKYKzYQdfFvnOfU9W5QnRyrZ1QTHKuN6512QzhpoTucVt_RNwLY7lNoolMFe4sd0hyMXX1jL7OfDqprFsbzk8pzN1v0NE_PCHFhs3xY-Q9c1yoHvt72YD0mOxez-JaZmCWW7iIOTUkja8JkWKhmHdVNN8oQGfFkwRLIGCEnKMm42aP3drXe2yDuxSMKbDNKo9YQdw227Dsv56iAljJyvl41lDgkWD7KX8Pm9pXgcUFFiBgJAReRFPWfny4TOqoMISWuk4s2skcp1LfnRydeeDDrbtL3VX11iLN-CXLE_GpZdPfvfqrseLiBgoZH08mi6SD04Jt75P-8wlCKCYepkGp80zk0Addl9Bg-w7Kh-BrS8JLEmoMf1ZiTK9U8eUGTGXrEPtmK1h0n07Mdn0SoT5u4ezz-U0LsowDupojxwv1CLcpJJMK0dQNkxDuNOew8K1xrdSxghc8mfl8gOltafC29cympLIzsh-bAnpSPfQ4O1y5QJuL9pNILF9-MmS1Wmfg_mvuZL6jhGZ86ofIh_7NV90GG9mMi4JFn0-RzXKQK979FNU4-YKrbBfYMCbzKLDRm6yWBVHUBgfvkCQ0K9XW3ljZBWYtXHuGVA1koeNURK-74gZULPLdnUTuXJacuefVAB_kG_t7ImC2mO-QatJHosUFOeBitH8pGO5S7wbRyt9cMI_-fGWgd4vQ29GNbTTEXPrXFV634jVm0UFrDycMXwSoscgT53_sFtMVxeQlIeVCJaOfKjMrbZ9SqKRbTs94YhKpxu9sot8rqxLHLXD_IiPLCJHfOiVUYECReukYHQMy3FWcN8r6DI3751B279DELqR18zxn0D5paq5f9zdUJXsoKxKE6WbYTtUkSs4AP_HvIqUVNDvDnwM3J8z6fEiznL-gWPhxihS1Vg7f3yvD8gursSh4XO54Xqr-NJ1Kl9S6PSb9J564UQ_MZ-ymkRBZVbYHkHcbOkmZ_r1VkHO8uk3iz6ZdeO0ueRMsfA9IGG-juTeLzE_xh5a0REVoaR6hrAZiW0XkhJWnmC8lJRhA3_JYYgPUtUOMuvaFNnkM-zp8V7Vh62Xh-ap1fkODg7dY5drvsbDdAyGWR4hXmkY0y7ycwYm7aAALs33n3wkTwycvDB7aBgGTeNVDTEboxb3wviWamcLBvyXW03j3J39zr2SRJ_FT8Ga6rnpPPsB1SMx4IZavWKI8mSj9tNYEyOd6K7zP84PD3Uh6GLjKI2iBk8srxhvEL1ETHgQP-6zsslE2YUsL_EEl1dWViymCtfaCryZn158gtIOm7siQpAgOXMc3ayuimfAW8H4YIc9qapiVqW5qqLTywfAJJjMeBK-u_oQTxw../download",
   #           httr::write_disk(tmp) )
   
-  readxl::read_excel("data-raw/Site Status Database 18 April 2024.xlsx") %>%
+  readxl::read_excel("~/The University of Montana/Wiechmann, Catherine - UMRB Network Shared Files/Database and Other Tracking Docs/Site Status Database 03 July 2025.xlsx") %>%
     dplyr::filter(`Station Status` != "Removed") %>%
     dplyr::rename(`Site Type` = `Site Type\r\n(New, Existing, Existing - Moved > 100 ft)\r\n`) %>%
     dplyr::mutate(`Site Type` = ifelse(`Site Type` == "new","New",`Site Type`)) %>%
@@ -36,7 +36,8 @@ get_umrb_status <- function(){
       c(Cell, Number),
       sep = "-"
     ) %>%
-  sf::st_as_sf(coords = c("Longitude", "Latitude"), crs = 4326)
+    # dplyr::mutate(Longitude = ifelse(Longitude == -194.50740, -94.50740, Longitude)) %>%
+    sf::st_as_sf(coords = c("Longitude", "Latitude"), crs = 4326, remove = FALSE)
 }
 
 get_umrb_grid <- function(){
@@ -508,12 +509,8 @@ site_status <-
   dplyr::select(Site, 
                 `Grid Cell ID`,
                 `Site Type`,
-                `Project Year (PY)`) %>%
-  dplyr::mutate(`Station Status` = forcats::fct_collapse(`Project Year (PY)`,
-                                                         Operational = c("Pilot Year", "PY1", "PY2", "PY3"),
-                                                         `Summer 2024` = c("PY4"),
-                                                         `Candidate 2025` = c("PY5"))) %>%
-  dplyr::filter(!is.na(`Station Status`))
+                `Station Status`) %>%
+  dplyr::filter(!(`Station Status` %in% c("Removed", "Available")))
 
 g <-
   umrb_zoom_base() +
@@ -737,10 +734,15 @@ ggsave("figures/umrb-grid-sites-2025.png",
 
 umrb_grid_tribes <-
   umrb_grid %>%
-  dplyr::filter(sf::st_intersects(geometry,sf::st_transform(pop20_tribal,
-                                                            sf::st_crs(geometry)), 
-                                  sparse = FALSE) %>%
-                  rowSums() > 0)
+  dplyr::filter(
+    # sf::st_intersects(geometry,sf::st_transform(pop20_tribal,
+    #                                             sf::st_crs(geometry)), 
+    #                   sparse = FALSE) %>%
+      sf::st_intersects(geometry,sf::st_transform(tigris::native_areas() %>%
+                                                    dplyr::filter(LSAD != "OT"),
+                                                  sf::st_crs(geometry)), 
+                        sparse = FALSE) %>%
+      rowSums() > 0)
 
 
 g <-
@@ -783,7 +785,25 @@ ggsave("figures/umrb-grid-tribes.png",
        height = 5.15,
        bg = "transparent")
 
-# 174 cells intersect Tribal land
+# 128 cells intersect Tribal land
+
+umrb_grid_tribes %>%
+  sf::st_drop_geometry() %>%
+  dplyr::group_by(State) %>%
+  dplyr::count()
+
+# Groups:   State [5]
+# State     n
+# <ord> <int>
+#   1 MT       47
+# 2 ND       11
+# 3 NE        8
+# 4 SD       54
+# 5 WY        8
+
+mapview::mapview(site_status, zcol = "Station Status") + 
+mapview::mapview(pop20_tribal) +
+mapview::mapview(umrb_grid_tribes)
 
 g <-
   umrb_zoom_base() +
@@ -833,6 +853,26 @@ ggsave("figures/umrb-grid-tribes_remaining.png",
 
 # 80 potential cells to be filled on Tribal land
 
+grid_status
+
+site_status %>%
+  sf::st_intersection(tigris::native_areas() %>%
+                        dplyr::filter(LSAD != "OT") %>%
+                        sf::st_transform(umrb_grid_proj)) %>%
+  dplyr::left_join(sf::st_drop_geometry(umrb_grid),
+                   by = c("Grid.Cell.ID" = "Cell")) %>%
+  sf::st_drop_geometry() %>%
+  dplyr::group_by(State) %>%
+  dplyr::count()
+
+# 42 completed/planned on tribal land so far
+# # Groups:   State [4]
+# State     n
+# <ord> <int>
+#   1 MT       18
+# 2 ND        1
+# 3 SD       21
+# 4 WY        2
 
 g <-
   umrb_zoom_base() +
@@ -881,7 +921,7 @@ g <-
                                                Cell))) %>%
                   nrow(),
                 " Grid Cells Remaining")
-         )
+  )
 
 ggsave("figures/umrb-grid-all_remaining.png",
        plot = g,
@@ -956,14 +996,3 @@ ggsave(file.path("figures","mco_mesonet.pdf") ,
 # 105 stations
 # 19 HydroMet
 # 86 AgriMet
-
-
-
-
-
-
-
-
-
-
-

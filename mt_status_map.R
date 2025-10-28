@@ -13,19 +13,13 @@ mt_station_status <-
       dplyr::select(station, status, ace_grid),
     by = c("station")
   ) %>%
+  dplyr::filter(!is.na(longitude),
+                longitude < 0) %>%
   sf::st_as_sf(coords = c("longitude", "latitude"),
                crs = 4326) %>%
   sf::st_transform(mcor::mt_state_plane) %>%
   dplyr::mutate(status = 
-                  factor(status,
-                         levels = c("pending",
-                                    "active",
-                                    "decommissioned",
-                                    "inactive",
-                                    "ground",
-                                    "structures",
-                                    "contracted",
-                                    "future")),
+                  factor(status),
                 sub_network = 
                   factor(sub_network,
                          levels = c("HydroMet",
@@ -46,22 +40,38 @@ grid <-
   dplyr::left_join(mt_station_status %>%
                      sf::st_drop_geometry() %>%
                      dplyr::select(Cell = ace_grid,
-                                   status)) %>%
-  dplyr::mutate(status = 
-                  status %>%
+                                   status,
+                                   station)) %>%
+  dplyr::mutate(status = status %>%
+                  as.character() %>%
                   tidyr::replace_na("future") %>%
+                  factor() %>%
                   forcats::fct_collapse(Operational = "active",
-                                        `Summer 2025` = c("ground", "inactive", "pending", "structures"),
-                                        `Summer 2026` = "contracted",
-                                        `Future Stations` = "future"
+                                        # `Summer 2025` = c("contracted", "pending", "structures"),
+                                        `Summer 2026` = c("candidate-26"),
+                                        `Summer 2027` = c("candidate-27", "future")
                                         
                   ) %>%
                   factor(levels = c("Operational",
-                                    "Summer 2025",
+                                    # "Summer 2025",
                                     "Summer 2026",
-                                    "Future Stations"
+                                    "Summer 2027"
                   ),
                   ordered = TRUE)
+  ) %>%
+  dplyr::mutate(
+    status = 
+      dplyr::case_when(
+        Cell %in% c("R-2", "S-2", "S-3", "S-4") ~ "Operational",
+        # Cell == "S-3" ~ "Summer 2025",
+        .default = status
+      ) %>%
+      factor(levels = c("Operational",
+                        # "Summer 2025",
+                        "Summer 2026",
+                        "Summer 2027"
+      ),
+      ordered = TRUE)
   )
 
 mt_towns <-
@@ -115,9 +125,9 @@ p <-
   scale_fill_manual(name = "Montana Mesonet\nStation Status",
                     values = c(
                       Operational = "#009988FF",
-                      `Summer 2025` = "#0077BBFF",
+                      # `Summer 2025` = "#0077BBFF",
                       `Summer 2026` = "#33BBEEFF",
-                      `Future Stations` = "#EE7733FF"
+                      `Summer 2027` = "#EE7733FF"
                     )
   ) +
   geom_raster(data = terra::as.data.frame(hill, xy = TRUE),
@@ -190,7 +200,7 @@ p <-
   #   alpha = 0.5,
   #   label.padding = unit(0.25, "lines"),
   #   # position = position_dodge(0.9),
-  #   
+  # 
   # ) +
   
   
@@ -257,29 +267,30 @@ p <-
       gp = grid::gpar(fontface = "italic",
                       fontsize = 6)
     ),
-    xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)
+    xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf) +
+  coord_sf(clip = "off")
 
 gt <- ggplot_gtable(ggplot_build(p))
 gt$layout$clip[gt$layout$name == "panel"] <- "off"
 
 dev.off()
 grid::grid.draw(gt) %>%
-ggsave(plot = .,
-       filename = "mt_status_map.png",
-       width = 10, 
-       height = 14/3,
-       device = ragg::agg_png,
-       bg = "white",
-       dpi = 1200
-)
+  ggsave(plot = .,
+         filename = "mt_status_map.png",
+         width = 10, 
+         height = 14/3,
+         device = ragg::agg_png,
+         bg = "white",
+         dpi = 1200
+  )
 
-# grid::grid.draw(gt) %>%
-#   ggsave(plot = .,
-#          filename = "mt_status_map.pdf",
-#          width = 10, 
-#          height = 14/3,
-#          device = cairo_pdf,
-#          bg = "white",
-#          dpi = 1200
-#   )
+grid::grid.draw(gt) %>%
+  ggsave(plot = .,
+         filename = "mt_status_map.pdf",
+         width = 10,
+         height = 14/3,
+         device = cairo_pdf,
+         bg = "white",
+         dpi = 1200
+  )
 

@@ -15,14 +15,57 @@ mt_station_status <- readr::read_csv(
   ) %>%
   sf::st_as_sf(coords = c("longitude", "latitude"), crs = 4326) 
 
-tribes <- sf::read_sf("https://data.climate.umt.edu/mesonet/fgb/mt_tribes.fgb")
+tribes <- rmapshaper::ms_simplify(sf::read_sf("https://data.climate.umt.edu/mesonet/fgb/mt_tribes.fgb"))
+
+
 
 hill <- 
   mcor::mt_hillshade_500m %>%
   terra::rast()
 
+mt_towns <-
+  tribble(
+    ~Name,        ~vjust, ~hjust,
+    "Libby",        -0.3,    0.5,
+    # "Whitefish",    -0.3,    0.0,
+    "Kalispell",     -0.3,    0.3,
+    # "Polson",        1.3,    0.7,
+    "Missoula",     1.3,    0.3,
+    # "Cut Bank",     0.5,    -0.1,
+    # "Hamilton",     -0.3,    0.1,
+    "Butte",        -0.3,    0.5,
+    "Dillon",       -0.3,    1.0,
+    "Helena",       -0.3,    0.5,
+    "Great Falls",  1.3,    0.7,
+    "Havre",        0.5,    1.1,
+    "Bozeman",      -0.3,    0.5,
+    "Lewistown",    1.3,    0.2,
+    "Billings",     -0.3,    0.3,
+    "Miles City",    1.3,    0.5,
+    "Glendive",     -0.3,    0.7,
+    "Wolf Point",   1.3,    0.3,
+    # "Gardiner",     -0.3,    0.3
+  )
+
+
+mt_towns <-
+  sf::read_sf("/vsicurl/https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/GeographicNames/MT_Names_gdb.zip",
+              layer = "MT_Names") %>%
+  dplyr::filter(Class == "Populated Place") %>%
+  dplyr::right_join(mt_towns) %>%
+  sf::st_transform(mcor::mt_state_plane)
+
+
 p <-
   ggplot() +
+  geom_sf(data = mcor::mt_state_simple,
+          fill = "white",
+          linewidth = 0) +
+  geom_sf(data = tribes, 
+          fill = "#70002e",
+          linewidth = 0,
+          alpha = 0.15,
+          color = NA) + 
   geom_raster(data = terra::as.data.frame(hill, xy = TRUE),
               mapping = aes(x = x,
                             y = y,
@@ -36,16 +79,38 @@ p <-
           fill = NA,
           color = "white",
           linewidth = 0.3) +
-  geom_sf(data = tribes, 
+  geom_sf(data = mcor::mt_state_simple,
           fill = NA,
-          linewidth = 0.25,
-          color= "grey30") + 
+          linewidth = 0.5) +
   geom_sf(data = mt_station_status,
-          shape = "\u2605",
+          shape = 24,
+          size = 3,
           fill = "black",
-          color = "black",
+          color = "white",
+          linewidth = 1
+  ) +
+  geom_sf(data = mt_towns,
+          shape = 21,
+          fill = "black",
+          color = "white",
+  ) +
+  geom_sf_label(
+    data = mt_towns,
+    aes(label = Name,
+        vjust = vjust,
+        hjust = hjust),
+    fontface = "bold",
+    color = "black",
+    fill = "white",
+    size = 4,
+    label.size = 0,
+    alpha = 0.5,
+    label.padding = unit(0.25, "lines"),
+    # position = position_dodge(0.9),
+
   ) +
   guides(
+    fill = guide_legend(order = 1),
     shape = guide_legend(
       override.aes = list(size = 3),
       theme = ggplot2::theme(
@@ -54,16 +119,6 @@ p <-
       )
     )
   ) + 
-  
-  # geom_sf(data = mcor::mt_tribal_land,
-  #         fill = NA,
-  #         color = "black",
-  #         linewidth = 1) +
-  
-  geom_sf(data = mcor::mt_state_simple,
-          fill = NA,
-          linewidth = 0.5) +
-  guides(fill = guide_legend(order = 1)) +
   # ggrepel::geom_label_repel(
   #   data = mt_station_status,
   #   aes(label = name, geometry = geometry),
@@ -145,7 +200,7 @@ p <-
       halign = 0.5,
       valign = 1,
       gp = grid::gpar(fontface = "bold",
-                      fontsize = 13)
+                      fontsize = 18)
     ),
     xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)
 

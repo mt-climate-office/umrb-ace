@@ -29,8 +29,26 @@ umrb_grid <-
   raster::rasterToPolygons() %>%
   sf::st_as_sf()
 
+mt_grid <-
+  raster::raster(crs = umrb_grid_proj$input,
+                 resolution = c(edge,edge),
+                 xmn = 0-(25*edge),
+                 ymn = 0,
+                 xmx = (19*edge),
+                 ymx = 0+(24*edge)
+  ) %>%
+  raster::rasterToPolygons() %>%
+  sf::st_as_sf() %>%
+  sf::st_filter(
+    mcor::mt_state_simple |>
+      sf::st_transform(umrb_grid_proj)
+    ) |>
+  sf::st_transform(mcor::mt_state_plane) %T>%
+  sf::write_sf("data/mt-ace-grid.shp")
+
 
 mapview::mapview(umrb_grid) +
+  mapview::mapview(mt_grid) + 
   mapview::mapview(sf::read_sf("data-raw/fwmesonetgrid19oct2021"))
 
 library(sf)
