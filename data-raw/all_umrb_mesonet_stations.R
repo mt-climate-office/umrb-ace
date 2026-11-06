@@ -10,9 +10,9 @@ umrb_grid_proj <-
   {paste0("+",names(.),"=",., collapse = " ")} %>%
   sf::st_crs()
 
-umrb_grid <- sf::read_sf("data-raw/fwmesonetgrid19oct2021/") %>% 
-  dplyr::filter(percentIn > 40) %>% 
-  dplyr::select(cell) %>%
+# Includes manual revisions; see umrb-grid.R
+umrb_grid <- sf::read_sf("data/umrb-ace-grid.geojson") %>% 
+  dplyr::select(cell = Cell) %>%
   sf::st_transform(umrb_grid_proj)
 
 

@@ -253,9 +253,8 @@ p <-
     xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf) +
   annotation_custom(
     gridtext::textbox_grob(
-      text = paste0("The Montana Mesonet is operated by the Montana Climate Office, 
-      and is a service of the Montana Forest and Conservation Experiment Station, 
-      WA Franke College of Forestry and Conservation, University of Montana.<br>
+      text = paste0("The Montana Mesonet is operated by the Montana Climate Office,<br>
+      and is a service of the WA Franke College of Forestry and Conservation, University of Montana.<br>
       Map produced on ", format(today(), "%B %d, %Y"), "."),
       x = unit(0.94, "npc"),
       y = unit(0.05, "npc"),

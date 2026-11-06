@@ -13,7 +13,7 @@ get_umrb_status <- function(){
   # httr::GET(url = "https://dl.boxcloud.com/d/1/b1!Y5CMqqt3mOhS4jjvCCwD2AeQmhxM9Ohom794KK5Tv3Yal0Xo7Rm9u8XyjH8pNgyey2-PIAAw6BAIbN1gdXEWpLUCkiKDkRItrmNtZ6w-_LtjTZ_5r-VMH_Tmxigc_r-hHgUSypo23hZUA_Pmi5xNsKgoVmOh1TZY0mL_0mcaxuOY1wlYeEr9YT-6kSziddnV4VRftzDF8B34VEtyE_Zi2ROL9YsgB05TPM-p-WtKYKzYQdfFvnOfU9W5QnRyrZ1QTHKuN6512QzhpoTucVt_RNwLY7lNoolMFe4sd0hyMXX1jL7OfDqprFsbzk8pzN1v0NE_PCHFhs3xY-Q9c1yoHvt72YD0mOxez-JaZmCWW7iIOTUkja8JkWKhmHdVNN8oQGfFkwRLIGCEnKMm42aP3drXe2yDuxSMKbDNKo9YQdw227Dsv56iAljJyvl41lDgkWD7KX8Pm9pXgcUFFiBgJAReRFPWfny4TOqoMISWuk4s2skcp1LfnRydeeDDrbtL3VX11iLN-CXLE_GpZdPfvfqrseLiBgoZH08mi6SD04Jt75P-8wlCKCYepkGp80zk0Addl9Bg-w7Kh-BrS8JLEmoMf1ZiTK9U8eUGTGXrEPtmK1h0n07Mdn0SoT5u4ezz-U0LsowDupojxwv1CLcpJJMK0dQNkxDuNOew8K1xrdSxghc8mfl8gOltafC29cympLIzsh-bAnpSPfQ4O1y5QJuL9pNILF9-MmS1Wmfg_mvuZL6jhGZ86ofIh_7NV90GG9mMi4JFn0-RzXKQK979FNU4-YKrbBfYMCbzKLDRm6yWBVHUBgfvkCQ0K9XW3ljZBWYtXHuGVA1koeNURK-74gZULPLdnUTuXJacuefVAB_kG_t7ImC2mO-QatJHosUFOeBitH8pGO5S7wbRyt9cMI_-fGWgd4vQ29GNbTTEXPrXFV634jVm0UFrDycMXwSoscgT53_sFtMVxeQlIeVCJaOfKjMrbZ9SqKRbTs94YhKpxu9sot8rqxLHLXD_IiPLCJHfOiVUYECReukYHQMy3FWcN8r6DI3751B279DELqR18zxn0D5paq5f9zdUJXsoKxKE6WbYTtUkSs4AP_HvIqUVNDvDnwM3J8z6fEiznL-gWPhxihS1Vg7f3yvD8gursSh4XO54Xqr-NJ1Kl9S6PSb9J564UQ_MZ-ymkRBZVbYHkHcbOkmZ_r1VkHO8uk3iz6ZdeO0ueRMsfA9IGG-juTeLzE_xh5a0REVoaR6hrAZiW0XkhJWnmC8lJRhA3_JYYgPUtUOMuvaFNnkM-zp8V7Vh62Xh-ap1fkODg7dY5drvsbDdAyGWR4hXmkY0y7ycwYm7aAALs33n3wkTwycvDB7aBgGTeNVDTEboxb3wviWamcLBvyXW03j3J39zr2SRJ_FT8Ga6rnpPPsB1SMx4IZavWKI8mSj9tNYEyOd6K7zP84PD3Uh6GLjKI2iBk8srxhvEL1ETHgQP-6zsslE2YUsL_EEl1dWViymCtfaCryZn158gtIOm7siQpAgOXMc3ayuimfAW8H4YIc9qapiVqW5qqLTywfAJJjMeBK-u_oQTxw../download",
   #           httr::write_disk(tmp) )
   
-  readxl::read_excel("data-raw/Site Status Database 18 April 2024.xlsx") %>%
+  readxl::read_excel("data-raw/Site Status Database 10 DEC 2025.xlsx") %>%
     dplyr::filter(`Station Status` != "Removed") %>%
     dplyr::rename(`Site Type` = `Site Type\r\n(New, Existing, Existing - Moved > 100 ft)\r\n`) %>%
     dplyr::mutate(`Site Type` = ifelse(`Site Type` == "new","New",`Site Type`)) %>%
@@ -41,7 +41,8 @@ get_umrb_grid <- function(){
   #       exdir = tmpdir)
   # 
   # sf::read_sf(tmpdir)
-  sf::read_sf("data-raw/fwmesonetgrid19oct2021/")
+  # Includes manual revisions; see umrb-grid.R
+  sf::read_sf("data/umrb-ace-grid.geojson")
 }
 
 get_df <- function(x){
@@ -250,9 +251,6 @@ ggsave("figures/mt-tribes.png",
 
 umrb_grid <- 
   get_umrb_grid() %>%
-  dplyr::filter(Status != "Less than 40%") %>%
-  dplyr::select(Cell = cell,
-                State) %>%
   sf::st_make_valid() %>%
   sf::st_transform(mcor::mt_state_plane) %>%
   rmapshaper::ms_simplify()
@@ -410,7 +408,7 @@ umrb_grid %>%
 site_status <-
   get_umrb_status() %>%
   sf::st_transform(mcor::mt_state_plane) %>%
-  dplyr::select(Site, 
+  dplyr::select(Site = `Site/Station Name`, 
                 `Grid Cell ID`,
                 `Site Type`,
                 `Station Status`)
@@ -593,3 +591,4 @@ ggsave("figures/mt-grid-tribes_remaining.png",
 )
 
 # 151 potential cells to be filled on Tribal land
+

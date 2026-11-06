@@ -22,7 +22,7 @@ get_umrb_status <- function(){
   # httr::GET(url = "https://dl.boxcloud.com/d/1/b1!Y5CMqqt3mOhS4jjvCCwD2AeQmhxM9Ohom794KK5Tv3Yal0Xo7Rm9u8XyjH8pNgyey2-PIAAw6BAIbN1gdXEWpLUCkiKDkRItrmNtZ6w-_LtjTZ_5r-VMH_Tmxigc_r-hHgUSypo23hZUA_Pmi5xNsKgoVmOh1TZY0mL_0mcaxuOY1wlYeEr9YT-6kSziddnV4VRftzDF8B34VEtyE_Zi2ROL9YsgB05TPM-p-WtKYKzYQdfFvnOfU9W5QnRyrZ1QTHKuN6512QzhpoTucVt_RNwLY7lNoolMFe4sd0hyMXX1jL7OfDqprFsbzk8pzN1v0NE_PCHFhs3xY-Q9c1yoHvt72YD0mOxez-JaZmCWW7iIOTUkja8JkWKhmHdVNN8oQGfFkwRLIGCEnKMm42aP3drXe2yDuxSMKbDNKo9YQdw227Dsv56iAljJyvl41lDgkWD7KX8Pm9pXgcUFFiBgJAReRFPWfny4TOqoMISWuk4s2skcp1LfnRydeeDDrbtL3VX11iLN-CXLE_GpZdPfvfqrseLiBgoZH08mi6SD04Jt75P-8wlCKCYepkGp80zk0Addl9Bg-w7Kh-BrS8JLEmoMf1ZiTK9U8eUGTGXrEPtmK1h0n07Mdn0SoT5u4ezz-U0LsowDupojxwv1CLcpJJMK0dQNkxDuNOew8K1xrdSxghc8mfl8gOltafC29cympLIzsh-bAnpSPfQ4O1y5QJuL9pNILF9-MmS1Wmfg_mvuZL6jhGZ86ofIh_7NV90GG9mMi4JFn0-RzXKQK979FNU4-YKrbBfYMCbzKLDRm6yWBVHUBgfvkCQ0K9XW3ljZBWYtXHuGVA1koeNURK-74gZULPLdnUTuXJacuefVAB_kG_t7ImC2mO-QatJHosUFOeBitH8pGO5S7wbRyt9cMI_-fGWgd4vQ29GNbTTEXPrXFV634jVm0UFrDycMXwSoscgT53_sFtMVxeQlIeVCJaOfKjMrbZ9SqKRbTs94YhKpxu9sot8rqxLHLXD_IiPLCJHfOiVUYECReukYHQMy3FWcN8r6DI3751B279DELqR18zxn0D5paq5f9zdUJXsoKxKE6WbYTtUkSs4AP_HvIqUVNDvDnwM3J8z6fEiznL-gWPhxihS1Vg7f3yvD8gursSh4XO54Xqr-NJ1Kl9S6PSb9J564UQ_MZ-ymkRBZVbYHkHcbOkmZ_r1VkHO8uk3iz6ZdeO0ueRMsfA9IGG-juTeLzE_xh5a0REVoaR6hrAZiW0XkhJWnmC8lJRhA3_JYYgPUtUOMuvaFNnkM-zp8V7Vh62Xh-ap1fkODg7dY5drvsbDdAyGWR4hXmkY0y7ycwYm7aAALs33n3wkTwycvDB7aBgGTeNVDTEboxb3wviWamcLBvyXW03j3J39zr2SRJ_FT8Ga6rnpPPsB1SMx4IZavWKI8mSj9tNYEyOd6K7zP84PD3Uh6GLjKI2iBk8srxhvEL1ETHgQP-6zsslE2YUsL_EEl1dWViymCtfaCryZn158gtIOm7siQpAgOXMc3ayuimfAW8H4YIc9qapiVqW5qqLTywfAJJjMeBK-u_oQTxw../download",
   #           httr::write_disk(tmp) )
   
-  readxl::read_excel("~/The University of Montana/Wiechmann, Catherine - UMRB Network Shared Files/Database and Other Tracking Docs/Site Status Database 03 July 2025.xlsx") %>%
+  readxl::read_excel("data-raw/Site Status Database 10 DEC 2025.xlsx") %>%
     dplyr::filter(`Station Status` != "Removed") %>%
     dplyr::rename(`Site Type` = `Site Type\r\n(New, Existing, Existing - Moved > 100 ft)\r\n`) %>%
     dplyr::mutate(`Site Type` = ifelse(`Site Type` == "new","New",`Site Type`)) %>%
@@ -51,7 +51,8 @@ get_umrb_grid <- function(){
   #       exdir = tmpdir)
   # 
   # sf::read_sf(tmpdir)
-  sf::read_sf("data-raw/fwmesonetgrid19oct2021/")
+  # Includes manual revisions; see umrb-grid.R
+  sf::read_sf("data/umrb-ace-grid.geojson")
 }
 
 
@@ -111,7 +112,7 @@ umrb <-
 
 umrb_states <-
   states %>%
-  dplyr::filter(STUSPS %in% c("ID", "MT", "WY", "ND", "SD", "NE", "MN", "IA"))
+  dplyr::filter(STUSPS %in% c("MT", "WY", "ND", "SD", "NE"))
 
 # httr::GET("https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/raster/PRISMA_SR_50M.zip",
 #           httr::write_disk("data-raw/PRISMA_SR_50M.zip"))
@@ -272,7 +273,7 @@ total_pop <-
                 variables = "P1_001N", 
                 year = 2020,
                 geometry = TRUE) %>%
-  dplyr::filter(sf::st_intersects(geometry,sf::st_transform(umrb,sf::st_crs(geometry)), sparse = FALSE)[,1]) %$%
+  dplyr::filter(sf::st_intersects(geometry,sf::st_transform(umrb_states,sf::st_crs(geometry)), sparse = FALSE)[,1]) %$%
   value %>%
   sum()
 #2,974,820 people in 2020 Census
@@ -288,14 +289,15 @@ pop20_tribal <-
     ),
     by = "GEOID"
   ) %>%
-  dplyr::filter(sf::st_intersects(geometry,sf::st_transform(umrb,sf::st_crs(geometry)), sparse = FALSE)[,1]) %>%
+  dplyr::filter(sf::st_intersects(geometry,sf::st_transform(sf::st_union(umrb_states),sf::st_crs(geometry)), sparse = FALSE)[,1]) %>%
   dplyr::select(Name =  NAME.x,
                 variable,
                 value) %>%
   sf::st_transform(umrb_grid_proj) %>%
   sf::st_intersection(umrb_states) %>%
   dplyr::group_by(Name) %>%
-  dplyr::summarise()
+  dplyr::summarise(value = sum(value)) %>%
+  sf::st_cast("MULTIPOLYGON")
 
 # 21 Tribal Reservations
 sum(pop20_tribal$value, na.rm = TRUE)
@@ -321,15 +323,15 @@ g <-
           color = "#2b8cbe",
           fill = "white",
           alpha = 0.5) +
-  # geom_sf(data = pop20_tribal,
-  #         color = "#5D7A56",
-  #         fill = "#5D7A56",
-  #         alpha = 0.5
-  # ) +
-  # geom_sf_text(data = tcus, 
-  #              label="★", 
-  #              size=3, 
-  #              family = "HiraKakuPro-W3") +
+  geom_sf(data = pop20_tribal,
+          color = "#5D7A56",
+          fill = "#5D7A56",
+          alpha = 0.5
+  ) +
+  geom_sf_text(data = tcus,
+               label="★",
+               size=3,
+               family = "HiraKakuPro-W3") +
   coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
            ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
   labs(title = "The Upper Missouri River Basin",
@@ -344,9 +346,6 @@ ggsave("figures/umrb-tribes.png",
 
 umrb_grid <- 
   get_umrb_grid() %>%
-  dplyr::filter(Status != "Less than 40%") %>%
-  dplyr::select(Cell = cell,
-                State) %>%
   sf::st_make_valid() %>%
   sf::st_transform(umrb_grid_proj) %>%
   rmapshaper::ms_simplify() %>%
@@ -377,15 +376,15 @@ g<-
           color = "#2b8cbe",
           fill = "white",
           alpha = 0.5) +
-  # geom_sf(data = pop20_tribal,
-  #         color = "#5D7A56",
-  #         fill = "#5D7A56",
-  #         alpha = 0.5
-  # ) +
-  # geom_sf_text(data = tcus, 
-  #              label="★", 
-  #              size=3, 
-  #              family = "HiraKakuPro-W3") +
+  geom_sf(data = pop20_tribal,
+          color = "#5D7A56",
+          fill = "#5D7A56",
+          alpha = 0.5
+  ) +
+  geom_sf_text(data = tcus,
+               label="★",
+               size=3,
+               family = "HiraKakuPro-W3") +
   coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
            ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
   labs(title = "The Upper Missouri River Basin",
@@ -404,15 +403,15 @@ g<-
           size = 0.25,
           fill = NA,
           alpha = 0.5) +
-  # geom_sf(data = pop20_tribal,
-  #         color = "#5D7A56",
-  #         fill = "#5D7A56",
-  #         alpha = 0.3
-  # ) +
-  # geom_sf_text(data = tcus, 
-  #              label="★", 
-  #              size=3, 
-  #              family = "HiraKakuPro-W3") +
+  geom_sf(data = pop20_tribal,
+          color = "#5D7A56",
+          fill = "#5D7A56",
+          alpha = 0.3
+  ) +
+  geom_sf_text(data = tcus,
+               label="★",
+               size=3,
+               family = "HiraKakuPro-W3") +
   geom_sf(data = umrb_grid,
           color = "gray50",
           fill = "white",
@@ -437,15 +436,15 @@ g<-
           size = 0.25,
           fill = NA,
           alpha = 0.5) +
-  # geom_sf(data = pop20_tribal,
-  #         color = "#5D7A56",
-  #         fill = "#5D7A56",
-  #         alpha = 0.3
-  # ) +
-  # geom_sf_text(data = tcus, 
-  #              label="★", 
-  #              size=3, 
-  #              family = "HiraKakuPro-W3") +
+  geom_sf(data = pop20_tribal,
+          color = "#5D7A56",
+          fill = "#5D7A56",
+          alpha = 0.3
+  ) +
+  geom_sf_text(data = tcus,
+               label="★",
+               size=3,
+               family = "HiraKakuPro-W3") +
   geom_sf(data = umrb_grid,
           mapping = aes(fill = State),
           color = "gray50",
@@ -506,7 +505,7 @@ umrb_grid %>%
 site_status <-
   get_umrb_status() %>%
   sf::st_transform(umrb_grid_proj) %>%
-  dplyr::select(Site, 
+  dplyr::select(Site = `Site/Station Name`, 
                 `Grid Cell ID`,
                 `Site Type`,
                 `Station Status`) %>%
@@ -519,27 +518,20 @@ g <-
           size = 0.25,
           fill = NA,
           alpha = 0.5) +
-  # geom_sf(data = pop20_tribal,
-  #         color = "#5D7A56",
-  #         fill = "#5D7A56",
-  #         alpha = 0.3
-  # ) +
-  # geom_sf_text(data = tcus, 
-  #              label="★", 
-  #              size=3, 
-  #              family = "HiraKakuPro-W3") +
   geom_sf(data = umrb_grid,
           color = "gray50",
           fill = "white",
           alpha = 0.5) +
   geom_sf(data = umrb_grid %>%
-            dplyr::inner_join(site_status %>%
-                                dplyr::filter(`Station Status` == "Operational") %>%
-                                sf::st_drop_geometry() %>%
-                                dplyr::rename(Cell = `Grid Cell ID`)),
-          mapping = aes(fill = State),
-          color = "gray50",
-          size = 1.2,
+            dplyr::inner_join(
+              site_status %>%
+                dplyr::filter(`Station Status` == "Complete") %>%
+                sf::st_drop_geometry() %>%
+                dplyr::rename(Cell = `Grid Cell ID`)
+            ),
+          mapping = aes(fill = State, color = State),
+          # color = "gray50",
+          linewidth = 0.5,
           alpha = 0.5) +
   scale_color_manual(values = c("MT" = "#00678a",
                                 "ND" = "#c0affb",
@@ -555,13 +547,23 @@ g <-
                                 "TBD" = "#5eccab",
                                 "WY" = "#56641a"),
                     guide = 'none') +
+  geom_sf(data = pop20_tribal,
+          color = "#5D7A56",
+          fill = "#5D7A56",
+          alpha = 0.3
+  ) +
+  geom_sf_text(data = tcus,
+               label="★",
+               size=3,
+               family = "HiraKakuPro-W3") +
   geom_sf(data = site_status %>%
-            dplyr::filter(`Station Status` == "Operational"),
+            dplyr::filter(`Station Status` == "Complete"),
           aes(shape = `Station Status`),
+          size = 1,
           fill = "white") +
-  scale_shape_manual(values = c("Operational" = 19,
-                                "Summer 2024" = 21,
-                                "Candidate 2025" = 3),
+  scale_shape_manual(values = c("Complete" = 19,
+                                "In-Progress" = 21,
+                                "Candidate" = 3),
                      drop = FALSE,
                      name = NULL) +
   coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
@@ -572,14 +574,14 @@ g <-
             y = sf::st_bbox(umrb_states)[c("ymax")],
             label = paste0(
               site_status %>%
-                dplyr::filter(`Station Status` == "Operational") %>%
+                dplyr::filter(`Station Status` == "Complete") %>%
                 nrow(),
-              " Operational"
+              " Complete"
             ),
             fontface = "bold",
             size = 6)
 
-ggsave("figures/umrb-grid-sites-2023.png",
+ggsave("figures/umrb-grid-sites-complete.png",
        plot = g,
        width = 10,
        height = 5.15,
@@ -593,27 +595,19 @@ g <-
           size = 0.25,
           fill = NA,
           alpha = 0.5) +
-  # geom_sf(data = pop20_tribal,
-  #         color = "#5D7A56",
-  #         fill = "#5D7A56",
-  #         alpha = 0.3
-  # ) +
-  # geom_sf_text(data = tcus, 
-  #              label="★", 
-  #              size=3, 
-  #              family = "HiraKakuPro-W3") +
+
   geom_sf(data = umrb_grid,
           color = "gray50",
           fill = "white",
           alpha = 0.5) +
   geom_sf(data = umrb_grid %>%
             dplyr::inner_join(site_status %>%
-                                dplyr::filter(`Station Status` %in% c("Operational","Summer 2024")) %>%
+                                dplyr::filter(`Station Status` %in% c("Complete","In-Progress")) %>%
                                 sf::st_drop_geometry() %>%
                                 dplyr::rename(Cell = `Grid Cell ID`)),
-          mapping = aes(fill = State),
-          color = "gray50",
-          size = 1.2,
+          mapping = aes(fill = State, color = State),
+          # color = "gray50",
+          linewidth = 0.5,
           alpha = 0.5) +
   scale_color_manual(values = c("MT" = "#00678a",
                                 "ND" = "#c0affb",
@@ -629,31 +623,41 @@ g <-
                                 "TBD" = "#5eccab",
                                 "WY" = "#56641a"),
                     guide = 'none') +
+  geom_sf(data = pop20_tribal,
+          color = "#5D7A56",
+          fill = "#5D7A56",
+          alpha = 0.3
+  ) +
+  geom_sf_text(data = tcus,
+               label="★",
+               size=3,
+               family = "HiraKakuPro-W3") +
   geom_sf(data = site_status %>%
-            dplyr::filter(`Station Status`  %in% c("Operational","Summer 2024")),
+            dplyr::filter(`Station Status`  %in% c("Complete","In-Progress")),
           aes(shape = `Station Status`),
+          size = 1,
           fill = "white") +
-  scale_shape_manual(values = c("Operational" = 19,
-                                "Summer 2024" = 21,
-                                "Candidate 2025" = 3),
+  scale_shape_manual(values = c("Complete" = 19,
+                                "In-Progress" = 21,
+                                "Candidate" = 3),
                      drop = FALSE,
                      name = NULL) +
   coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
            ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
   labs(title = "The UMRB Monitoring Network",
-       subtitle = NULL) +
-  geom_text(x = mean(sf::st_bbox(umrb_states)[c("xmin","xmax")]),
-            y = sf::st_bbox(umrb_states)[c("ymax")],
-            label = paste0(
-              site_status %>%
-                dplyr::filter(`Station Status` == "Summer 2024") %>%
-                nrow(),
-              " Summer 2024 Installs"
-            ),
-            fontface = "bold",
-            size = 6)
+       subtitle = NULL)# +
+  # geom_text(x = mean(sf::st_bbox(umrb_states)[c("xmin","xmax")]),
+  #           y = sf::st_bbox(umrb_states)[c("ymax")],
+  #           label = paste0(
+  #             site_status %>%
+  #               dplyr::filter(`Station Status` == "In-Progress") %>%
+  #               nrow(),
+  #             " Stations In-Progress"
+  #           ),
+  #           fontface = "bold",
+  #           size = 6)
 
-ggsave("figures/umrb-grid-sites-2024.png",
+ggsave("figures/umrb-grid-sites-in-progress.png",
        plot = g,
        width = 10,
        height = 5.15,
@@ -667,15 +671,7 @@ g <-
           size = 0.25,
           fill = NA,
           alpha = 0.5) +
-  # geom_sf(data = pop20_tribal,
-  #         color = "#5D7A56",
-  #         fill = "#5D7A56",
-  #         alpha = 0.3
-  # ) +
-  # geom_sf_text(data = tcus, 
-  #              label="★", 
-  #              size=3, 
-  #              family = "HiraKakuPro-W3") +
+
   geom_sf(data = umrb_grid,
           color = "gray50",
           fill = "white",
@@ -684,9 +680,9 @@ g <-
             dplyr::inner_join(site_status %>%
                                 sf::st_drop_geometry() %>%
                                 dplyr::rename(Cell = `Grid Cell ID`)),
-          mapping = aes(fill = State),
-          color = "gray50",
-          size = 1.2,
+          mapping = aes(fill = State, color = State),
+          # color = "gray50",
+          linewidth = 0.5,
           alpha = 0.5) +
   scale_color_manual(values = c("MT" = "#00678a",
                                 "ND" = "#c0affb",
@@ -702,12 +698,22 @@ g <-
                                 "TBD" = "#5eccab",
                                 "WY" = "#56641a"),
                     guide = 'none') +
+  geom_sf(data = pop20_tribal,
+          color = "#5D7A56",
+          fill = "#5D7A56",
+          alpha = 0.3
+  ) +
+  geom_sf_text(data = tcus,
+               label="★",
+               size=3,
+               family = "HiraKakuPro-W3") +
   geom_sf(data = site_status,
           aes(shape = `Station Status`),
+          size = 1,
           fill = "white") +
-  scale_shape_manual(values = c("Operational" = 19,
-                                "Summer 2024" = 21,
-                                "Candidate 2025" = 3),
+  scale_shape_manual(values = c("Complete" = 19,
+                                "In-Progress" = 21,
+                                "Candidate" = 3),
                      drop = FALSE,
                      name = NULL) +
   coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
@@ -718,14 +724,101 @@ g <-
             y = sf::st_bbox(umrb_states)[c("ymax")],
             label = paste0(
               site_status %>%
-                dplyr::filter(`Station Status` == "Candidate 2025") %>%
+                # dplyr::filter(`Station Status` == "Candidate") %>%
                 nrow(),
-              " Candidate 2025 Installs"
+              " Complete or Candidate Stations"
             ),
             fontface = "bold",
             size = 6)
 
-ggsave("figures/umrb-grid-sites-2025.png",
+ggsave("figures/umrb-grid-sites-candidate.png",
+       plot = g,
+       width = 10,
+       height = 5.15,
+       bg = "transparent")
+
+
+
+site_status_tribal <-
+  site_status %>%
+  dplyr::filter(
+    # sf::st_intersects(geometry,sf::st_transform(pop20_tribal,
+    #                                             sf::st_crs(geometry)), 
+    #                   sparse = FALSE) %>%
+    sf::st_intersects(geometry,sf::st_transform(tigris::native_areas() %>%
+                                                  dplyr::filter(LSAD != "OT"),
+                                                sf::st_crs(geometry)), 
+                      sparse = FALSE) %>%
+      rowSums() > 0)
+
+g <-
+  umrb_zoom_base() +
+  geom_sf(data = umrb,
+          color = "#2b8cbe",
+          size = 0.25,
+          fill = NA,
+          alpha = 0.5) +
+  
+  geom_sf(data = umrb_grid,
+          color = "gray50",
+          fill = "white",
+          alpha = 0.5) +
+  geom_sf(data = umrb_grid %>%
+            dplyr::inner_join(site_status_tribal %>%
+                                sf::st_drop_geometry() %>%
+                                dplyr::rename(Cell = `Grid Cell ID`)),
+          mapping = aes(fill = State, color = State),
+          # color = "gray50",
+          linewidth = 0.5,
+          alpha = 0.5) +
+  scale_color_manual(values = c("MT" = "#00678a",
+                                "ND" = "#c0affb",
+                                "NE" = "#e6a176",
+                                "SD" = "#984464",
+                                "TBD" = "#5eccab",
+                                "WY" = "#56641a"),
+                     guide = 'none') +
+  scale_fill_manual(values =  c("MT" = "#00678a",
+                                "ND" = "#c0affb",
+                                "NE" = "#e6a176",
+                                "SD" = "#984464",
+                                "TBD" = "#5eccab",
+                                "WY" = "#56641a"),
+                    guide = 'none') +
+  geom_sf(data = pop20_tribal,
+          color = "#5D7A56",
+          fill = "#5D7A56",
+          alpha = 0.3
+  ) +
+  geom_sf_text(data = tcus,
+               label="★",
+               size=3,
+               family = "HiraKakuPro-W3") +
+  geom_sf(data = site_status_tribal,
+          aes(shape = `Station Status`),
+          size = 1,
+          fill = "white") +
+  scale_shape_manual(values = c("Complete" = 19,
+                                "In-Progress" = 21,
+                                "Candidate" = 3),
+                     drop = FALSE,
+                     name = NULL) +
+  coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
+           ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
+  labs(title = "The UMRB Monitoring Network",
+       subtitle = NULL) +
+  geom_text(x = mean(sf::st_bbox(umrb_states)[c("xmin","xmax")]),
+            y = sf::st_bbox(umrb_states)[c("ymax")],
+            label = paste0(
+              site_status_tribal %>%
+                # dplyr::filter(`Station Status` == "Candidate") %>%
+                nrow(),
+              " on Tribal Land"
+            ),
+            fontface = "bold",
+            size = 6)
+
+ggsave("figures/umrb-grid-sites-candidate-tribal.png",
        plot = g,
        width = 10,
        height = 5.15,
@@ -738,10 +831,10 @@ umrb_grid_tribes <-
     # sf::st_intersects(geometry,sf::st_transform(pop20_tribal,
     #                                             sf::st_crs(geometry)), 
     #                   sparse = FALSE) %>%
-      sf::st_intersects(geometry,sf::st_transform(tigris::native_areas() %>%
-                                                    dplyr::filter(LSAD != "OT"),
-                                                  sf::st_crs(geometry)), 
-                        sparse = FALSE) %>%
+    sf::st_intersects(geometry,sf::st_transform(tigris::native_areas() %>%
+                                                  dplyr::filter(LSAD != "OT"),
+                                                sf::st_crs(geometry)), 
+                      sparse = FALSE) %>%
       rowSums() > 0)
 
 
@@ -769,10 +862,10 @@ g <-
   geom_sf(data = pop20_tribal,
           color = "#5D7A56",
           fill = NA) +
-  # geom_sf_text(data = tcus, 
-  #              label="★", 
-  #              size=3, 
-  #              family = "HiraKakuPro-W3") +
+  geom_sf_text(data = tcus,
+               label="★",
+               size=3,
+               family = "HiraKakuPro-W3") +
   theme(legend.position = 'none') +
   coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
            ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
@@ -802,8 +895,8 @@ umrb_grid_tribes %>%
 # 5 WY        8
 
 mapview::mapview(site_status, zcol = "Station Status") + 
-mapview::mapview(pop20_tribal) +
-mapview::mapview(umrb_grid_tribes)
+  mapview::mapview(pop20_tribal) +
+  mapview::mapview(umrb_grid_tribes)
 
 g <-
   umrb_zoom_base() +
@@ -835,10 +928,10 @@ g <-
   geom_sf(data = pop20_tribal,
           color = "#5D7A56",
           fill = NA) +
-  # geom_sf_text(data = tcus, 
-  #              label="★", 
-  #              size=3, 
-  #              family = "HiraKakuPro-W3") +
+  geom_sf_text(data = tcus,
+               label="★",
+               size=3,
+               family = "HiraKakuPro-W3") +
   theme(legend.position = 'none') +
   coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
            ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +
@@ -865,13 +958,13 @@ site_status %>%
   dplyr::group_by(State) %>%
   dplyr::count()
 
-# 42 completed/planned on tribal land so far
+# 48 completed/planned on tribal land so far
 # # Groups:   State [4]
 # State     n
 # <ord> <int>
-#   1 MT       18
+#   1 MT       19
 # 2 ND        1
-# 3 SD       21
+# 3 SD       26
 # 4 WY        2
 
 g <-
@@ -901,13 +994,13 @@ g <-
           fill = NA,
           size = 1.2,
           alpha = 0.5) +
-  # geom_sf(data = pop20_tribal,
-  #         color = "#5D7A56",
-  #         fill = NA) +
-  # geom_sf_text(data = tcus, 
-  #              label="★", 
-  #              size=3, 
-  #              family = "HiraKakuPro-W3") +
+  geom_sf(data = pop20_tribal,
+          color = "#5D7A56",
+          fill = NA) +
+  geom_sf_text(data = tcus,
+               label="★",
+               size=3,
+               family = "HiraKakuPro-W3") +
   theme(legend.position = 'none') +
   coord_sf(xlim = sf::st_bbox(umrb_states)[c("xmin","xmax")],
            ylim = sf::st_bbox(umrb_states)[c("ymin","ymax")]) +

@@ -44,7 +44,23 @@ mt_grid <-
       sf::st_transform(umrb_grid_proj)
     ) |>
   sf::st_transform(mcor::mt_state_plane) %T>%
-  sf::write_sf("data/mt-ace-grid.shp")
+  sf::write_sf("data/mt-ace-grid.shp") %>%
+  sf::st_join(sf::read_sf("data/umrb-ace-grid.geojson") %>%
+                      dplyr::select(cell = Cell) %>%
+                      sf::st_transform(mcor::mt_state_plane) %>%
+                      sf::st_centroid(),
+            join = sf::st_contains) %>%
+  sf::st_intersection(mcor::mt_state) %>%
+  dplyr::mutate(cellArea = sf::st_area(geometry) %>%
+                  units::set_units("miles^2")) %>%
+  dplyr::filter(cellArea >= units::set_units(0.4*500, "miles^2")) %>%
+  tibble::as_tibble() %>%
+  sf::st_as_sf() %>%
+  dplyr::select(cell, cellArea) %T>%
+  sf::write_sf("data/mt-ace-grid-clipped.geojson",
+               delete_dsn = TRUE)
+
+mapview::mapview(mt_grid, zcol = "cell", legend = FALSE)
 
 
 mapview::mapview(umrb_grid) +
@@ -63,3 +79,42 @@ sf::read_sf("/vsizip//Users/bocinsky/git/mt-climate-office/umrb-ace/data-raw/fwm
   
 
 
+
+## Manual grid revisions
+# Cells added to or removed from the network after the 2021 grid was drawn.
+# Removed cells are lowercased in the shapefile, which marks them as not
+# included, and dropped from the geojson. This section can be re-run safely.
+grid_removed <- c("J-13")  # 2026-10-21: J-13 will not be filled
+grid_added <- c("E-9")     # 2026-10-21: E-9 will get a site, despite being <40% in the UMRB
+
+raw_grid <-
+  sf::read_sf("data-raw/fwmesonetgrid19oct2021")
+
+sf::read_sf("data/umrb-ace-grid.shp") %>%
+  dplyr::mutate(cell = dplyr::if_else(toupper(cell) %in% grid_removed,
+                                      tolower(cell),
+                                      cell),
+                included = grepl("^[[:upper:]]", cell)) %T>%
+  sf::write_sf("data/umrb-ace-grid.shp",
+               delete_dsn = TRUE) %>%
+  invisible()
+
+file.remove("data/umrb-ace-grid.zip")
+zip("data/umrb-ace-grid.zip",
+    files = list.files("data", pattern = "^umrb-ace-grid\\.(dbf|prj|shp|shx)$", full.names = TRUE),
+    flags = "-j")
+
+sf::read_sf("data/umrb-ace-grid.geojson") %>%
+  dplyr::filter(!(toupper(Cell) %in% c(grid_removed, grid_added))) %>%
+  dplyr::bind_rows(
+    raw_grid %>%
+      dplyr::filter(cell %in% grid_added) %>%
+      dplyr::select(Cell = cell,
+                    State) %>%
+      sf::st_make_valid() %>%
+      sf::st_transform(4326) %>%
+      sf::st_cast("MULTIPOLYGON")
+  ) %>%
+  dplyr::arrange(Cell) %>%
+  sf::write_sf("data/umrb-ace-grid.geojson",
+               delete_dsn = TRUE)

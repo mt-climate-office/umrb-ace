@@ -3,14 +3,25 @@ library(ggplot2)
 library(terra)
 source("./data-raw/all_umrb_mesonet_stations.R")
 
+# Custom Albers parameterization from Alex Stum, 2021-10-20
+umrb_grid_proj <-
+  list(proj = "aea",
+       lat_0 = 41.8865,
+       lat_1 = 43.0,
+       lat_2 = 47.8,
+       lon_0 = -104.0487,
+       units = "m") %>%
+  {paste0("+",names(.),"=",., collapse = " ")} %>%
+  sf::st_crs()
+
 states <-
   tigris::states(cb = TRUE) %>%
   dplyr::filter(!(STUSPS %in% c("PR","AK","HI","GU","MP", "AS","VI"))) %>%
-  sf::st_transform("EPSG:5070")
+  sf::st_transform(umrb_grid_proj)
 
 umrb <- 
   sf::read_sf("data/umrb.geojson") %>%
-  sf::st_transform("EPSG:5070") %>%
+  sf::st_transform(umrb_grid_proj) %>%
   rmapshaper::ms_simplify()
 
 umrb_states <-
@@ -22,7 +33,7 @@ umrb_roi <- sf::st_union(umrb, umrb_states) %>%
   sf::st_union()
 
 stations <- get_all_stations() %>% 
-  sf::st_transform("EPSG:5070") %>%
+  sf::st_transform(umrb_grid_proj) %>%
   sf::st_intersection(umrb_roi) 
 
 
@@ -36,7 +47,7 @@ tcus <-
                        dplyr::transmute(Town = NAME,
                                         State)) %>%
   sf::st_as_sf() %>%
-  sf::st_transform("EPSG:5070") %>%
+  sf::st_transform(umrb_grid_proj) %>%
   sf::st_intersection(umrb_roi)
 
 
@@ -49,15 +60,35 @@ universities <- tibble::tribble(
   "unl", 40.82015677983608, -96.70050968433904
 ) %>%
   sf::st_as_sf(coords = c("lon", "lat"), crs = 4326) %>%
-  sf::st_transform("EPSG:5070")
+  sf::st_transform(umrb_grid_proj)
 
-nlcd <- FedData::get_nlcd_annual(umrb_roi, "umrb")
+nlcd_2024 <-
+  curl::multi_download(urls = "https://www.mrlc.gov/downloads/sciweb1/shared/mrlc/data-bundles/Annual_NLCD_LndCov_2024_CU_C1V1.zip",
+                       destfiles = file.path("data-raw","Annual_NLCD_LndCov_2024_CU_C1V1.zip"),
+                       resume = TRUE) %$%
+  destfile %>%
+  file.path("/vsizip",.,"Annual_NLCD_LndCov_2024_CU_C1V1.tif") %>%
+  terra::rast()
+  
 
-nlcd_out <- nlcd %>%
-  purrr::pluck("rast") %>% 
-  purrr::pluck(1) %>% 
-  terra::aggregate(fact=1000/30, fun="modal") %>%
-  terra::project("EPSG:5070") %>%
+nlcd <- 
+  nlcd_2024 %>%
+  terra::crop(
+    sf::st_transform(umrb_roi, sf::st_crs(nlcd_2024)) %>%
+      terra::vect(),
+    mask = TRUE
+  )
+
+
+
+nlcd_out <- 
+  nlcd %>%
+  # terra::aggregate(fact=1000/30, fun="modal") %>%
+  terra::project(y = umrb_grid_proj$wkt, 
+                 res = 1000, 
+                 method = "mode",
+                 threads = TRUE,
+                 by_util = TRUE) %>%
   terra::classify(
     matrix(c(
       1, 31, 0,
@@ -72,22 +103,22 @@ nlcd_out <- nlcd %>%
   terra::subst( 
     from = c(0, 1, 2, 3),
     to = c(NA, "Forest", "Rangeland", "Cultivated Agriculture")
-  ) %>%
-  terra::mask(
-    terra::vect(
-      umrb_roi
-    )
   )
 
-tribes <- tigris::native_areas() %>% 
+tribes <- 
+  tigris::native_areas(cb = TRUE) %>% 
+  dplyr::filter(LSAD %in% c(86, 96)) %>%
   dplyr::select(NAME) %>%
-  sf::st_transform("EPSG:5070") %>% 
+  sf::st_transform(umrb_grid_proj) %>% 
   sf::st_intersection(umrb_roi) %>%
-  sf::st_simplify() %>% 
+  sf::st_cast("MULTIPOLYGON") %>%
   sf::st_cast("POLYGON") %>% 
   dplyr::mutate(area = sf::st_area(.)%>% as.numeric()) %>% 
-  dplyr::filter(area > 1000000) %>% 
-  dplyr::select(-area)
+  dplyr::filter(area > 5000000) %>% 
+  dplyr::select(-area) %>%
+  dplyr::group_by(NAME) %>%
+  dplyr::summarise(.groups = "drop") %>%
+  sf::st_cast("MULTIPOLYGON")
 
 get_df <- function(x){
   out <- cbind(xyFromCell(x, seq_len(ncell(x))),
@@ -114,7 +145,8 @@ get_df <- function(x){
 
 
 
-p <- ggplot(sf::st_transform(umrb_states, "EPSG:5070")) +
+p <- 
+  ggplot(sf::st_transform(umrb_states, umrb_grid_proj)) +
   geom_tile(data = nlcd_out %>%
                 raster::raster() %>% 
                 get_df() %>% 
@@ -139,19 +171,19 @@ p <- ggplot(sf::st_transform(umrb_states, "EPSG:5070")) +
   geom_sf(data = umrb_states,
           fill = NA, 
           color="black",
-          size=0) +
+          linewidth = 0.5) +
   geom_sf(
     data=tribes,
     fill = NA,
     color = "black",
-    size = 3
+    linewidth = 0.5
   ) +
-  geom_sf(data = umrb,
-          aes(color = "Upper Missouri River Basin"),  # Add this aes mapping
-          fill = "white",
-          alpha = 0.2,
-          color = "grey30",
-          size=2) +
+  # geom_sf(data = umrb,
+  #         aes(color = "Upper Missouri River Basin"),  # Add this aes mapping
+  #         fill = "white",
+  #         alpha = 0.2,
+  #         color = "grey30",
+  #         linewidth=0.5) +
   geom_sf(data = stations, mapping = aes(shape = active), size = 0.75, alpha = 1, color="black") +
   scale_shape_manual(
     values = c("Operational" = 20, "Future Installation" = 3),  # Green for active, red for inactive
@@ -174,9 +206,8 @@ p <- ggplot(sf::st_transform(umrb_states, "EPSG:5070")) +
     )
   ) +
   coord_sf(expand = TRUE,
-           xlim = c(-1715671.1, 489292.2),
-           ylim = c(1887033.0, 3059862.0),
-           crs = 5070) +
+           xlim = c(-892749.2, 1000000),
+           crs = umrb_grid_proj) +
   theme_void() +
   theme(
     legend.position = "right", 
@@ -199,7 +230,7 @@ dev.off()
 grid::grid.draw(gt) %>%
   ggsave(plot = .,
          filename = "r2i2_map.png",
-         width = 5, 
+         width = 6.5, 
          height = 3.5,
          device = ragg::agg_png,
          bg = "white",
