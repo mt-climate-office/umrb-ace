@@ -5,3 +5,6 @@
 .DS_Store
 
 PRIMSA_SR_50M.tif
+
+# Large source data (download separately)
+data-raw/Annual_NLCD_LndCov_2024_CU_C1V1.zip
